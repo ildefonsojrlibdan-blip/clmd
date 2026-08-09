@@ -1,0 +1,55 @@
+{
+  "site": {
+    "name": "Curriculum and Learning Management Division",
+    "short": "CLMD",
+    "agency": "Department of Education",
+    "region": "Regional Office XII",
+    "socc": "SOCCSKSARGEN",
+    "tagline": "Transforming Learning Through Quality Curriculum and Excellent Educational Leadership",
+    "email": "clmd.region12@deped.gov.ph",
+    "telephone": "(083) 228-8825 / 228-8826",
+    "address": "DepEd Regional Office XII, Carpenter Hill, City Proper, Koronadal City, South Cotabato, Region XII (SOCCSKSARGEN), Philippines",
+    "mapEmbed": "https://maps.google.com/maps?q=DepEd%20Regional%20Office%20XII%20Koronadal%20City&t=&z=13&ie=UTF8&iwloc=&output=embed"
+  },
+  "social": [
+    { "icon": "bi-facebook", "url": "#", "label": "Facebook" },
+    { "icon": "bi-twitter-x", "url": "#", "label": "Twitter / X" },
+    { "icon": "bi-youtube", "url": "#", "label": "YouTube" },
+    { "icon": "bi-envelope", "url": "mailto:clmd.region12@deped.gov.ph", "label": "Email" }
+  ],
+  "leaders": [
+    {
+      "photo": "assets/images/profile/rd.png",
+      "name": "Atty. Alberto T. Escobarte",
+      "position": "Regional Director",
+      "title": "CESO II",
+      "message": "Together, we transform learning across SOCCSKSARGEN through quality curriculum and excellent educational leadership. Every learner matters, every school counts, and every region of Region XII rises with integrity, innovation, and excellence.",
+      "email": "region12@deped.gov.ph",
+      "phone": "(083) 228-8825"
+    },
+    {
+      "photo": "assets/images/profile/ard.png",
+      "name": "Kathrine H. Lotilla",
+      "position": "Assistant Regional Director",
+      "title": "Director III",
+      "message": "We are committed to advancing inclusive, relevant, and responsive basic education — empowering our schools, teachers, and learners to achieve their fullest potential in a globally competitive environment.",
+      "email": "region12@deped.gov.ph",
+      "phone": "(083) 228-8825"
+    },
+    {
+      "photo": "assets/images/profile/clmd_chief.png",
+      "name": "Shienna Lyn L. Antenor, PhD",
+      "position": "Chief, Curriculum & Learning Management Division",
+      "title": "",
+      "message": "The Curriculum and Learning Management Division is dedicated to ensuring that every learner in Region XII receives quality, relevant, and equitable instruction supported by well-developed curricula and responsive learning resources.",
+      "email": "clmd.region12@deped.gov.ph",
+      "phone": "(083) 228-8825"
+    }
+  ],
+  "coreValues": [
+    { "icon": "bi-heart", "title": "Maka-Diyos", "desc": "Faith and godliness in all our actions." },
+    { "icon": "bi-people", "title": "Maka-Tao", "desc": "Humane and caring towards every person." },
+    { "icon": "bi-globe-asia-australia", "title": "Maka-Kalikasan", "desc": "Stewardship and care for our environment." },
+    { "icon": "bi-flag", "title": "Makabansa", "desc": "Patriotic love for our country and people." }
+  ]
+}

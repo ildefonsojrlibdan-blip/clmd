@@ -1,0 +1,31 @@
+{
+  "title": "Visitor Analytics",
+  "note": "Demo mode uses browser LocalStorage. Replace with backend API by editing assets/js/visitor.js fetch endpoint.",
+  "defaults": {
+    "total": 124530,
+    "today": 342,
+    "week": 2408,
+    "month": 10420,
+    "online": 186,
+    "returning": 62040
+  },
+  "weeklyGraph": {
+    "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "data": [210, 265, 248, 302, 340, 410, 356]
+  },
+  "countryStats": [
+    { "country": "Philippines", "visits": 118400, "flag": "PH" },
+    { "country": "United States", "visits": 2110, "flag": "US" },
+    { "country": "United Arab Emirates", "visits": 1280, "flag": "AE" },
+    { "country": "Saudi Arabia", "visits": 960, "flag": "SA" },
+    { "country": "Others", "visits": 1780, "flag": "GL" }
+  ],
+  "regionStats": [
+    { "region": "SOCCSKSARGEN", "visits": 62400 },
+    { "region": "Davao Region", "visits": 18400 },
+    { "region": "NCR", "visits": 14200 },
+    { "region": "Bangsamoro", "visits": 11800 },
+    { "region": "Central Visayas", "visits": 9800 },
+    { "region": "Others", "visits": 7930 }
+  ]
+}

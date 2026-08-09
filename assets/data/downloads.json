@@ -1,0 +1,24 @@
+{
+  "title": "Download Center",
+  "categories": ["Curriculum Guides", "Learning Resources", "Regional Memoranda", "Regional Advisories", "Office Forms", "Templates", "Reports", "Manuals"],
+  "items": [
+    { "name": "English K-3 Curriculum Guide", "category": "Curriculum Guides", "type": "PDF", "size": "2.4 MB", "icon": "bi-file-earmark-pdf", "desc": "Official K-3 curriculum guide for English." },
+    { "name": "Mathematics 7-10 MELC", "category": "Curriculum Guides", "type": "PDF", "size": "1.8 MB", "icon": "bi-file-earmark-pdf", "desc": "Most Essential Learning Competencies for Junior High Math." },
+    { "name": "Science 11-12 STEM Curriculum Guide", "category": "Curriculum Guides", "type": "PDF", "size": "3.1 MB", "icon": "bi-file-earmark-pdf", "desc": "Senior High School STEM curriculum guide." },
+    { "name": "MAPEH Curriculum Guide", "category": "Curriculum Guides", "type": "PDF", "size": "2.9 MB", "icon": "bi-file-earmark-pdf", "desc": "Comprehensive MAPEH curriculum guide." },
+    { "name": "Reading Intervention Toolkit", "category": "Learning Resources", "type": "ZIP", "size": "18.5 MB", "icon": "bi-file-earmark-zip", "desc": "Tools for literacy intervention programs." },
+    { "name": "Mathematics LAS Library", "category": "Learning Resources", "type": "ZIP", "size": "25.0 MB", "icon": "bi-file-earmark-zip", "desc": "Learning Activity Sheets for Mathematics." },
+    { "name": "Science Investigatory Project Guide", "category": "Learning Resources", "type": "PDF", "size": "5.2 MB", "icon": "bi-file-earmark-pdf", "desc": "Step-by-step guide to SIP preparation." },
+    { "name": "RM No. 2025-0112", "category": "Regional Memoranda", "type": "PDF", "size": "0.8 MB", "icon": "bi-file-earmark-pdf", "desc": "Festival of Talents guidelines." },
+    { "name": "RM No. 2025-0098", "category": "Regional Memoranda", "type": "PDF", "size": "0.6 MB", "icon": "bi-file-earmark-pdf", "desc": "Regional Mathematics Olympics." },
+    { "name": "RA No. 2025-0034", "category": "Regional Advisories", "type": "PDF", "size": "0.5 MB", "icon": "bi-file-earmark-pdf", "desc": "National Learning Camp advisory." },
+    { "name": "Performance Report FY 2024", "category": "Reports", "type": "PDF", "size": "8.7 MB", "icon": "bi-file-earmark-pdf", "desc": "Annual performance accomplishment report." },
+    { "name": "Aral Program Quarterly Report", "category": "Reports", "type": "XLSX", "size": "1.2 MB", "icon": "bi-file-earmark-excel", "desc": "Quarterly learning gains dataset." },
+    { "name": "DepEd Official Office Form", "category": "Office Forms", "type": "DOCX", "size": "0.3 MB", "icon": "bi-file-earmark-word", "desc": "Standard office form template." },
+    { "name": "Training Completion Report Form", "category": "Office Forms", "type": "DOCX", "size": "0.4 MB", "icon": "bi-file-earmark-word", "desc": "Form for training reports." },
+    { "name": "Learning Resource Template", "category": "Templates", "type": "PPTX", "size": "1.5 MB", "icon": "bi-file-earmark-ppt", "desc": "Standard LR development template." },
+    { "name": "Quarterly Report Template", "category": "Templates", "type": "XLSX", "size": "0.9 MB", "icon": "bi-file-earmark-excel", "desc": "Excel template for reports." },
+    { "name": "LRMDS Operational Manual", "category": "Manuals", "type": "PDF", "size": "6.4 MB", "icon": "bi-file-earmark-pdf", "desc": "Official LRMDS operations manual." },
+    { "name": "Work Immersion Manual", "category": "Manuals", "type": "PDF", "size": "4.2 MB", "icon": "bi-file-earmark-pdf", "desc": "Guide for SHS work immersion." }
+  ]
+}

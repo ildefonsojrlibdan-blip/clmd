@@ -1,0 +1,13 @@
+{
+  "title": "Regional Advisories Repository",
+  "items": [
+    { "no": "RA No. 2025-0034", "year": 2025, "title": "Advisory on the 2025 National Learning Camp", "area": "Programs", "program": "NLC", "date": "2025-07-01", "issuedTo": "Schools Division Offices", "keywords": "national, learning, camp, summer", "pdf": "pdf/sample.pdf" },
+    { "no": "RA No. 2025-0028", "year": 2025, "title": "Advisory on the Submission of Learning Resource Materials", "area": "LRMDS", "program": "Learning Resources", "date": "2025-06-12", "issuedTo": "All School Heads", "keywords": "learning, resource, materials, submission", "pdf": "pdf/sample.pdf" },
+    { "no": "RA No. 2025-0021", "year": 2025, "title": "Advisory on the Regional Validation of Curriculum Guides", "area": "Curriculum", "program": "Curriculum Guides", "date": "2025-05-19", "issuedTo": "Curriculum Implementers", "keywords": "curriculum, guides, validation", "pdf": "pdf/sample.pdf" },
+    { "no": "RA No. 2024-0045", "year": 2024, "title": "Advisory on the Distribution of DepEd TV Episodes", "area": "Learning Resources", "program": "DepEd TV", "date": "2024-12-03", "issuedTo": "Schools Division Offices", "keywords": "deped tv, episodes, broadcast, television", "pdf": "pdf/sample.pdf" },
+    { "no": "RA No. 2024-0036", "year": 2024, "title": "Advisory on the Conduct of the Brigada Pagbasa 2024", "area": "Reading", "program": "Literacy", "date": "2024-10-14", "issuedTo": "All Schools", "keywords": "brigada, pagbasa, reading, volunteers", "pdf": "pdf/sample.pdf" },
+    { "no": "RA No. 2024-0029", "year": 2024, "title": "Advisory on the 2024 Buwan ng Wika Celebration", "area": "Filipino", "program": "Buwan ng Wika", "date": "2024-08-01", "issuedTo": "All Schools", "keywords": "buwan, wika, filipino, language, month", "pdf": "pdf/sample.pdf" },
+    { "no": "RA No. 2023-0052", "year": 2023, "title": "Advisory on the Search for the Most Functional Library", "area": "LRMDS", "program": "Libraries", "date": "2023-11-11", "issuedTo": "Schools Division Offices", "keywords": "library, functional, search, resource", "pdf": "pdf/sample.pdf" },
+    { "no": "RA No. 2023-0041", "year": 2023, "title": "Advisory on the Regional Reading Month Celebration", "area": "Reading", "program": "Literacy", "date": "2023-09-22", "issuedTo": "All Schools", "keywords": "reading, month, celebration, literacy", "pdf": "pdf/sample.pdf" }
+  ]
+}

@@ -1,0 +1,46 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 590 >>
+stream
+BT /F1 12 Tf 50 750 Td 18 TL
+(CLMD - Curriculum & Learning Management Division) Tj T*
+(Department of Education - Regional Office XII (SOCCSKSARGEN)) Tj T*
+() Tj T*
+(Sample Document) Tj T*
+(====================) Tj T*
+(This is a placeholder PDF for the demo.) Tj T*
+(Replace files in the /assets/pdf folder with) Tj T*
+(actual curriculum guides, memoranda, advisories,) Tj T*
+(and other official documents to use the preview,) Tj T*
+(download, and print features.) Tj T*
+() Tj T*
+(All document data is driven by the external JSON) Tj T*
+(files in /assets/data for easy maintenance.) Tj T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 00000 n 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000882 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+952
+%%EOF

@@ -1,0 +1,16 @@
+{
+  "title": "Photo Gallery",
+  "categories": ["Programs", "Events", "Training", "School Visits", "Awards"],
+  "items": [
+    { "title": "2025 Festival of Talents", "program": "Special Programs", "year": 2025, "division": "Gen. Santos", "event": "Events", "img": "assets/images/banners/performance.jpg", "tag": "Events" },
+    { "title": "Regional Math Olympics", "program": "Mathematics", "year": 2025, "division": "Koronadal", "event": "Events", "img": "assets/images/banners/math.jpg", "tag": "Events" },
+    { "title": "National Schools Press Conference", "program": "English", "year": 2024, "division": "South Cotabato", "event": "Events", "img": "assets/images/banners/english.jpg", "tag": "Events" },
+    { "title": "Science and Technology Fair", "program": "Science", "year": 2024, "division": "Sarangani", "event": "Events", "img": "assets/images/banners/science.jpg", "tag": "Events" },
+    { "title": "SNED Fun Day", "program": "Inclusive Education", "year": 2024, "division": "Cotabato Province", "event": "Events", "img": "assets/images/banners/inclusive.jpg", "tag": "Events" },
+    { "title": "Teachers' Training Workshop", "program": "Professional Development", "year": 2025, "division": "Regional", "event": "Training", "img": "assets/images/banners/analytics.jpg", "tag": "Training" },
+    { "title": "Aral Program Implementation Visit", "program": "Programs", "year": 2025, "division": "Sultan Kudarat", "event": "School Visits", "img": "assets/images/banners/aral.jpg", "tag": "School Visits" },
+    { "title": "Awarding Ceremony", "program": "Awards", "year": 2024, "division": "Regional", "event": "Awards", "img": "assets/images/banners/leadership.jpg", "tag": "Awards" },
+    { "title": "Regional TechVoc Day", "program": "TLE", "year": 2024, "division": "Gen. Santos", "event": "Events", "img": "assets/images/banners/tle.jpg", "tag": "Events" },
+    { "title": "Buwan ng Wika", "program": "Filipino", "year": 2024, "division": "Koronadal", "event": "Events", "img": "assets/images/banners/filipino.jpg", "tag": "Events" }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Learning Assessment Dashboard",
+  "subtitle": "CRLA · RMA · Philippine Early Childhood Development Checklist — Regional Summary",
+  "summary": [
+    { "label": "Learners Assessed", "value": 1245000, "icon": "bi-clipboard-check" },
+    { "label": "Schools Covered", "value": 2100, "icon": "bi-building" },
+    { "label": "Full Refresher (CRLA)", "value": 28.4, "suffix": "%", "icon": "bi-arrow-repeat" },
+    { "label": "Grade Ready (RMA)", "value": 71.6, "suffix": "%", "icon": "bi-check2-circle" }
+  ],
+  "catalog": [
+    {
+      "id": "crla",
+      "name": "Comprehensive Rapid Literacy Assessment (CRLA)",
+      "icon": "bi-journal-text",
+      "description": "The CRLA identifies learners' literacy levels to guide reading instruction and targeted intervention. Learners are classified into Full Refresher, Moderate Refresher, Light Refresher, and Grade Ready.",
+      "indicators": ["Full Refresher", "Moderate Refresher", "Light Refresher", "Grade Ready"],
+      "regional": [28.4, 19.7, 16.8, 35.1],
+      "divisionLabels": ["South Cotabato", "Sarangani", "Sultan Kudarat", "Cotabato Prov.", "Gen. Santos", "Koronadal", "Tacurong", "Kidapawan"],
+      "gradeReady": [38.2, 34.1, 32.4, 30.1, 37.6, 35.8, 29.4, 33.2],
+      "colors": ["#e05a5a", "#e89a3c", "#e8c660", "#2bb673"],
+      "interpretation": "Region XII shows 35.1% of learners classified as Grade Ready, while 28.4% require full reading refresher. The distribution indicates meaningful progress but underscores the need for continued literacy interventions, particularly in Cotabato Province and Tacurong City."
+    },
+    {
+      "id": "rma",
+      "name": "Reading Management Assessment (RMA)",
+      "icon": "bi-book-half",
+      "description": "The RMA monitors reading progress of learners in higher grade levels, guiding teachers in adjusting reading instruction and managing reading programs.",
+      "indicators": ["Beginning", "Developing", "Proficient", "Advanced"],
+      "regional": [22.5, 31.8, 28.9, 16.8],
+      "divisionLabels": ["South Cotabato", "Sarangani", "Sultan Kudarat", "Cotabato Prov.", "Gen. Santos", "Koronadal", "Tacurong", "Kidapawan"],
+      "gradeReady": [78.1, 74.2, 71.6, 69.8, 77.2, 75.0, 66.9, 72.4],
+      "colors": ["#e05a5a", "#e89a3c", "#5b8def", "#2bb673"],
+      "interpretation": "Combined proficient and advanced readers reach 45.7% regionally. Gen. Santos and South Cotabato lead in reading proficiency, while Tacurong City needs intensified reading recovery programs. The RMA confirms steady improvement in sustained silent reading and comprehension."
+    },
+    {
+      "id": "pedc",
+      "name": "Philippine Early Childhood Development Checklist",
+      "icon": "bi-balloon-heart",
+      "description": "The Philippine ECD Checklist assesses the developmental status of early learners across gross motor, fine motor, self-help, receptive language, expressive language, cognitive, and socio-emotional domains.",
+      "indicators": ["Needs Support", "On Track"],
+      "regional": [12.6, 87.4],
+      "divisionLabels": ["South Cotabato", "Sarangani", "Sultan Kudarat", "Cotabato Prov.", "Gen. Santos", "Koronadal", "Tacurong", "Kidapawan"],
+      "gradeReady": [90.2, 86.4, 84.8, 83.1, 89.3, 88.0, 81.6, 85.7],
+      "colors": ["#e05a5a", "#2bb673"],
+      "interpretation": "The vast majority (87.4%) of early learners are developmentally on track. South Cotabato leads with 90.2% on-track children. Slight variations across divisions point to targeted early childhood stimulation needs in Tacurong and Kidapawan."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor Analytics | Curriculum &amp; Learning Management Division - DepEd Region XII</title>
+  <meta name="description" content="Visitor analytics module for the CLMD website, DepEd Region XII.">
+  <link rel="icon" href="../assets/images/icons/clmd-logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="Analytics" data-child="Visitor Analytics">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header id="site-header" class="no-print"></header>
+
+  <section class="hero" style="min-height:auto;padding:5rem 0;background:linear-gradient(135deg,var(--violet-deep),var(--violet),var(--violet-light))">
+    <div class="hero-overlay" style="background:linear-gradient(135deg,rgba(42,18,69,.4),rgba(91,45,142,.6))"></div>
+    <div class="container hero-content text-center">
+      <span class="hero-badge"><i class="bi bi-eye"></i> Analytics</span>
+      <h1 class="mt-3">Visitor Analytics</h1>
+      <p class="lead mx-auto" style="max-width:620px">Live visitor statistics for the CLMD portal. Powered by browser LocalStorage in demo mode.</p>
+    </div>
+  </section>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="row g-3 mb-4" data-aos="fade-up">
+        <div class="col-6 col-lg-2"><div class="glass stat-pill text-center"><i class="bi bi-people" style="font-size:1.8rem;color:var(--violet)"></i><div class="big gold" data-visitor="total">0</div><div class="lbl">Total Visitors</div></div></div>
+        <div class="col-6 col-lg-2"><div class="glass stat-pill text-center"><i class="bi bi-calendar-day" style="font-size:1.8rem;color:var(--violet)"></i><div class="big" data-visitor="today">0</div><div class="lbl">Today</div></div></div>
+        <div class="col-6 col-lg-2"><div class="glass stat-pill text-center"><i class="bi bi-calendar-week" style="font-size:1.8rem;color:var(--violet)"></i><div class="big" data-visitor="week">0</div><div class="lbl">This Week</div></div></div>
+        <div class="col-6 col-lg-2"><div class="glass stat-pill text-center"><i class="bi bi-calendar-month" style="font-size:1.8rem;color:var(--violet)"></i><div class="big" data-visitor="month">0</div><div class="lbl">This Month</div></div></div>
+        <div class="col-6 col-lg-2"><div class="glass stat-pill text-center"><i class="bi bi-wifi" style="font-size:1.8rem;color:var(--violet)"></i><div class="big" data-visitor="online">0</div><div class="lbl">Online Now</div></div></div>
+        <div class="col-6 col-lg-2"><div class="glass stat-pill text-center"><i class="bi bi-arrow-repeat" style="font-size:1.8rem;color:var(--violet)"></i><div class="big" data-visitor="returning">0</div><div class="lbl">Returning</div></div></div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-7" data-aos="fade-up">
+          <div class="glass p-4 h-100">
+            <h5><i class="bi bi-bar-chart me-2 text-primary"></i>Weekly Visitors</h5>
+            <div class="chart-wrap"><canvas id="visitorChart"></canvas></div>
+          </div>
+        </div>
+        <div class="col-lg-5" data-aos="fade-up">
+          <div class="glass p-4 h-100">
+            <h5><i class="bi bi-globe me-2 text-success"></i>By Country</h5>
+            <div id="countryList"></div>
+          </div>
+        </div>
+        <div class="col-12" data-aos="fade-up">
+          <div class="glass p-4">
+            <h5><i class="bi bi-geo-alt me-2 text-warning"></i>By Region (Philippines)</h5>
+            <div id="regionList"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass p-3 mt-4" data-aos="fade-up">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <span class="badge-tag"><i class="bi bi-code-slash me-1"></i>Backend-Ready</span>
+          <button class="btn btn-ghost btn-sm" onclick="window.CLMD.toast('info','Replace assets/js/main.js initVisitor() fetch endpoint to connect a real backend.')">How to connect a backend</button>
+        </div>
+        <p class="muted small mb-0 mt-2">The visitor counter runs in <strong>demo mode using browser LocalStorage</strong>. To use live data, edit the <code>initVisitor()</code> function in <code>assets/js/main.js</code> to fetch from your API or database endpoint.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script>window.CLMD_DEPTH=1;</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      fetch("../assets/data/visitors.json").then(r=>r.json()).then(d=>{
+        const maxC=Math.max(...d.countryStats.map(c=>c.visits));
+        document.getElementById("countryList").innerHTML = d.countryStats.map(c=>`
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span><span class="badge bg-primary me-2">${c.flag}</span>${c.country}</span>
+            <div class="d-flex align-items-center gap-2 flex-grow-1 mx-3"><div class="progress flex-grow-1" style="height:8px"><div class="progress-bar gold" style="width:${Math.round(c.visits/maxC*100)}%"></div></div><strong>${c.visits.toLocaleString()}</strong></div>
+          </div>`).join("");
+        const maxR=Math.max(...d.regionStats.map(r=>r.visits));
+        document.getElementById("regionList").innerHTML = d.regionStats.map(r=>`
+          <div class="d-flex align-items-center mb-2">
+            <span style="width:160px">${r.region}</span>
+            <div class="progress flex-grow-1 mx-2" style="height:10px"><div class="progress-bar" style="width:${Math.round(r.visits/maxR*100)}%"></div></div>
+            <strong style="width:80px;text-align:right">${(r.visits/maxR*100).toFixed(1)}%</strong>
+          </div>`).join("");
+      }).catch(()=>{});
+    });
+  </script>
+</body>
+</html>

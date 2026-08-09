@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regional Performance Dashboard | CLMD - DepEd Region XII</title>
+  <meta name="description" content="Regional performance analytics of CLMD, DepEd Region XII (SOCCSKSARGEN).">
+  <link rel="icon" href="../assets/images/icons/clmd-logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="Analytics" data-child="Regional Performance">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header id="site-header" class="no-print"></header>
+
+  <section class="hero" style="min-height:auto;padding:5rem 0;background:linear-gradient(135deg,var(--violet-deep),var(--violet),var(--violet-light))">
+    <div class="hero-overlay" style="background:linear-gradient(135deg,rgba(42,18,69,.4),rgba(91,45,142,.6))"></div>
+    <div class="container hero-content text-center">
+      <span class="hero-badge"><i class="bi bi-bar-chart"></i> Analytics</span>
+      <h1 class="mt-3">Regional Performance Dashboard</h1>
+      <p class="lead mx-auto" style="max-width:680px">Accomplishments and achievements of Region XII across major educational events and awards.</p>
+      <div class="hero-cta justify-content-center">
+        <button class="btn btn-gold" onclick="window.CLMD.exportPDF('CLMD Regional Performance Dashboard')"><i class="bi bi-file-earmark-pdf me-1"></i>Export PDF</button>
+        <button class="btn btn-ghost text-white border-white" onclick="exportPerfExcel()"><i class="bi bi-file-earmark-excel me-1"></i>Export Excel</button>
+        <button class="btn btn-ghost text-white border-white" onclick="window.print()"><i class="bi bi-printer me-1"></i>Print</button>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="section">
+    <div class="container">
+      <!-- Summary stats -->
+      <div class="row g-3 mb-4" data-aos="fade-up" id="summaryPills"></div>
+
+      <!-- Event selector -->
+      <div class="glass p-3 mb-4" data-aos="fade-up">
+        <div class="d-flex flex-wrap gap-2" id="eventFilters"></div>
+      </div>
+
+      <!-- Selected event panel -->
+      <div id="eventPanel"></div>
+
+      <!-- Division comparison -->
+      <div class="glass p-4 mt-4" data-aos="fade-up">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <h4 class="mb-0"><i class="bi bi-diagram-3 me-2 text-primary"></i>Performance by Division</h4>
+          <span class="badge-tag">Overall Index</span>
+        </div>
+        <div class="chart-wrap-lg mt-3"><canvas id="divisionChart"></canvas></div>
+        <div class="auto-discussion mt-2"><i class="bi bi-chat-left-text me-1 text-primary"></i> South Cotabato leads regional performance with an index of 92, reflecting strong curriculum implementation and learner outcomes, while Sarangani and Sultan Kudarat continue to show steady improvement through targeted support.</div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script>window.CLMD_DEPTH=1;</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <script>
+    let DATA = null, charts = [], activeEvent = "nft", divChart = null;
+    const evt = document.getElementById("eventPanel");
+
+    function renderSummary() {
+      document.getElementById("summaryPills").innerHTML = DATA.summary.map(s => `
+        <div class="col-6 col-lg-3" data-aos="fade-up">
+          <div class="glass stat-pill text-center hover-lift">
+            <div style="font-size:1.8rem;color:var(--violet)"><i class="bi ${s.icon}"></i></div>
+            <div class="big gold" data-count="${s.value}" data-suffix="${s.suffix||''}">0</div>
+            <div class="lbl">${s.label}</div>
+          </div>
+        </div>`).join("");
+      window.CLMD.initCounters(document.getElementById("summaryPills"));
+    }
+
+    function renderFilters() {
+      document.getElementById("eventFilters").innerHTML = DATA.events.map(e =>
+        `<button class="filter-btn ${e.id===activeEvent?'active':''}" data-ev="${e.id}"><i class="bi ${e.icon} me-1"></i>${e.name}</button>`).join("");
+      document.querySelectorAll("#eventFilters .filter-btn").forEach(b => b.onclick = () => { activeEvent = b.dataset.ev; document.querySelectorAll("#eventFilters .filter-btn").forEach(x=>x.classList.remove('active')); b.classList.add('active'); renderEvent(); });
+    }
+
+    function renderEvent() {
+      const e = DATA.events.find(x => x.id === activeEvent);
+      const t = DATA.events.findIndex(x => x.id === activeEvent);
+      evt.innerHTML = `
+        <div class="glass p-4" data-aos="fade-up" key="${e.id}">
+          <div class="d-flex align-items-center gap-3 flex-wrap mb-3">
+            <div class="ic" style="width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#fff;background:linear-gradient(135deg,var(--violet),var(--violet-light))"><i class="bi ${e.icon}"></i></div>
+            <div><h3 class="mb-0">${e.name}</h3><span class="muted">Event ${t+1} of ${DATA.events.length}</span></div>
+          </div>
+          <p class="muted">${e.description}</p>
+          <div class="row g-3">
+            <div class="col-lg-7">
+              <div class="chart-wrap-lg"><canvas id="evChart-${e.id}"></canvas></div>
+              <div class="auto-discussion mt-2"><i class="bi bi-chat-left-text me-1 text-primary"></i> ${e.name} performance shows steady growth from ${e.chart.data[0]} in 2019 to ${e.chart.data[e.chart.data.length-1]} in the latest cycle, reflecting sustained excellence. The temporary dip reflects the 2020 suspension of face-to-face competitions.</div>
+            </div>
+            <div class="col-lg-5">
+              <div class="row g-2 mb-3">
+                ${e.stats.map(s=>`<div class="col-6"><div class="card-g p-3 text-center"><div class="count" style="font-size:1.6rem;font-weight:800;color:var(--violet)" data-count="${s.value}">0</div><div class="lbl muted small">${s.label}</div></div></div>`).join('')}
+              </div>
+              <h5><i class="bi bi-trophy me-1 gold-text"></i>Key Awardees</h5>
+              <ul class="icon-list mb-3">${e.awardees.map(a=>`<li>${a}</li>`).join('')}</ul>
+              <h5><i class="bi bi-star me-1 text-warning"></i>Highlights</h5>
+              <ul class="icon-list">${e.highlights.map(a=>`<li>${a}</li>`).join('')}</ul>
+            </div>
+          </div>
+          <div class="alert alert-info bg-soft border-0 rounded-4 mt-3 mb-0"><i class="bi bi-lightbulb me-2"></i><strong>Narrative:</strong> ${e.description} Region XII's consistent award-winning performance in ${e.name} underscores the effectiveness of CLMD's technical assistance, teacher mentoring, and learner preparation programs.</div>
+        </div>`;
+      window.CLMD.initCounters(evt);
+      charts.forEach(c=>c.destroy()); charts = [];
+      const isDark = document.documentElement.getAttribute("data-theme")==="dark";
+      const tick = isDark?"#b9aed6":"#6b6480", grid=isDark?"rgba(220,200,255,.1)":"rgba(91,45,142,.1)";
+      charts.push(new Chart(document.getElementById("evChart-"+e.id), {
+        type: "line",
+        data: { labels: e.chart.labels, datasets: [{
+          label: e.name, data: e.chart.data,
+          borderColor: "#C9A227", backgroundColor: "rgba(201,162,39,.15)", fill:true, tension:.4,
+          pointBackgroundColor:"#5B2D8E", pointRadius:5, borderWidth:3
+        }]},
+        options: { responsive:true, maintainAspectRatio:false,
+          plugins:{ legend:{labels:{color:tick,font:{weight:600}}}, tooltip:{backgroundColor:"#3d1b63"} },
+          scales:{ x:{ticks:{color:tick},grid:{color:grid}}, y:{ticks:{color:tick},grid:{color:grid},beginAtZero:true} } }
+      }));
+    }
+
+    function drawDivision() {
+      if (divChart) divChart.destroy();
+      const isDark = document.documentElement.getAttribute("data-theme")==="dark";
+      const tick = isDark?"#b9aed6":"#6b6480", grid=isDark?"rgba(220,200,255,.1)":"rgba(91,45,142,.1)";
+      divChart = new Chart(document.getElementById("divisionChart"), {
+        type:"bar",
+        data:{ labels: DATA.divisionChart.labels, datasets:[{ label:"Performance Index", data: DATA.divisionChart.data, backgroundColor: DATA.divisionChart.data.map((v,i)=> v>=90?"#C9A227":(v>=85?"#8e44ad":"#5B2D8E")), borderRadius:8, borderSkipped:false }]},
+        options:{ responsive:true, maintainAspectRatio:false, indexAxis:"y", plugins:{ legend:{labels:{color:tick}}, tooltip:{backgroundColor:"#3d1b63"} }, scales:{ x:{ticks:{color:tick},grid:{color:grid},beginAtZero:true,max:100}, y:{ticks:{color:tick},grid:{color:grid}} } }
+      });
+    }
+
+    function exportPerfExcel() {
+      const rows = DATA.events.map(e => [e.name, e.stats[0]?e.stats[0].value:"", e.stats[1]?e.stats[1].value:"", e.chart.data.join(", ")]);
+      window.CLMD.exportToCSV("clmd-regional-performance", ["Event","Participants","Awardees","Trend 2019-2024"], rows);
+      window.CLMD.toast("success","Performance data exported.");
+    }
+
+    fetch("../assets/data/performance.json").then(r=>r.json()).then(d=>{ DATA=d; renderSummary(); renderFilters(); renderEvent(); drawDivision(); });
+    document.addEventListener("clmd-theme-changed", () => { renderEvent(); drawDivision(); });
+  </script>
+</body>
+</html>

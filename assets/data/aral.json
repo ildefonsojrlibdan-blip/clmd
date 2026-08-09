@@ -1,0 +1,51 @@
+{
+  "title": "Aral Program Dashboard",
+  "subtitle": "Learning Recovery & Academic Gains Across the Eight Schools Division Offices of Region XII",
+  "summary": [
+    { "label": "Divisions Tracked", "value": 8, "icon": "bi-diagram-3" },
+    { "label": "Learners Served", "value": 854200, "icon": "bi-people" },
+    { "label": "Average Gain", "value": 18.6, "suffix": "%", "icon": "bi-graph-up-arrow" },
+    { "label": "Participating Schools", "value": 1540, "icon": "bi-building" }
+  ],
+  "divisions": ["South Cotabato", "Sarangani", "Sultan Kudarat", "Cotabato Province", "General Santos City", "Koronadal City", "Tacurong City", "Kidapawan City"],
+  "readingGains": [22.1, 19.4, 17.8, 16.5, 21.3, 18.9, 15.8, 17.2],
+  "numeracyGains": [20.6, 18.2, 16.9, 15.4, 20.1, 17.8, 14.9, 16.3],
+  "learnersPerDivision": [154000, 98000, 112000, 132000, 141000, 79000, 67000, 81200],
+  "subjectGains": {
+    "labels": ["Reading", "Numeracy", "Science", "English", "Filipino", "AP", "Values", "MAPEH"],
+    "primary": [18.6, 17.9, 15.2, 16.8, 17.4, 14.1, 13.8, 12.6],
+    "juniorHigh": [15.9, 16.4, 14.3, 15.1, 15.8, 13.2, 12.9, 11.8]
+  },
+  "quarterlyTrend": {
+    "labels": ["Q1", "Q2", "Q3", "Q4"],
+    "reading": [9.2, 13.1, 16.4, 18.6],
+    "numeracy": [8.6, 12.4, 15.7, 17.9]
+  },
+  "radar": {
+    "labels": ["Reading", "Numeracy", "Science", "English", "Filipino", "AP"],
+    "region": [18.6, 17.9, 15.2, 16.8, 17.4, 14.1],
+    "national": [14.5, 13.8, 12.1, 13.2, 13.9, 11.6]
+  },
+  "heatmap": {
+    "rows": ["South Cotabato", "Sarangani", "Sultan Kudarat", "Cotabato Prov.", "Gen. Santos", "Koronadal", "Tacurong", "Kidapawan"],
+    "cols": ["Reading", "Numeracy", "Science", "English", "Filipino", "AP"],
+    "values": [
+      [22.1, 20.6, 17.3, 19.8, 20.4, 16.2],
+      [19.4, 18.2, 15.1, 16.9, 17.6, 14.3],
+      [17.8, 16.9, 13.8, 15.4, 16.1, 12.9],
+      [16.5, 15.4, 12.6, 14.2, 14.8, 11.9],
+      [21.3, 20.1, 16.4, 18.7, 19.3, 15.6],
+      [18.9, 17.8, 14.6, 16.1, 16.9, 13.5],
+      [15.8, 14.9, 11.9, 13.6, 14.2, 11.2],
+      [17.2, 16.3, 13.2, 14.8, 15.5, 12.4]
+    ]
+  },
+  "interpretations": {
+    "readingGains": "South Cotabato posted the highest reading gain at 22.1%, while Tacurong City requires additional literacy support at 15.8%. The regional average reading gain of 18.6% indicates a substantial recovery from the learning gaps caused by the pandemic.",
+    "numeracyGains": "Numeracy gains range from 14.9% (Tacurong City) to 20.6% (South Cotabato). General Santos City (20.1%) also demonstrates strong numeracy performance, reflecting the success of targeted math intervention programs.",
+    "subject": "Across both primary and junior high school levels, Reading shows the strongest gains, followed closely by Numeracy. Values Education and MAPEH record the lowest numerical gains, reflecting their more qualitative and less assessment-driven nature.",
+    "quarterly": "Learning gains steadily increased across the four quarters, confirming sustained improvement. The gap between reading and numeracy narrows by the fourth quarter, indicating converging progress across learning domains.",
+    "radar": "Region XII consistently outperforms the national average across all learning areas, with the widest lead in Reading (4.1 percentage points) and the narrowest in AP (2.5 points), signaling opportunities for further civic education strengthening.",
+    "heatmap": "The heatmap reveals a clear pattern: divisions with stronger resource allocation and smaller class sizes (South Cotabato, Gen. Santos) consistently outperform larger, more dispersed divisions (Tacurong, Kidapawan), highlighting the need for targeted support."
+  }
+}
