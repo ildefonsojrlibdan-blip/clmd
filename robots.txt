@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Add the official absolute sitemap URL after deployment.

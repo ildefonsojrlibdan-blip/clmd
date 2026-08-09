@@ -1,96 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Curriculum &amp; Learning Management Division - DepEd Region XII</title>
-  <meta name="description" content="Contact the Curriculum and Learning Management Division, DepEd Regional Office XII (SOCCSKSARGEN).">
-  <link rel="icon" href="assets/images/icons/clmd-logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body data-page="Contact">
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <header id="site-header" class="no-print"></header>
-
-  <section class="hero" style="min-height:auto;padding:5rem 0;background:linear-gradient(135deg,var(--violet-deep),var(--violet),var(--violet-light))">
-    <div class="hero-overlay" style="background:linear-gradient(135deg,rgba(42,18,69,.4),rgba(91,45,142,.6))"></div>
-    <div class="container hero-content text-center">
-      <span class="hero-badge"><i class="bi bi-envelope-heart"></i> Contact</span>
-      <h1 class="mt-3">Get in Touch with CLMD</h1>
-      <p class="lead mx-auto" style="max-width:620px">We're here to help. Reach us through any of the channels below.</p>
-    </div>
-  </section>
-
-  <main id="main" class="section">
-    <div class="container">
-      <div class="row g-4 mb-4">
-        <div class="col-md-4" data-aos="fade-up"><div class="glass stat-pill text-center h-100"><i class="bi bi-envelope" style="font-size:2rem;color:var(--violet)"></i><h5 class="mt-2">Official Email</h5><p class="muted mb-0">clmd.region12@deped.gov.ph</p></div></div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"><div class="glass stat-pill text-center h-100"><i class="bi bi-telephone" style="font-size:2rem;color:var(--violet)"></i><h5 class="mt-2">Telephone</h5><p class="muted mb-0">(083) 228-8825 / 228-8826</p></div></div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200"><div class="glass stat-pill text-center h-100"><i class="bi bi-geo-alt" style="font-size:2rem;color:var(--violet)"></i><h5 class="mt-2">Office Address</h5><p class="muted mb-0">Carpenter Hill, City Proper, Koronadal City, South Cotabato</p></div></div>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-lg-6" data-aos="fade-right">
-          <div class="glass p-4 h-100">
-            <h4><i class="bi bi-pencil-square me-2 text-primary"></i>Inquiry Form</h4>
-            <form onsubmit="return submitForm(event,'inquiry')">
-              <div class="mb-3"><label class="form-label">Full Name</label><input class="form-control" required placeholder="Your name"></div>
-              <div class="mb-3"><label class="form-label">Email</label><input type="email" class="form-control" required placeholder="you@email.com"></div>
-              <div class="mb-3"><label class="form-label">Subject</label><input class="form-control" required placeholder="Subject of inquiry"></div>
-              <div class="mb-3"><label class="form-label">Message</label><textarea class="form-control" rows="4" required placeholder="How can we help?"></textarea></div>
-              <button class="btn btn-gold w-100"><i class="bi bi-send me-1"></i>Send Inquiry</button>
-            </form>
-          </div>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left">
-          <div class="glass p-4 h-100">
-            <h4><i class="bi bi-star me-2 text-warning"></i>Feedback Form</h4>
-            <form onsubmit="return submitForm(event,'feedback')">
-              <div class="mb-3"><label class="form-label">Your Name</label><input class="form-control" required placeholder="Your name"></div>
-              <div class="mb-3"><label class="form-label">Feedback Type</label><select class="form-select"><option>General Feedback</option><option>Compliment</option><option>Suggestion</option><option>Concern</option></select></div>
-              <div class="mb-3"><label class="form-label">Rating</label>
-                <select class="form-select"><option>Excellent</option><option>Good</option><option>Fair</option><option>Poor</option></select>
-              </div>
-              <div class="mb-3"><label class="form-label">Feedback</label><textarea class="form-control" rows="4" required placeholder="Share your feedback..."></textarea></div>
-              <button class="btn btn-violet w-100"><i class="bi bi-chat-heart me-1"></i>Submit Feedback</button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div class="glass p-2 mt-4" data-aos="zoom-in">
-        <div style="position:relative;padding-bottom:55%;border-radius:1rem;overflow:hidden">
-          <iframe title="CLMD Office Location Map" src="https://maps.google.com/maps?q=DepEd%20Regional%20Office%20XII%20Koronadal%20City&t=&z=13&ie=UTF8&iwloc=&output=embed" style="position:absolute;inset:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe>
-        </div>
-      </div>
-
-      <div class="mt-5" data-aos="fade-up">
-        <div class="section-head"><span class="section-eyebrow">Help Center</span><h2>Frequently Asked Questions</h2><div class="rule"></div></div>
-        <div class="accordion" id="faqAcc">
-          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f1">How do I access the official curriculum guides?</button></h2><div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc"><div class="accordion-body">Visit the Download Center and filter by "Curriculum Guides," or navigate to the specific Learning Area page and check its resources section.</div></div></div>
-          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">Where can I find regional memoranda and advisories?</button></h2><div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Use the Regional Memoranda and Regional Advisories pages. You can filter by year, learning area, program, and keyword, and view, download, print, or share documents.</div></div></div>
-          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">Who are the Education Program Supervisors for each learning area?</button></h2><div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Each Learning Area page displays its Education Program Supervisor, including contact email, responsibilities, and programs handled.</div></div></div>
-          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4">How are the analytics dashboards updated?</button></h2><div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Dashboard data is stored in external JSON files within assets/data, allowing easy updates without modifying HTML source code.</div></div></div>
-          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f5">How do I contact the CLMD office?</button></h2><div id="f5" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">You may email clmd.region12@deped.gov.ph, call (083) 228-8825/228-8826, or visit the office at Carpenter Hill, Koronadal City during office hours.</div></div></div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer id="site-footer"></footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/common.js"></script>
-  <script>
-    function submitForm(e,type){ e.preventDefault(); window.CLMD.toast("success", type==="inquiry" ? "Inquiry submitted! We'll respond within 2-3 working days." : "Thank you for your feedback!"); e.target.reset(); return false; }
-  </script>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#512675"><meta name="description" content="Official contact channels, inquiry form, feedback, and FAQs for CLMD Region XII."><meta name="robots" content="index,follow"><title>Contact CLMD | CLMD Region XII</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="./assets/css/styles.css"><link rel="icon" href="./assets/images/deped-region-xii-logo.jpg"><link rel="manifest" href="./manifest.webmanifest"></head>
+<body data-root="./" data-page="contact" ><a class="skip-link" href="#mainContent">Skip to main content</a><div id="pageLoader"><div class="portal-loader"><img src="./assets/images/deped-region-xii-logo.jpg" alt=""><span></span></div><p>Loading CLMD Region XII Portal…</p></div><div id="siteHeader"></div><main id="mainContent"><section class="page-hero"><div class="container"><div class="breadcrumb-line"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i><span>Contact</span></div><span class="section-kicker gold">Connect with CLMD</span><h1>How can we support you?</h1><p>Use the channels below for curriculum, learning resource, program, assessment, and technical assistance inquiries.</p></div></section><section class="section"><div class="container"><div class="row g-4"><div class="col-lg-5"><div class="content-card h-100"><span class="section-kicker">Official contact</span><h2 class="h3">CLMD Region XII</h2><div id="contactDetails" class="contact-list"></div><div class="map-placeholder compact mt-4"><i class="fa-solid fa-map-location-dot"></i><strong>Google Map Placeholder</strong><span>Regional Center, Carpenter Hill, Koronadal City</span></div></div></div><div class="col-lg-7"><div class="content-card"><span class="section-kicker">Send an inquiry</span><h2 class="h3">Inquiry Form</h2><form id="inquiryForm" class="row g-3"><div class="col-md-6"><label class="form-label" for="name">Full name</label><input class="form-control" id="name" required></div><div class="col-md-6"><label class="form-label" for="email">Email address</label><input class="form-control" id="email" type="email" required></div><div class="col-md-6"><label class="form-label" for="office">Office / School</label><input class="form-control" id="office"></div><div class="col-md-6"><label class="form-label" for="subject">Inquiry type</label><select class="form-select" id="subject" required><option value="">Select a category</option><option>Curriculum</option><option>Learning Resources</option><option>Programs</option><option>Assessment</option><option>Technical Assistance</option><option>Records / Issuances</option></select></div><div class="col-12"><label class="form-label" for="message">Message</label><textarea class="form-control" id="message" rows="5" required></textarea></div><div class="col-12 d-flex justify-content-between align-items-center"><small class="text-muted">Demo form · connect this handler to your official backend.</small><button class="btn btn-violet" type="submit">Submit Inquiry <i class="fa-solid fa-paper-plane"></i></button></div></form></div></div></div></div></section><section class="section pt-0"><div class="container"><div class="content-card"><div class="row g-4 align-items-center"><div class="col-lg-5"><span class="section-kicker">Help us improve</span><h2 class="h3 mt-2">Portal Feedback</h2><p class="text-muted">Share your experience, suggestions, or accessibility concerns. Demo submissions are stored only for the current interaction.</p></div><div class="col-lg-7"><form id="feedbackForm" class="row g-3"><div class="col-md-6"><label class="form-label" for="feedbackType">Feedback type</label><select class="form-select" id="feedbackType" required><option value="">Select</option><option>Content</option><option>Usability</option><option>Accessibility</option><option>Technical Issue</option><option>Suggestion</option></select></div><div class="col-md-6"><label class="form-label" for="rating">Overall rating</label><select class="form-select" id="rating" required><option value="">Select</option><option>5 – Excellent</option><option>4 – Very Good</option><option>3 – Good</option><option>2 – Needs Improvement</option><option>1 – Poor</option></select></div><div class="col-12"><label class="form-label" for="feedbackMessage">Comments</label><textarea class="form-control" id="feedbackMessage" rows="3" required></textarea></div><div class="col-12 text-end"><button class="btn btn-violet" type="submit"><i class="fa-solid fa-comment-dots"></i> Submit Feedback</button></div></form></div></div></div></div></section><section class="section section-violet-soft"><div class="container"><div class="section-heading centered"><span class="section-kicker">Frequently asked questions</span><h2>Helpful information</h2></div><div class="accordion portal-accordion" id="faq"><div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">How can we request CLMD technical assistance?</button></h2><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faq"><div class="accordion-body">Coordinate through your Schools Division Office curriculum leadership team and provide the concern, evidence, intended outcomes, and preferred schedule.</div></div></div><div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Where can official memoranda and advisories be found?</button></h2><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Use the searchable Memoranda and Advisories repositories. Replace demonstration PDFs with approved official files before publication.</div></div></div><div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">How do we submit learning resources for quality assurance?</button></h2><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Follow the current regional quality assurance cycle and coordinate submission through the SDO LRMS focal person.</div></div></div></div></div></section></main><div id="siteFooter"></div><div id="globalUi"></div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-matrix@2.0.1/dist/chartjs-chart-matrix.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script><script src="./assets/js/demo-data.js"></script><script src="./assets/js/data-loader.js"></script><script src="./assets/js/visitor.js"></script><script src="./assets/js/search.js"></script><script src="./assets/js/main.js"></script><script src="assets/js/contact.js"></script></body></html>

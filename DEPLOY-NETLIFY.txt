@@ -1,0 +1,37 @@
+CLMD REGION XII PORTAL — NETLIFY DEPLOYMENT
+============================================
+
+WHY THE PREVIOUS DEPLOYMENT HAD NO COLOR
+The site uses external project files under /assets/. Only index.html was uploaded,
+so Netlify returned 404 for styles.css, JavaScript, images, JSON, PDFs, and all
+other pages.
+
+CORRECT MANUAL DEPLOYMENT
+1. Use the file: clmd-region-xii-netlify-deploy.zip
+2. Extract the ZIP on your computer.
+3. Open the extracted folder and confirm these items are together at its top level:
+      index.html
+      assets/
+      analytics/
+      learning-areas/
+      programs/
+      downloads/
+      memoranda/
+      advisories/
+      gallery/
+      netlify.toml
+4. In Netlify, open Deploys > Add new deploy > Deploy manually.
+5. Drag the ENTIRE extracted folder into Netlify Drop — do not drag index.html alone.
+6. After deployment, verify these URLs:
+      /assets/css/styles.css
+      /assets/js/main.js
+      /assets/images/deped-region-xii-logo.jpg
+      /about.html
+
+GIT-BASED DEPLOYMENT
+- Commit all files from the extracted folder to the repository root.
+- Build command: leave blank
+- Publish directory: .
+
+The deployment ZIP is intentionally FLAT: index.html and assets/ are at the ZIP
+root so the correct publish directory is unambiguous.

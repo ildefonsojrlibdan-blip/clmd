@@ -1,0 +1,41 @@
+[build]
+  publish = "."
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
+
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/assets/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+    Access-Control-Allow-Origin = "*"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
