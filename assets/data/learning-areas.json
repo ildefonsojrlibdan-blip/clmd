@@ -1,328 +1,803 @@
-{
-  "areas": [
-    {
-      "id": "english",
-      "name": "English",
-      "icon": "bi-book",
-      "banner": "assets/images/banners/english.jpg",
-      "overview": "The English learning area develops learners' communicative competence in listening, speaking, reading, and writing. It emphasizes the use of English as a global language for effective communication, critical thinking, and lifelong learning.",
-      "objectives": [
-        "Develop communicative competence in English across all macro skills.",
-        "Foster critical thinking and literacy through a variety of texts.",
-        "Enhance oral and written expression in academic and real-life contexts.",
-        "Integrate Philippine and international literature to broaden perspective."
-      ],
-      "programs": ["English Month Celebration", "Reading Remediation Programs", "Journalism & Campus Paper Support", "Language Proficiency Enrichment"],
-      "projects": ["Brigada Pagbasa", "Book Nook Development", "Writing Skills Clinics", "ELLNA Readiness Program"],
-      "bestPractices": ["Peer tutorial sessions", "School-based reading camps", "Multimedia-assisted language teaching", "Literacy monitoring via ELLNA and CRLA"],
-      "announcements": ["2025 English Month activities schedule released", "Regional English Festival of Talents entries now open"],
-      "curriculumGuides": ["English K-3 Curriculum Guide (PDF)", "English 4-6 Curriculum Guide (PDF)", "English 7-10 MELC (PDF)", "English 11-12 Curriculum Guide (PDF)"],
-      "learningResources": ["DepEd TV Lesson Compendium", "Learning Activity Sheets (LAS) Library", "Campus Writing Samples", "Vocabulary Building Modules"],
-      "eps": {
-        "photo": "assets/images/profile/eps_english.png",
-        "name": "Shienna Lyn L. Antenor, PhD",
-        "position": "Education Program Supervisor - English",
-        "email": "english.clmd.region12@deped.gov.ph",
-        "responsibilities": ["Oversee the English curriculum implementation", "Monitor and evaluate learning outcomes", "Provide technical assistance to schools", "Manage English learning resource development"],
-        "programsHandled": ["English Curriculum", "Reading & Literacy", "Journalism", "Language Assessment"]
-      }
-    },
-    {
-      "id": "math",
-      "name": "Mathematics",
-      "icon": "bi-calculator",
-      "banner": "assets/images/banners/math.jpg",
-      "overview": "Mathematics promotes problem solving, critical thinking, and logical reasoning. The curriculum equips learners with essential numeracy skills and the ability to apply mathematical concepts to real-life situations.",
-      "objectives": [
-        "Develop learners' understanding of mathematical concepts and operations.",
-        "Cultivate problem solving and critical thinking abilities.",
-        "Apply mathematics to daily life and higher education.",
-        "Foster appreciation of the beauty and utility of mathematics."
-      ],
-      "programs": ["Mathematics Month Celebration", "Numeracy Intervention Programs", "Regional Mathematics Olympics", "Teacher Upskilling in MTB-MLE Numeracy"],
-      "projects": ["Project NUMERACY", "Math Challenge & Problem-Solving Clinics", "Brigada Pagbasa Numeracy Component"],
-      "bestPractices": ["Concrete-pictorial-abstract approach", "Integrating numeracy across subjects", "Learning recovery in Mathematics", "Gamified math drills"],
-      "announcements": ["Regional Mathematics Olympics results released", "Math Month theme announced for the year"],
-      "curriculumGuides": ["Math K-3 Curriculum Guide (PDF)", "Math 4-6 Curriculum Guide (PDF)", "Math 7-10 MELC (PDF)", "Math 11-12 Curriculum Guide (PDF)"],
-      "learningResources": ["Mathematics LAS Library", "Problem-Solving Toolkits", "Gamified Math Apps Guide"],
-      "eps": {
-        "photo": "assets/images/profile/eps_math.png",
-        "name": "Jay-ar S. Lipura",
-        "position": "Education Program Supervisor - Mathematics",
-        "email": "math.clmd.region12@deped.gov.ph",
-        "responsibilities": ["Lead mathematics curriculum implementation", "Design numeracy intervention programs", "Supervise mathematics competitions", "Develop mathematics learning resources"],
-        "programsHandled": ["Mathematics", "Numeracy", "Math Olympics", "Math Camp"]
-      }
-    },
-    {
-      "id": "science",
-      "name": "Science",
-      "icon": "bi-eyedropper",
-      "banner": "assets/images/banners/science.jpg",
-      "overview": "Science education develops scientific literacy and inquiry skills. Learners explore the natural world through hands-on investigations, problem solving, and the responsible application of scientific knowledge.",
-      "objectives": [
-        "Develop scientific inquiry, observation, and experimentation skills.",
-        "Promote scientific literacy and responsible decision making.",
-        "Foster innovation and appreciation for STEM careers.",
-        "Integrate environmental stewardship in science education."
-      ],
-      "programs": ["Science Month Celebration", "Regional Science and Technology Fair", "STEM Tracks Support", "Science Fair Mentoring"],
-      "projects": ["Project STEM in the Community", "School Garden & Ecological Programs", "Innovation and Invention Clinics"],
-      "bestPractices": ["Inquiry-based learning", "Hands-on laboratory activities", "Community-based science projects", "Partnerships with STEM industries"],
-      "announcements": ["Regional Science & Technology Fair winners announced", "Science Investigatory Project submissions open"],
-      "curriculumGuides": ["Science 3-6 Curriculum Guide (PDF)", "Science 7-10 MELC (PDF)", "Science 11-12 STEM Curriculum Guide (PDF)"],
-      "learningResources": ["Science LAS Library", "Laboratory Safety Manual", "STEM Research Guides"],
-      "eps": {
-        "photo": "assets/images/profile/eps_science.png",
-        "name": "Dantly S. Villanueva",
-        "position": "Education Program Supervisor - Science",
-        "email": "science.clmd.region12@deped.gov.ph",
-        "responsibilities": ["Oversee science curriculum implementation", "Manage the Science & Technology Fair", "Support STEM education initiatives", "Develop science learning resources"],
-        "programsHandled": ["Science", "STEM", "Regional SciTech Fair", "Environmental Education"]
-      }
-    },
-    {
-      "id": "filipino",
-      "name": "Filipino",
-      "icon": "bi-translate",
-      "banner": "assets/images/banners/filipino.jpg",
-      "overview": "Ang Filipino ay naglalayong malinang ang kakayahang komunikatibo at kritikal ng mga mag-aaral sa pamamagitan ng pag-aaral ng wika, panitikan, at kulturang Filipino.",
-      "objectives": [
-        "Malinang ang kakayahang komunikatibo sa Filipino.",
-        "Maunawaan at pahalagahan ang panitikang Filipino.",
-        "Maiugnay ang wika sa pagkakakilanlang kultural.",
-        "Maging epektibong tagapag-ugnay ng mga kaisipan at damdamin."
-      ],
-      "programs": ["Buwan ng Wika", "Pagsasanay sa Pagbasa at Pagsulat", "Panitikan at Kulturang Filipino", "Ortograpiyang Filipino"],
-      "projects": ["Aklatan ng mga Kuwentong Filipino", "Buwan ng Wika Contest", "Pagsulat ng mga Akdang Panrehiyon"],
-      "bestPractices": ["Integrasyon ng panitikan sa pagtuturo", "Paggamit ng Mother Tongue at Filipino", "Pagpapaunlad ng mga babasahing Filipino"],
-      "announcements": ["Buwan ng Wika activities binuo", "Regional Filipino Festival entries open"],
-      "curriculumGuides": ["Filipino K-3 Curriculum Guide (PDF)", "Filipino 4-6 Curriculum Guide (PDF)", "Filipino 7-10 MELC (PDF)"],
-      "learningResources": ["Mga Babasahing Filipino", "LAS Filipino Library", "Mga Akdang Pampanitikan"],
-      "eps": {
-        "photo": "assets/images/profile/eps_filipino.png",
-        "name": "Leonardo B. Mission",
-        "position": "Education Program Supervisor - Filipino",
-        "email": "filipino.clmd.region12@deped.gov.ph",
-        "responsibilities": ["Supervise Filipino curriculum implementation", "Lead Buwan ng Wika and language programs", "Develop Filipino learning resources", "Provide technical assistance to schools"],
-        "programsHandled": ["Filipino", "Panitikan", "Buwan ng Wika", "Ortograpiya"]
-      }
-    },
-    {
-      "id": "ap",
-      "name": "Araling Panlipunan",
-      "icon": "bi-globe2",
-      "banner": "assets/images/banners/ap.jpg",
-      "overview": "Araling Panlipunan develops understanding of the Filipino people, society, culture, and environment. It nurtures citizenship, historical consciousness, and responsible participation in national and global life.",
-      "objectives": [
-        "Develop historical and civic literacy among learners.",
-        "Foster a sense of national identity and responsibility.",
-        "Understand the interplay of geography, culture, and society.",
-        "Promote active, informed citizenship."
-      ],
-      "programs": ["Araling Panlipunan Month", "Historical and Heritage Programs", "Civic Education", "Kindergarten Readiness Support"],
-      "projects": ["Museums and Heritage Walks", "Community Mapping Projects", "Mock Elections & Youth Forums"],
-      "bestPractices": ["Storytelling and historical analysis", "Community-based learning", "Integration of current events", "Civic engagement projects"],
-      "announcements": ["Araling Panlipunan Month celebrated across the region", "Kindergarten readiness assessment conducted"],
-      "curriculumGuides": ["Araling Panlipunan K-3 CG (PDF)", "Araling Panlipunan 4-6 CG (PDF)", "Araling Panlipunan 7-10 MELC (PDF)", "Kindergarten Curriculum Guide (PDF)"],
-      "learningResources": ["AP LAS Library", "Philippine History Readers", "Civic Education Modules"],
-      "eps": {
-        "photo": "assets/images/profile/eps_ap.png",
-        "name": "Jade T. Palomar",
-        "position": "Education Program Supervisor - Araling Panlipunan & Kindergarten",
-        "email": "ap.clmd.region12@deped.gov.ph",
-        "responsibilities": ["Supervise Araling Panlipunan and Kindergarten programs", "Lead civic and heritage education", "Manage early childhood education support", "Develop AP learning resources"],
-        "programsHandled": ["Araling Panlipunan", "Kindergarten", "Civic Education", "Heritage Programs"]
-      }
-    },
-    {
-      "id": "values",
-      "name": "Values Education",
-      "icon": "bi-emoji-smile",
-      "banner": "assets/images/banners/values.jpg",
-      "overview": "Values Education nurtures the moral and spiritual development of learners. It cultivates positive character, ethical decision making, and responsible citizenship anchored on the Filipino core values.",
-      "objectives": [
-        "Develop sound moral and ethical character.",
-        "Nurture the Filipino core values in everyday life.",
-        "Promote responsible decision making and empathy.",
-        "Support multigrade classrooms with responsive values programs."
-      ],
-      "programs": ["Values Formation Sessions", "Multigrade Education Support", "Character Building Activities", "Guidance and Counseling Linkages"],
-      "projects": ["Project PEACE (Values Integration)", "Multigrade Learning Circles", "Mentoring and Character Formation"],
-      "bestPractices": ["Values integration across subjects", "Multigrade flexible learning", "Community partnership programs", "Restorative practices in schools"],
-      "announcements": ["Values formation training scheduled", "Multigrade conference set for teachers"],
-      "curriculumGuides": ["Values Education Curriculum Guide (PDF)", "Multigrade Teaching Guides (PDF)"],
-      "learningResources": ["Values Education Modules", "Multigrade Teaching Kits", "Character Formation Readers"],
-      "eps": {
-        "photo": "assets/images/profile/eps_values.png",
-        "name": "Maria Isabel R. Cunanan",
-        "position": "Education Program Supervisor - Values Education & Multigrade",
-        "email": "values.clmd.region12@deped.gov.ph",
-        "responsibilities": ["Lead Values Education programs", "Support multigrade teaching", "Develop character formation resources", "Coordinate guidance initiatives"],
-        "programsHandled": ["Values Education", "Multigrade", "Character Formation", "Guidance"]
-      }
-    },
-    {
-      "id": "mapeh",
-      "name": "MAPEH",
-      "icon": "bi-music-note-beamed",
-      "banner": "assets/images/banners/mapeh.jpg",
-      "overview": "MAPEH develops learners holistically through Music, Arts, Physical Education, and Health. It nurtures creativity, physical well-being, and healthy lifestyle habits, including special curricular programs such as SPA, SPS, and SPFL.",
-      "objectives": [
-        "Develop artistic and creative expression.",
-        "Promote physical fitness and lifelong health.",
-        "Support special programs in the Arts, Sports, and Foreign Languages.",
-        "Foster appreciation of Filipino and global culture."
-      ],
-      "programs": ["MAPEH Month", "Special Program in the Arts (SPA)", "Special Program in Sports (SPS)", "Special Program in Foreign Language (SPFL)"],
-      "projects": ["Regional Arts Festival", "Sports Development Camps", "Foreign Language Enrichment", "Health and Wellness Programs"],
-      "bestPractices": ["Integrated arts performance", "Athletic talent development", "Bilingual and multilingual learning", "Health education campaigns"],
-      "announcements": ["SPA/SPS auditions announced", "MAPEH Month celebration guidelines released"],
-      "curriculumGuides": ["MAPEH K-6 Curriculum Guide (PDF)", "MAPEH 7-10 MELC (PDF)", "SPA/SPS/SPFL Program Guides (PDF)"],
-      "learningResources": ["MAPEH LAS Library", "SPA Curriculum Materials", "Sports Training Manuals", "Foreign Language Modules"],
-      "eps": {
-        "photo": "assets/images/profile/eps_mapeh.png",
-        "name": "Ildefonso E. Libdan Jr.",
-        "position": "Education Program Supervisor - MAPEH · SPA · SPS · SPFL",
-        "email": "mapeh.clmd.region12@deped.gov.ph",
-        "responsibilities": ["Supervise MAPEH curriculum and special programs", "Manage SPA, SPS, and SPFL programs", "Coordinate arts and sports events", "Develop MAPEH learning resources"],
-        "programsHandled": ["MAPEH", "SPA", "SPS", "SPFL"]
-      }
-    },
-    {
-      "id": "tle",
-      "name": "Technology & Livelihood Education",
-      "icon": "bi-tools",
-      "banner": "assets/images/banners/tle.jpg",
-      "overview": "TLE equips learners with practical skills in the fields of Home Economics, Industrial Arts, Agri-Fishery Arts, and ICT. It prepares learners for employment, entrepreneurship, and higher education.",
-      "objectives": [
-        "Develop technical and vocational competencies.",
-        "Foster entrepreneurship and livelihood skills.",
-        "Support the Strengthened Senior High School curriculum.",
-        "Integrate workplace readiness and values."
-      ],
-      "programs": ["TLE Month", "Technical-Vocational Education", "Entrepreneurship Programs", "Strengthened Senior High School Support"],
-      "projects": ["Regional TechVoc Day", "Student Enterprise Programs", "Skills Competitions", "Work Immersion Partnerships"],
-      "bestPractices": ["Competency-based training", "Work immersion and industry partnership", "Product-based assessment", "Entrepreneurship showcases"],
-      "announcements": ["Regional TechVoc Day celebration announced", "Skills competition registration open"],
-      "curriculumGuides": ["TLE Curriculum Guide (PDF)", "Senior High School Tracks Guide (PDF)", "Work Immersion Manual (PDF)"],
-      "learningResources": ["TLE LAS Library", "Entrepreneurship Guides", "Skills Training Modules"],
-      "eps": {
-        "photo": "assets/images/profile/eps_tle.png",
-        "name": "Crisanto M. Bulado",
-        "position": "Education Program Supervisor - TLE & Strengthened Senior High School",
-        "email": "tle.clmd.region12@deped.gov.ph",
-        "responsibilities": ["Oversee TLE and Senior High School programs", "Manage TechVoc and skills competitions", "Support work immersion initiatives", "Develop TLE learning resources"],
-        "programsHandled": ["TLE", "Senior High School", "TechVoc", "Entrepreneurship"]
-      }
-    },
-    {
-      "id": "scp",
-      "name": "Special Curricular Programs",
-      "icon": "bi-stars",
-      "banner": "assets/images/banners/scp.jpg",
-      "overview": "Special Curricular Programs provide focused learning opportunities for learners with advanced potential in the arts, sports, and foreign languages, as well as special academic tracks that enrich the basic education experience.",
-      "objectives": [
-        "Develop advanced talents in arts, sports, and languages.",
-        "Provide enriched and responsive learning tracks.",
-        "Support Science and Technology and other specialized programs.",
-        "Nurture holistic and excellent learners."
-      ],
-      "programs": ["Special Program in the Arts (SPA)", "Special Program in Sports (SPS)", "Special Program in Foreign Language (SPFL)", "Science, Technology and Engineering (STE)"],
-      "projects": ["Regional Arts & Sports Festivals", "Language and Cultural Exchanges", "STE Research and Innovation"],
-      "bestPractices": ["Talent-based selection", "Specialized curriculum delivery", "Intensive coaching and mentoring", "Performance-based assessment"],
-      "announcements": ["Special program admission exams scheduled", "Regional arts festival guidelines released"],
-      "curriculumGuides": ["Special Curricular Programs Handbook (PDF)", "SPA/SPS/SPFL Curriculum Guides (PDF)"],
-      "learningResources": ["Special Programs Resource Library", "Arts and Sports Training Manuals"],
-      "eps": {
-        "photo": "assets/images/profile/eps_mapeh.png",
-        "name": "Special Curricular Programs Team",
-        "position": "Education Program Supervisors - SCP",
-        "email": "scp.clmd.region12@deped.gov.ph",
-        "responsibilities": ["Coordinate special curricular programs", "Manage SPA, SPS, SPFL implementation", "Supervise STE and specialized tracks", "Develop enriched learning resources"],
-        "programsHandled": ["SPA", "SPS", "SPFL", "STE"]
-      }
-    },
-    {
-      "id": "inclusive",
-      "name": "Inclusive Education",
-      "icon": "bi-people-fill",
-      "banner": "assets/images/banners/inclusive.jpg",
-      "overview": "Inclusive Education ensures that every learner—regardless of ability, culture, or background—receives quality education. It covers Special Needs Education (SNED), Indigenous Peoples Education (IPED), and Madrasah Education.",
-      "objectives": [
-        "Ensure equitable access to quality education for all learners.",
-        "Support learners with special needs through responsive programs.",
-        "Respect and integrate indigenous knowledge systems.",
-        "Provide culturally appropriate education for Muslim learners."
-      ],
-      "programs": ["Special Needs Education (SNED)", "Indigenous Peoples Education (IPED)", "Madrasah Education", "Inclusive Learning Resource Centers"],
-      "projects": ["SNED Fun Day", "Regional Indigenous Peoples Day", "Madrasah Curriculum Support", "IP Community Learning Programs"],
-      "bestPractices": ["Learner-centered individualized plans", "Community and cultural engagement", "Partnership with IP and Muslim communities", "Multi-sectoral support systems"],
-      "announcements": ["SNED Fun Day scheduled", "Regional Indigenous Peoples Day celebration held"],
-      "curriculumGuides": ["SNED Curriculum Guides (PDF)", "IPED Framework (PDF)", "Madrasah Curriculum Guide (PDF)"],
-      "learningResources": ["Inclusive Education Modules", "IPED Learning Materials", "Madrasah Resources"],
-      "eps": {
-        "photo": "assets/images/profile/eps_lrmds.png",
-        "name": "Inclusive Education Team",
-        "position": "Education Program Supervisors - Inclusive Education",
-        "email": "inclusive.clmd.region12@deped.gov.ph",
-        "responsibilities": ["Coordinate SNED, IPED, and Madrasah programs", "Develop inclusive learning resources", "Engage communities and partners", "Monitor inclusive education outcomes"],
-        "programsHandled": ["SNED", "IPED", "Madrasah", "ALS Linkages"]
-      }
-    },
-    {
-      "id": "sshs",
-      "name": "Strengthened Senior High School",
-      "icon": "bi-mortarboard",
-      "banner": "assets/images/banners/sshs.jpg",
-      "overview": "The Strengthened Senior High School program provides learners with relevant, responsive, and learner-centered pathways across academic, technical-vocational, arts and design, and sports tracks to prepare them for their chosen careers.",
-      "objectives": [
-        "Provide quality senior high school education across all tracks.",
-        "Prepare learners for higher education, employment, and entrepreneurship.",
-        "Strengthen partnerships with industry and higher education institutions.",
-        "Support learners' career guidance and development."
-      ],
-      "programs": ["Academic Track", "Technical-Vocational-Livelihood Track", "Arts and Design Track", "Sports Track"],
-      "projects": ["SHS Career Fair", "Industry Partnership Program", "Work Immersion", "SHS Research and Innovation"],
-      "bestPractices": ["Track-based specialization", "Industry partnerships and immersion", "Career guidance integration", "Competency-based instruction"],
-      "announcements": ["SHS enrollment guidelines released", "Work immersion partner registration open"],
-      "curriculumGuides": ["Senior High School Curriculum Guides (PDF)", "Track Pathways Guide (PDF)", "Work Immersion Manual (PDF)"],
-      "learningResources": ["SHS Learning Modules", "TVL Competency Materials", "Career Guidance Toolkits"],
-      "eps": {
-        "photo": "assets/images/profile/eps_tle.png",
-        "name": "Crisanto M. Bulado",
-        "position": "Education Program Supervisor - Strengthened Senior High School",
-        "email": "sshs.clmd.region12@deped.gov.ph",
-        "responsibilities": ["Oversee SHS curriculum and tracks", "Manage work immersion and partnerships", "Coordinate SHS assessments", "Develop SHS learning resources"],
-        "programsHandled": ["Senior High School", "Work Immersion", "Career Guidance", "TVL Tracks"]
-      }
-    },
-    {
-      "id": "lrmds",
-      "name": "Learning Resources Mgmt & Dev System",
-      "icon": "bi-folder2-open",
-      "banner": "assets/images/banners/lrmds.jpg",
-      "overview": "The Learning Resources Management and Development System (LRMDS) ensures the availability, quality, and accessibility of learning resources. It manages the development, production, and distribution of materials for all learning areas.",
-      "objectives": [
-        "Manage the development and quality assurance of learning resources.",
-        "Ensure accessibility of materials to all schools and learners.",
-        "Coordinate the production and distribution of resources.",
-        "Support curriculum implementation through responsive materials."
-      ],
-      "programs": ["Learning Resource Development", "Quality Assurance & Review", "Print and Digital Production", "Library and Media Center Support"],
-      "projects": ["Learning Resource Portal", "Material Review and Validation", "Reader's and Storybook Development", "Offline Resource Distribution"],
-      "bestPractices": ["Standardized quality assurance", "Alignment with MELCs", "Community-contributed resources", "Digital and offline accessibility"],
-      "announcements": ["New learning resource bundles released", "Material development training scheduled"],
-      "curriculumGuides": ["LRMDS Operational Manual (PDF)", "Quality Assurance Guidelines (PDF)", "Format & Template Guide (PDF)"],
-      "learningResources": ["Digital Resource Library", "DepEd Commons Guides", "Print-Ready Materials"],
-      "eps": {
-        "photo": "assets/images/profile/eps_lrmds.png",
-        "name": "Arturo B. Tingson",
-        "position": "Education Program Supervisor - LRMDS",
-        "email": "lrmds.clmd.region12@deped.gov.ph",
-        "responsibilities": ["Manage the LRMDS at the regional level", "Oversee learning resource quality assurance", "Coordinate production and distribution", "Support library and media centers"],
-        "programsHandled": ["LRMDS", "Learning Resources", "Quality Assurance", "Media Centers"]
-      }
-    }
-  ]
-}
+[
+  {
+    "slug": "english",
+    "title": "English",
+    "icon": "fa-language",
+    "supervisor": "Shienna Lyn L. Antenor, PhD",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/shienna-lyn-antenor.jpg",
+    "overview": "Strengthens communicative competence, multiliteracies, critical reading, and purposeful language use across grade levels.",
+    "short": "Strengthens communicative competence, multiliteracies, critical reading, and purposeful language use across grade levels.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Regional English Program",
+      "Campus Journalism",
+      "Reading and Literacy"
+    ],
+    "projects": [
+      "English Regional Learning Community",
+      "English Innovation and Best Practice Showcase",
+      "English Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "English",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "shienna-antenor"
+  },
+  {
+    "slug": "math",
+    "title": "Mathematics",
+    "icon": "fa-square-root-variable",
+    "supervisor": "Jay-ar S. Lipura, PhD",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/jay-ar-lipura.jpg",
+    "overview": "Advances conceptual understanding, mathematical reasoning, problem solving, and numeracy through engaging, evidence-based instruction.",
+    "short": "Advances conceptual understanding, mathematical reasoning, problem solving, and numeracy through engaging, evidence-based instruction.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Regional Mathematics Program",
+      "Mathematics Olympics",
+      "Numeracy Intervention"
+    ],
+    "projects": [
+      "Mathematics Regional Learning Community",
+      "Mathematics Innovation and Best Practice Showcase",
+      "Mathematics Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Mathematics",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "jay-ar-lipura"
+  },
+  {
+    "slug": "science",
+    "title": "Science & STE",
+    "icon": "fa-flask",
+    "supervisor": "Dantly S. Villanueva, PhD",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/dantly-villanueva.jpg",
+    "overview": "Builds scientific literacy, inquiry, innovation, and environmental responsibility through hands-on and research-oriented learning.",
+    "short": "Builds scientific literacy, inquiry, innovation, and environmental responsibility through hands-on and research-oriented learning.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Science",
+      "Special Program in Science, Technology and Engineering (STE)",
+      "Regional Science and Technology Fair"
+    ],
+    "projects": [
+      "Science Regional Learning Community",
+      "Science Innovation and Best Practice Showcase",
+      "Science Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Science",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "dantly-villanueva"
+  },
+  {
+    "slug": "filipino",
+    "title": "Filipino & SPJ",
+    "icon": "fa-book",
+    "supervisor": "Leonardo B. Mission, PhD",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/leonardo-mission.jpg",
+    "overview": "Develops linguistic proficiency, cultural appreciation, critical expression, and meaningful communication in Filipino.",
+    "short": "Develops linguistic proficiency, cultural appreciation, critical expression, and meaningful communication in Filipino.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Filipino",
+      "Special Program in Journalism (SPJ)",
+      "Pambansang Buwan ng Wika"
+    ],
+    "projects": [
+      "Filipino Regional Learning Community",
+      "Filipino Innovation and Best Practice Showcase",
+      "Filipino Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Filipino",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "leonardo-mission"
+  },
+  {
+    "slug": "ap",
+    "title": "Araling Panlipunan & Kindergarten",
+    "icon": "fa-earth-asia",
+    "supervisor": "Jade T. Palomar, PhD, CAR",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/jade-palomar.jpg",
+    "overview": "Promotes historical consciousness, civic competence, cultural identity, and developmentally appropriate early learning.",
+    "short": "Promotes historical consciousness, civic competence, cultural identity, and developmentally appropriate early learning.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Araling Panlipunan",
+      "Kindergarten",
+      "Regional Kiddie Festival"
+    ],
+    "projects": [
+      "Araling Panlipunan & Kindergarten Regional Learning Community",
+      "Araling Panlipunan & Kindergarten Innovation and Best Practice Showcase",
+      "Araling Panlipunan & Kindergarten Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Araling Panlipunan & Kindergarten",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "jade-palomar"
+  },
+  {
+    "slug": "values",
+    "title": "Values Education & Multigrade",
+    "icon": "fa-heart",
+    "supervisor": "Maria Isabel R. Cunanan, MAEd",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/maria-isabel-cunanan.jpg",
+    "overview": "Nurtures character, ethical decision-making, social responsibility, and responsive learning for multigrade contexts.",
+    "short": "Nurtures character, ethical decision-making, social responsibility, and responsive learning for multigrade contexts.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Values Education",
+      "Multigrade Education",
+      "Homeroom Guidance Support"
+    ],
+    "projects": [
+      "Values Education & Multigrade Regional Learning Community",
+      "Values Education & Multigrade Innovation and Best Practice Showcase",
+      "Values Education & Multigrade Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Values Education & Multigrade",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "maria-cunanan"
+  },
+  {
+    "slug": "mapeh",
+    "title": "MAPEH · SPA · SPS · SPFL",
+    "icon": "fa-masks-theater",
+    "supervisor": "Ildefonso E. Libdan Jr., PhD",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/ildefonso-libdan-jr.jpg",
+    "overview": "Supports holistic learner development through music, arts, physical education, health, sports, and specialized curricular pathways.",
+    "short": "Supports holistic learner development through music, arts, physical education, health, sports, and specialized curricular pathways.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "MAPEH",
+      "Special Program in the Arts (SPA)",
+      "Special Program in Sports (SPS)",
+      "Special Program in Foreign Language (SPFL)"
+    ],
+    "projects": [
+      "MAPEH · SPA · SPS · SPFL Regional Learning Community",
+      "MAPEH · SPA · SPS · SPFL Innovation and Best Practice Showcase",
+      "MAPEH · SPA · SPS · SPFL Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "MAPEH",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "ildefonso-libdan"
+  },
+  {
+    "slug": "tle",
+    "title": "Technology and Livelihood Education",
+    "icon": "fa-screwdriver-wrench",
+    "supervisor": "Crisanto M. Bulado, PhDU",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/crisanto-bulado.jpg",
+    "overview": "Develops practical competencies, entrepreneurship, work readiness, innovation, and technology-enabled livelihood skills.",
+    "short": "Develops practical competencies, entrepreneurship, work readiness, innovation, and technology-enabled livelihood skills.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Technology and Livelihood Education",
+      "Technical-Vocational Education",
+      "Strengthened Senior High School"
+    ],
+    "projects": [
+      "Technology and Livelihood Education Regional Learning Community",
+      "Technology and Livelihood Education Innovation and Best Practice Showcase",
+      "Technology and Livelihood Education Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Technology and Livelihood Education",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "crisanto-bulado"
+  },
+  {
+    "slug": "scp",
+    "title": "Special Curricular Programs",
+    "icon": "fa-star",
+    "supervisor": "Ildefonso E. Libdan Jr., PhD",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/ildefonso-libdan-jr.jpg",
+    "overview": "Coordinates specialized curricular offerings that cultivate learner talent, language proficiency, creativity, athletic excellence, and innovation.",
+    "short": "Coordinates specialized curricular offerings that cultivate learner talent, language proficiency, creativity, athletic excellence, and innovation.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Special Program in the Arts (SPA)",
+      "Special Program in Sports (SPS)",
+      "Special Program in Foreign Language (SPFL)",
+      "Other Special Curricular Programs"
+    ],
+    "projects": [
+      "Special Curricular Programs Regional Learning Community",
+      "Special Curricular Programs Innovation and Best Practice Showcase",
+      "Special Curricular Programs Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Special Curricular Programs",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "ildefonso-libdan"
+  },
+  {
+    "slug": "inclusive",
+    "title": "Inclusive Education",
+    "icon": "fa-universal-access",
+    "supervisor": "Regional Inclusive Education Focal Team",
+    "position": "Education Program Supervisor / Regional Focal Person",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/eps-placeholder.svg",
+    "overview": "Promotes equitable access, participation, belonging, and achievement for learners with diverse strengths, identities, and needs.",
+    "short": "Promotes equitable access, participation, belonging, and achievement for learners with diverse strengths, identities, and needs.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Inclusive Education",
+      "Learner Support",
+      "Universal Design for Learning"
+    ],
+    "projects": [
+      "Inclusive Education Regional Learning Community",
+      "Inclusive Education Innovation and Best Practice Showcase",
+      "Inclusive Education Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Inclusive Education",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ]
+  },
+  {
+    "slug": "sned",
+    "title": "Special Needs Education (SNED)",
+    "icon": "fa-hands-holding-child",
+    "supervisor": "Cynthia B. Diaz, PhD",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/cynthia-diaz.jpg",
+    "overview": "Coordinates responsive services, accessible learning environments, and individualized support for learners with disabilities.",
+    "short": "Coordinates responsive services, accessible learning environments, and individualized support for learners with disabilities.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Special Needs Education (SNED)",
+      "SNED Fun Day",
+      "Transition Support"
+    ],
+    "projects": [
+      "Special Needs Education (SNED) Regional Learning Community",
+      "Special Needs Education (SNED) Innovation and Best Practice Showcase",
+      "Special Needs Education (SNED) Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Special Needs Education (SNED)",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "cynthia-diaz"
+  },
+  {
+    "slug": "iped",
+    "title": "Indigenous Peoples Education (IPED)",
+    "icon": "fa-people-roof",
+    "supervisor": "Regan B. Dagadas, PhD",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/regan-dagadas.jpg",
+    "overview": "Advances culture-responsive education through meaningful partnership with Indigenous Cultural Communities and knowledge holders.",
+    "short": "Advances culture-responsive education through meaningful partnership with Indigenous Cultural Communities and knowledge holders.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Indigenous Peoples Education (IPED)",
+      "Regional Indigenous Peoples Day",
+      "Community Partnership"
+    ],
+    "projects": [
+      "Indigenous Peoples Education (IPED) Regional Learning Community",
+      "Indigenous Peoples Education (IPED) Innovation and Best Practice Showcase",
+      "Indigenous Peoples Education (IPED) Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Indigenous Peoples Education (IPED)",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "regan-dagadas"
+  },
+  {
+    "slug": "madrasah",
+    "title": "Madrasah Education",
+    "icon": "fa-mosque",
+    "supervisor": "Regan B. Dagadas, PhD",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/regan-dagadas.jpg",
+    "overview": "Supports culturally responsive learning pathways and quality Arabic Language and Islamic Values Education.",
+    "short": "Supports culturally responsive learning pathways and quality Arabic Language and Islamic Values Education.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Madrasah Education",
+      "Arabic Language and Islamic Values Education (ALIVE)",
+      "Indigenous Peoples Education (IPED)"
+    ],
+    "projects": [
+      "Madrasah Education Regional Learning Community",
+      "Madrasah Education Innovation and Best Practice Showcase",
+      "Madrasah Education Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Madrasah Education",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "regan-dagadas"
+  },
+  {
+    "slug": "als",
+    "title": "Alternative Learning System",
+    "icon": "fa-road",
+    "supervisor": "Cynthia B. Diaz, PhD",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/cynthia-diaz.jpg",
+    "overview": "Expands flexible, inclusive, and relevant second-chance learning opportunities for out-of-school youth and adults.",
+    "short": "Expands flexible, inclusive, and relevant second-chance learning opportunities for out-of-school youth and adults.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Alternative Learning System (ALS)",
+      "Accreditation and Equivalency",
+      "Community Learning Centers"
+    ],
+    "projects": [
+      "Alternative Learning System Regional Learning Community",
+      "Alternative Learning System Innovation and Best Practice Showcase",
+      "Alternative Learning System Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Alternative Learning System",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "cynthia-diaz"
+  },
+  {
+    "slug": "sshs",
+    "title": "Strengthened Senior High School",
+    "icon": "fa-graduation-cap",
+    "supervisor": "Crisanto M. Bulado, PhDU",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/crisanto-bulado.jpg",
+    "overview": "Supports strengthened senior high school implementation, coherent pathways, industry alignment, and learner transition readiness.",
+    "short": "Supports strengthened senior high school implementation, coherent pathways, industry alignment, and learner transition readiness.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Strengthened Senior High School",
+      "Career Pathways",
+      "Work Immersion"
+    ],
+    "projects": [
+      "Strengthened Senior High School Regional Learning Community",
+      "Strengthened Senior High School Innovation and Best Practice Showcase",
+      "Strengthened Senior High School Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Strengthened Senior High School",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "crisanto-bulado"
+  },
+  {
+    "slug": "lrmds",
+    "title": "Learning Resources Management and Development System (LRMDS)",
+    "icon": "fa-box-archive",
+    "supervisor": "Arturo B. Tingson, MAEd",
+    "position": "Education Program Supervisor / Regional Program Holder",
+    "email": "Email placeholder – update in learning-areas.json",
+    "image": "assets/images/program-holders/arturo-tingson.jpg",
+    "overview": "Manages the development, quality assurance, contextualization, accessibility, and distribution of print and digital learning resources.",
+    "short": "Manages the development, quality assurance, contextualization, accessibility, and distribution of print and digital learning resources.",
+    "objectives": [
+      "Provide curriculum leadership and standards-aligned guidance to Schools Division Offices.",
+      "Strengthen teacher and school capacity through targeted technical assistance and professional learning.",
+      "Use assessment, monitoring, and research evidence to improve program implementation.",
+      "Promote inclusive, localized, culture-responsive, and future-ready learning experiences."
+    ],
+    "responsibilities": [
+      "Regional program planning and policy implementation",
+      "Monitoring, evaluation, and technical assistance",
+      "Resource review, quality assurance, and contextualization",
+      "Partnership building, documentation, and reporting"
+    ],
+    "programsHandled": [
+      "Learning Resources Management and Development System (LRMDS)",
+      "Learning Resource Quality Assurance",
+      "Digital Resource Management"
+    ],
+    "projects": [
+      "Learning Resources Management and Development System (LRMDS) Regional Learning Community",
+      "Learning Resources Management and Development System (LRMDS) Innovation and Best Practice Showcase",
+      "Learning Resources Management and Development System (LRMDS) Technical Assistance Cycle 2026"
+    ],
+    "bestPractices": [
+      "Data-informed coaching with division focal persons",
+      "Peer learning communities and demonstration lessons",
+      "Contextualized resources responsive to SOCCSKSARGEN learners"
+    ],
+    "gallery": [
+      "assets/images/hero-learning.jpg",
+      "assets/images/event-reading.jpg",
+      "assets/images/event-science.jpg"
+    ],
+    "resourceTags": [
+      "Learning Resources Management and Development System (LRMDS)",
+      "Curriculum Guide",
+      "Learning Resource",
+      "Regional Issuance"
+    ],
+    "holderId": "arturo-tingson"
+  }
+]

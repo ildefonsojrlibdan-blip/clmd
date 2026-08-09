@@ -1,48 +1,221 @@
 {
-  "title": "Learning Assessment Dashboard",
-  "subtitle": "CRLA · RMA · Philippine Early Childhood Development Checklist — Regional Summary",
-  "summary": [
-    { "label": "Learners Assessed", "value": 1245000, "icon": "bi-clipboard-check" },
-    { "label": "Schools Covered", "value": 2100, "icon": "bi-building" },
-    { "label": "Full Refresher (CRLA)", "value": 28.4, "suffix": "%", "icon": "bi-arrow-repeat" },
-    { "label": "Grade Ready (RMA)", "value": 71.6, "suffix": "%", "icon": "bi-check2-circle" }
+  "divisions": [
+    "Cotabato",
+    "Kidapawan City",
+    "South Cotabato",
+    "Koronadal City",
+    "Sultan Kudarat",
+    "Tacurong City",
+    "Sarangani",
+    "General Santos City"
   ],
-  "catalog": [
-    {
-      "id": "crla",
-      "name": "Comprehensive Rapid Literacy Assessment (CRLA)",
-      "icon": "bi-journal-text",
-      "description": "The CRLA identifies learners' literacy levels to guide reading instruction and targeted intervention. Learners are classified into Full Refresher, Moderate Refresher, Light Refresher, and Grade Ready.",
-      "indicators": ["Full Refresher", "Moderate Refresher", "Light Refresher", "Grade Ready"],
-      "regional": [28.4, 19.7, 16.8, 35.1],
-      "divisionLabels": ["South Cotabato", "Sarangani", "Sultan Kudarat", "Cotabato Prov.", "Gen. Santos", "Koronadal", "Tacurong", "Kidapawan"],
-      "gradeReady": [38.2, 34.1, 32.4, 30.1, 37.6, 35.8, 29.4, 33.2],
-      "colors": ["#e05a5a", "#e89a3c", "#e8c660", "#2bb673"],
-      "interpretation": "Region XII shows 35.1% of learners classified as Grade Ready, while 28.4% require full reading refresher. The distribution indicates meaningful progress but underscores the need for continued literacy interventions, particularly in Cotabato Province and Tacurong City."
+  "assessments": {
+    "CRLA": {
+      "full": "Comprehensive Rapid Literacy Assessment",
+      "regional": 74,
+      "target": 80,
+      "levels": [
+        18,
+        26,
+        37,
+        19
+      ],
+      "divisions": [
+        {
+          "division": "Cotabato",
+          "score": 69,
+          "tested": 3100,
+          "proficient": 61,
+          "growth": 2.8
+        },
+        {
+          "division": "Kidapawan City",
+          "score": 75,
+          "tested": 3520,
+          "proficient": 67,
+          "growth": 3.2
+        },
+        {
+          "division": "South Cotabato",
+          "score": 76,
+          "tested": 3940,
+          "proficient": 68,
+          "growth": 3.7
+        },
+        {
+          "division": "Koronadal City",
+          "score": 80,
+          "tested": 4360,
+          "proficient": 72,
+          "growth": 4.2
+        },
+        {
+          "division": "Sultan Kudarat",
+          "score": 68,
+          "tested": 4780,
+          "proficient": 60,
+          "growth": 4.6
+        },
+        {
+          "division": "Tacurong City",
+          "score": 79,
+          "tested": 5200,
+          "proficient": 71,
+          "growth": 5.0
+        },
+        {
+          "division": "Sarangani",
+          "score": 67,
+          "tested": 5620,
+          "proficient": 59,
+          "growth": 5.5
+        },
+        {
+          "division": "General Santos City",
+          "score": 78,
+          "tested": 6040,
+          "proficient": 70,
+          "growth": 5.9
+        }
+      ]
     },
-    {
-      "id": "rma",
-      "name": "Reading Management Assessment (RMA)",
-      "icon": "bi-book-half",
-      "description": "The RMA monitors reading progress of learners in higher grade levels, guiding teachers in adjusting reading instruction and managing reading programs.",
-      "indicators": ["Beginning", "Developing", "Proficient", "Advanced"],
-      "regional": [22.5, 31.8, 28.9, 16.8],
-      "divisionLabels": ["South Cotabato", "Sarangani", "Sultan Kudarat", "Cotabato Prov.", "Gen. Santos", "Koronadal", "Tacurong", "Kidapawan"],
-      "gradeReady": [78.1, 74.2, 71.6, 69.8, 77.2, 75.0, 66.9, 72.4],
-      "colors": ["#e05a5a", "#e89a3c", "#5b8def", "#2bb673"],
-      "interpretation": "Combined proficient and advanced readers reach 45.7% regionally. Gen. Santos and South Cotabato lead in reading proficiency, while Tacurong City needs intensified reading recovery programs. The RMA confirms steady improvement in sustained silent reading and comprehension."
+    "RMA": {
+      "full": "Reading Management Assessment",
+      "regional": 72,
+      "target": 78,
+      "levels": [
+        20,
+        28,
+        35,
+        17
+      ],
+      "divisions": [
+        {
+          "division": "Cotabato",
+          "score": 68,
+          "tested": 3100,
+          "proficient": 60,
+          "growth": 3.1
+        },
+        {
+          "division": "Kidapawan City",
+          "score": 74,
+          "tested": 3520,
+          "proficient": 66,
+          "growth": 3.5
+        },
+        {
+          "division": "South Cotabato",
+          "score": 75,
+          "tested": 3940,
+          "proficient": 67,
+          "growth": 4.0
+        },
+        {
+          "division": "Koronadal City",
+          "score": 79,
+          "tested": 4360,
+          "proficient": 71,
+          "growth": 4.5
+        },
+        {
+          "division": "Sultan Kudarat",
+          "score": 67,
+          "tested": 4780,
+          "proficient": 59,
+          "growth": 4.9
+        },
+        {
+          "division": "Tacurong City",
+          "score": 78,
+          "tested": 5200,
+          "proficient": 70,
+          "growth": 5.3
+        },
+        {
+          "division": "Sarangani",
+          "score": 66,
+          "tested": 5620,
+          "proficient": 58,
+          "growth": 5.8
+        },
+        {
+          "division": "General Santos City",
+          "score": 77,
+          "tested": 6040,
+          "proficient": 69,
+          "growth": 6.2
+        }
+      ]
     },
-    {
-      "id": "pedc",
-      "name": "Philippine Early Childhood Development Checklist",
-      "icon": "bi-balloon-heart",
-      "description": "The Philippine ECD Checklist assesses the developmental status of early learners across gross motor, fine motor, self-help, receptive language, expressive language, cognitive, and socio-emotional domains.",
-      "indicators": ["Needs Support", "On Track"],
-      "regional": [12.6, 87.4],
-      "divisionLabels": ["South Cotabato", "Sarangani", "Sultan Kudarat", "Cotabato Prov.", "Gen. Santos", "Koronadal", "Tacurong", "Kidapawan"],
-      "gradeReady": [90.2, 86.4, 84.8, 83.1, 89.3, 88.0, 81.6, 85.7],
-      "colors": ["#e05a5a", "#2bb673"],
-      "interpretation": "The vast majority (87.4%) of early learners are developmentally on track. South Cotabato leads with 90.2% on-track children. Slight variations across divisions point to targeted early childhood stimulation needs in Tacurong and Kidapawan."
+    "ECD": {
+      "full": "Philippine Early Childhood Development Checklist",
+      "regional": 79,
+      "target": 82,
+      "levels": [
+        12,
+        22,
+        42,
+        24
+      ],
+      "divisions": [
+        {
+          "division": "Cotabato",
+          "score": 76,
+          "tested": 3100,
+          "proficient": 68,
+          "growth": 3.4
+        },
+        {
+          "division": "Kidapawan City",
+          "score": 82,
+          "tested": 3520,
+          "proficient": 74,
+          "growth": 3.9
+        },
+        {
+          "division": "South Cotabato",
+          "score": 83,
+          "tested": 3940,
+          "proficient": 75,
+          "growth": 4.3
+        },
+        {
+          "division": "Koronadal City",
+          "score": 87,
+          "tested": 4360,
+          "proficient": 79,
+          "growth": 4.8
+        },
+        {
+          "division": "Sultan Kudarat",
+          "score": 75,
+          "tested": 4780,
+          "proficient": 67,
+          "growth": 5.2
+        },
+        {
+          "division": "Tacurong City",
+          "score": 86,
+          "tested": 5200,
+          "proficient": 78,
+          "growth": 5.6
+        },
+        {
+          "division": "Sarangani",
+          "score": 74,
+          "tested": 5620,
+          "proficient": 66,
+          "growth": 6.1
+        },
+        {
+          "division": "General Santos City",
+          "score": 85,
+          "tested": 6040,
+          "proficient": 77,
+          "growth": 6.5
+        }
+      ]
     }
-  ]
+  }
 }

@@ -1,210 +1,401 @@
 {
-  "summary": [
-    { "label": "Events Monitored", "value": 10, "suffix": "", "icon": "bi-trophy" },
-    { "label": "Awardees Regionwide", "value": 386, "suffix": "", "icon": "bi-award" },
-    { "label": "Participating Schools", "value": 1204, "suffix": "", "icon": "bi-building" },
-    { "label": "Top Performance", "value": 97.4, "suffix": "%", "icon": "bi-graph-up-arrow" }
+  "divisions": [
+    "Cotabato",
+    "Kidapawan City",
+    "South Cotabato",
+    "Koronadal City",
+    "Sultan Kudarat",
+    "Tacurong City",
+    "Sarangani",
+    "General Santos City"
+  ],
+  "regionalStats": {
+    "events": 10,
+    "participants": 7536,
+    "awards": 375,
+    "completion": 94,
+    "resources": 1248
+  },
+  "divisionScores": [
+    84,
+    89,
+    91,
+    94,
+    83,
+    92,
+    82,
+    93
+  ],
+  "awards": [
+    38,
+    34,
+    52,
+    48,
+    31,
+    42,
+    29,
+    56
   ],
   "events": [
     {
-      "id": "nft",
-      "name": "National Festival of Talents",
-      "icon": "bi-palette",
-      "banner": "assets/images/banners/performance.jpg",
-      "photo": "gallery/events/nft",
-      "description": "The National Festival of Talents (NFOT) showcases the skills and talents of learners in the arts, music, and other creative fields. Region XII consistently produces national-level awardees.",
-      "stats": [
-        { "label": "Participants", "value": 120 },
-        { "label": "National Awardees", "value": 18 },
-        { "label": "Gold", "value": 6 },
-        { "label": "Silver", "value": 7 },
-        { "label": "Bronze", "value": 5 }
+      "slug": "nft",
+      "title": "National Festival of Talents",
+      "category": "Talent Development",
+      "year": 2026,
+      "image": "assets/images/event-talents.jpg",
+      "participants": 1240,
+      "awards": 38,
+      "sdos": 8,
+      "performance": 82,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
       ],
-      "awardees": ["Regional Champions - Sining Tanghalan", "Regional Champions - Pop Song Composition", "National Qualifiers - Instrumental Music", "Multiple medal winners in visual arts"],
-      "highlights": ["Record-breaking participation", "Excellence in performing arts", "Strong mentorship programs"],
-      "chart": {
-        "labels": ["2019", "2020", "2021", "2022", "2023", "2024"],
-        "data": [8, 0, 10, 13, 15, 18]
-      }
+      "narrative": "Learners showcased artistic, technical, linguistic, and entrepreneurial excellence across multiple competition areas.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "General Santos City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Cotabato SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sarangani SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/event-talents.jpg",
+        "assets/images/event-science.jpg",
+        "assets/images/hero-learning.jpg"
+      ]
     },
     {
-      "id": "nspc",
-      "name": "National Schools Press Conference",
-      "icon": "bi-newspaper",
-      "banner": "assets/images/banners/performance.jpg",
-      "photo": "gallery/events/nspc",
-      "description": "The National Schools Press Conference (NSPC) recognizes the best campus journalists in the country. Region XII journalists excel in writing, layout, and broadcasting competitions.",
-      "stats": [
-        { "label": "Journalists", "value": 210 },
-        { "label": "National Awardees", "value": 42 },
-        { "label": "Gold", "value": 14 },
-        { "label": "Silver", "value": 16 },
-        { "label": "Bronze", "value": 12 }
+      "slug": "nspc",
+      "title": "National Schools Press Conference",
+      "category": "Campus Journalism",
+      "year": 2026,
+      "image": "assets/images/hero-leadership.jpg",
+      "participants": 486,
+      "awards": 27,
+      "sdos": 8,
+      "performance": 85,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
       ],
-      "awardees": ["Best Feature Writer", "Best Editorial Cartoonist", "Best Collaborative Publishing", "Best Radio Broadcasting Team"],
-      "highlights": ["Strong campus journalism tradition", "High-quality student publications", "Top rankings in multiple categories"],
-      "chart": {
-        "labels": ["2019", "2020", "2021", "2022", "2023", "2024"],
-        "data": [25, 0, 30, 36, 40, 42]
-      }
+      "narrative": "Campus journalists demonstrated responsible, ethical, and innovative storytelling in individual and group events.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "Koronadal City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Tacurong City SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sultan Kudarat SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/hero-leadership.jpg",
+        "assets/images/event-reading.jpg",
+        "assets/images/hero-curriculum.jpg"
+      ]
     },
     {
-      "id": "rstf",
-      "name": "Regional Science and Technology Fair",
-      "icon": "bi-lightbulb",
-      "banner": "assets/images/banners/performance.jpg",
-      "photo": "gallery/events/rstf",
-      "description": "The Regional Science and Technology Fair (RSTF) encourages learners to pursue research and innovation in the fields of science, mathematics, and technology.",
-      "stats": [
-        { "label": "Projects", "value": 98 },
-        { "label": "Finalists", "value": 60 },
-        { "label": "Research Awardees", "value": 24 },
-        { "label": "National Qualifiers", "value": 12 }
+      "slug": "rstf",
+      "title": "Regional Science and Technology Fair",
+      "category": "Science & Innovation",
+      "year": 2026,
+      "image": "assets/images/event-science.jpg",
+      "participants": 920,
+      "awards": 64,
+      "sdos": 8,
+      "performance": 88,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
       ],
-      "awardees": ["Best Life Science Research", "Best Physical Science Research", "Best Mathematics Research", "Innovation Award Winners"],
-      "highlights": ["Rising quality of research", "Industry mentorship", "Cross-division collaboration"],
-      "chart": {
-        "labels": ["2019", "2020", "2021", "2022", "2023", "2024"],
-        "data": [12, 0, 15, 19, 22, 24]
-      }
+      "narrative": "Research teams presented inquiry-based solutions in science, robotics, sustainability, and community innovation.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "South Cotabato SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Kidapawan City SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "South Cotabato SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/event-science.jpg",
+        "assets/images/hero-learning.jpg",
+        "assets/images/hero-leadership.jpg"
+      ]
     },
     {
-      "id": "rmo",
-      "name": "Regional Mathematics Olympics",
-      "icon": "bi-calculator",
-      "banner": "assets/images/banners/performance.jpg",
-      "photo": "gallery/events/rmo",
-      "description": "The Regional Mathematics Olympics develops and recognizes learners' mathematical talents and problem-solving abilities across grade levels.",
-      "stats": [
-        { "label": "Participants", "value": 340 },
-        { "label": "Medalists", "value": 60 },
-        { "label": "Gold", "value": 20 },
-        { "label": "National Qualifiers", "value": 15 }
+      "slug": "math-olympics",
+      "title": "Regional Mathematics Olympics",
+      "category": "Mathematics",
+      "year": 2026,
+      "image": "assets/images/hero-curriculum.jpg",
+      "participants": 760,
+      "awards": 52,
+      "sdos": 8,
+      "performance": 91,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
       ],
-      "awardees": ["Level Champions", "Problem-Solving Challenge Winners", "Team Relay Champions"],
-      "highlights": ["Expanding participation", "Improved problem-solving skills", "Strong teacher coaching"],
-      "chart": {
-        "labels": ["2019", "2020", "2021", "2022", "2023", "2024"],
-        "data": [10, 0, 12, 16, 18, 20]
-      }
+      "narrative": "Learners engaged in individual and team challenges that emphasized reasoning, precision, creativity, and perseverance.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "General Santos City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Cotabato SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sarangani SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/hero-curriculum.jpg",
+        "assets/images/hero-curriculum.jpg",
+        "assets/images/event-talents.jpg"
+      ]
     },
     {
-      "id": "rkf",
-      "name": "Regional Kiddie Festival",
-      "icon": "bi-balloon",
-      "banner": "assets/images/banners/performance.jpg",
-      "photo": "gallery/events/rkf",
-      "description": "The Regional Kiddie Festival celebrates the talents and development of kindergarten learners through songs, dances, and creative presentations.",
-      "stats": [
-        { "label": "Kiddie Participants", "value": 180 },
-        { "label": "Performing Groups", "value": 24 },
-        { "label": "Awardees", "value": 36 }
+      "slug": "kiddie-festival",
+      "title": "Regional Kiddie Festival",
+      "category": "Early Learning",
+      "year": 2026,
+      "image": "assets/images/event-reading.jpg",
+      "participants": 1100,
+      "awards": 45,
+      "sdos": 8,
+      "performance": 94,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
       ],
-      "awardees": ["Best Singing Group", "Best Dance Group", "Best Creative Presentation"],
-      "highlights": ["Joyful early learning celebrations", "Family and community participation", "Showcases of kindergarten competencies"],
-      "chart": {
-        "labels": ["2019", "2020", "2021", "2022", "2023", "2024"],
-        "data": [6, 0, 8, 10, 12, 14]
-      }
+      "narrative": "Kindergarten learners celebrated play, language, numeracy, creativity, movement, and social-emotional learning.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "Koronadal City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Tacurong City SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sultan Kudarat SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/event-reading.jpg",
+        "assets/images/hero-leadership.jpg",
+        "assets/images/event-science.jpg"
+      ]
     },
     {
-      "id": "snned",
-      "name": "SNED Fun Day",
-      "icon": "bi-balloon-heart",
-      "banner": "assets/images/banners/performance.jpg",
-      "photo": "gallery/events/sned",
-      "description": "SNED Fun Day is a joyful celebration of Special Needs Education learners, highlighting their talents, achievements, and inclusion in the education community.",
-      "stats": [
-        { "label": "Learners with Special Needs", "value": 250 },
-        { "label": "Participating Schools", "value": 45 },
-        { "label": "Special Awards", "value": 30 }
+      "slug": "sned-fun-day",
+      "title": "SNED Fun Day",
+      "category": "Inclusive Education",
+      "year": 2026,
+      "image": "assets/images/hero-learning.jpg",
+      "participants": 680,
+      "awards": 20,
+      "sdos": 8,
+      "performance": 82,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
       ],
-      "awardees": ["Most Talented Performers", "Sports Achievement Awardees", "Inclusion Champions"],
-      "highlights": ["Inclusive celebration of abilities", "Strong family support", "Community recognition"],
-      "chart": {
-        "labels": ["2019", "2020", "2021", "2022", "2023", "2024"],
-        "data": [5, 0, 7, 9, 11, 13]
-      }
+      "narrative": "Inclusive activities highlighted learner strengths, family participation, accessibility, and joyful community engagement.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "South Cotabato SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Kidapawan City SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "South Cotabato SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/hero-learning.jpg",
+        "assets/images/event-talents.jpg",
+        "assets/images/event-reading.jpg"
+      ]
     },
     {
-      "id": "techvoc",
-      "name": "Regional TechVoc Day",
-      "icon": "bi-tools",
-      "banner": "assets/images/banners/performance.jpg",
-      "photo": "gallery/events/techvoc",
-      "description": "Regional TechVoc Day showcases the technical-vocational skills and entrepreneurial products of learners in TLE and Senior High School TVL tracks.",
-      "stats": [
-        { "label": "Skill Exhibits", "value": 80 },
-        { "label": "Student Exhibitors", "value": 300 },
-        { "label": "Product Awardees", "value": 40 }
+      "slug": "techvoc-day",
+      "title": "Regional TechVoc Day",
+      "category": "TLE & TVL",
+      "year": 2026,
+      "image": "assets/images/event-talents.jpg",
+      "participants": 980,
+      "awards": 58,
+      "sdos": 8,
+      "performance": 85,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
       ],
-      "awardees": ["Best Product Innovation", "Best Culinary Team", "Best ICT Project", "Entrepreneurship Award"],
-      "highlights": ["Industry-relevant skills", "Entrepreneurship showcase", "Product innovation recognition"],
-      "chart": {
-        "labels": ["2019", "2020", "2021", "2022", "2023", "2024"],
-        "data": [9, 0, 11, 14, 16, 19]
-      }
+      "narrative": "Learners demonstrated technical skills, innovation, entrepreneurship, craftsmanship, and workplace readiness.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "General Santos City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Cotabato SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sarangani SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/event-talents.jpg",
+        "assets/images/event-science.jpg",
+        "assets/images/hero-learning.jpg"
+      ]
     },
     {
-      "id": "iped",
-      "name": "Regional Indigenous Peoples Day",
-      "icon": "bi-globe-asia-australia",
-      "banner": "assets/images/banners/performance.jpg",
-      "photo": "gallery/events/iped",
-      "description": "The Regional Indigenous Peoples Day honors and celebrates the culture, heritage, and contributions of indigenous peoples to basic education through IPED programs.",
-      "stats": [
-        { "label": "IP Communities", "value": 40 },
-        { "label": "IP Learner Performers", "value": 200 },
-        { "label": "Cultural Presentations", "value": 30 }
+      "slug": "iped-day",
+      "title": "Regional Indigenous Peoples Day",
+      "category": "Culture & Inclusion",
+      "year": 2026,
+      "image": "assets/images/hero-learning.jpg",
+      "participants": 820,
+      "awards": 24,
+      "sdos": 8,
+      "performance": 88,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
       ],
-      "awardees": ["Cultural Heritage Champions", "Best Indigenous Performance", "IPED Community Partners"],
-      "highlights": ["Cultural preservation", "Community engagement", "Recognition of indigenous knowledge"],
-      "chart": {
-        "labels": ["2019", "2020", "2021", "2022", "2023", "2024"],
-        "data": [4, 0, 6, 8, 10, 12]
-      }
+      "narrative": "Communities and schools celebrated Indigenous knowledge, languages, arts, heritage, and education partnerships.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "Koronadal City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Tacurong City SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sultan Kudarat SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/hero-learning.jpg",
+        "assets/images/event-reading.jpg",
+        "assets/images/hero-curriculum.jpg"
+      ]
     },
     {
-      "id": "lib",
-      "name": "Search for the Most Functional Library",
-      "icon": "bi-bookmark-star",
-      "banner": "assets/images/banners/performance.jpg",
-      "photo": "gallery/events/library",
-      "description": "The Search for the Most Functional Library recognizes school libraries that provide excellent learning resources, programs, and services to learners and teachers.",
-      "stats": [
-        { "label": "School Libraries Evaluated", "value": 120 },
-        { "label": "Regional Finalists", "value": 15 },
-        { "label": "Recognized Libraries", "value": 10 }
+      "slug": "library-search",
+      "title": "Search for the Most Functional Library",
+      "category": "Learning Resources",
+      "year": 2026,
+      "image": "assets/images/event-reading.jpg",
+      "participants": 210,
+      "awards": 16,
+      "sdos": 8,
+      "performance": 91,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
       ],
-      "awardees": ["Most Functional Library (Elementary)", "Most Functional Library (Secondary)", "Best Library Innovation"],
-      "highlights": ["Improved library facilities", "Enhanced reading programs", "Digital library initiatives"],
-      "chart": {
-        "labels": ["2019", "2020", "2021", "2022", "2023", "2024"],
-        "data": [6, 0, 8, 9, 10, 11]
-      }
+      "narrative": "The regional search recognized accessible, learner-centered, well-managed, and innovative school library services.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "South Cotabato SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Kidapawan City SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "South Cotabato SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/event-reading.jpg",
+        "assets/images/hero-learning.jpg",
+        "assets/images/hero-leadership.jpg"
+      ]
     },
     {
-      "id": "gta",
-      "name": "Gawad Teodora Alonzo Award",
-      "icon": "bi-pencil-square",
-      "banner": "assets/images/banners/performance.jpg",
-      "photo": "gallery/events/gta",
-      "description": "The Gawad Teodora Alonzo Award honors outstanding reading educators and reading advocates who have made significant contributions to literacy development in the region.",
-      "stats": [
-        { "label": "Nominees", "value": 60 },
-        { "label": "Regional Awardees", "value": 12 },
-        { "label": "Outstanding Educators", "value": 6 }
+      "slug": "gawad-teodora",
+      "title": "Gawad Teodora Alonzo Award",
+      "category": "Literacy",
+      "year": 2026,
+      "image": "assets/images/event-reading.jpg",
+      "participants": 340,
+      "awards": 31,
+      "sdos": 8,
+      "performance": 94,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
       ],
-      "awardees": ["Outstanding Reading Teacher", "Outstanding Reading Supervisor", "Literacy Advocate Award"],
-      "highlights": ["Recognition of literacy champions", "Promotes reading culture", "Inspires teachers and students"],
-      "chart": {
-        "labels": ["2019", "2020", "2021", "2022", "2023", "2024"],
-        "data": [4, 0, 6, 8, 9, 12]
-      }
+      "narrative": "Outstanding reading advocates and programs were recognized for sustained literacy impact and community partnership.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "General Santos City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Cotabato SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sarangani SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/event-reading.jpg",
+        "assets/images/hero-curriculum.jpg",
+        "assets/images/event-talents.jpg"
+      ]
     }
-  ],
-  "divisionChart": {
-    "labels": ["Koronadal", "Gen. Santos", "Sarangani", "South Cot.", "North Cot.", "Sultan Kudarat", "Kidapawan", "Tacurong"],
-    "data": [92, 88, 85, 90, 87, 82, 86, 84]
-  }
+  ]
 }

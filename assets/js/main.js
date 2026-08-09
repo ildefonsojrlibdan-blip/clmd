@@ -1,494 +1,86 @@
-/* ============================================================
-   CLMD Website - Main Application Script
-   Handles: header/footer injection, dark mode, search,
-   notifications, back-to-top, floating menu, accessibility,
-   language toggle, visitor counter, animations.
-   ============================================================ */
-(function () {
-  "use strict";
-
-  const SITE = {
-    email: "clmd.region12@deped.gov.ph",
-    tel: "(083) 228-8825 / 228-8826",
-    social: [
-      { icon: "bi-facebook", url: "#", label: "Facebook" },
-      { icon: "bi-twitter-x", url: "#", label: "Twitter / X" },
-      { icon: "bi-youtube", url: "#", label: "YouTube" },
-      { icon: "bi-envelope", url: "mailto:clmd.region12@deped.gov.ph", label: "Email" }
-    ]
-  };
-
-  const NAV = {
-    "Home": "index.html",
-    "About CLMD": { url: "about.html", children: ["Vision & Mission", "Leadership"] },
-    "Learning Areas": { url: "learning-areas/english.html", children: ["English","Mathematics","Science","Filipino","Araling Panlipunan","Values Education","MAPEH","TLE","Special Curricular Programs","Inclusive Education","Strengthened SHS","LRMDS"] },
-    "Programs": "programs.html",
-    "Analytics": { url: "analytics/performance.html", children: ["Regional Performance","Aral Program","Learning Assessment","Visitor Analytics"] },
-    "Memoranda": "memoranda.html",
-    "Advisories": "advisories.html",
-    "Downloads": "downloads.html",
-    "Gallery": "gallery.html",
-    "Contact": "contact.html"
-  };
-
-  // Learning area children map
-  const AREA_CHILDREN = {
-    "English": "english.html", "Mathematics": "math.html", "Science": "science.html",
-    "Filipino": "filipino.html", "Araling Panlipunan": "ap.html", "Values Education": "values.html",
-    "MAPEH": "mapeh.html", "TLE": "tle.html", "Special Curricular Programs": "scp.html",
-    "Inclusive Education": "inclusive.html", "Strengthened SHS": "sshs.html", "LRMDS": "lrmds.html"
-  };
-  const ANALYTICS_CHILDREN = { "Regional Performance": "performance.html", "Aral Program": "aral.html", "Learning Assessment": "assessment.html", "Visitor Analytics": "visitors.html" };
-
-  // ---------- DOM helpers ----------
-  function qs(sel, root) { return (root || document).querySelector(sel); }
-  function qsa(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
-
-  // ---------- Resolve nav path (works from any depth) ----------
-  function rel(path) {
-    // Current page depth to root
-    const depth = window.CLMD_DEPTH || 0;
-    let prefix = "";
-    for (let i = 0; i < depth; i++) prefix += "../";
-    return prefix + path;
-  }
-
-  // ---------- Build header ----------
-  function buildHeader() {
-    const holder = document.getElementById("site-header");
-    if (!holder) return;
-
-    const active = document.body.dataset.page || "";
-    let navLinks = "";
-    for (const [label, val] of Object.entries(NAV)) {
-      let href, children = null;
-      if (typeof val === "string") { href = val; }
-      else { href = val.url; children = val.children; }
-
-      const isActive = active === label;
-      if (children) {
-        let childLinks = "";
-        children.forEach((c) => {
-          let target;
-          if (label === "Learning Areas" && AREA_CHILDREN[c]) target = "learning-areas/" + AREA_CHILDREN[c];
-          else if (label === "Analytics" && ANALYTICS_CHILDREN[c]) target = "analytics/" + ANALYTICS_CHILDREN[c];
-          else if (c === "Vision & Mission") target = "about.html#vision";
-          else if (c === "Leadership") target = "about.html#leadership";
-          else target = href;
-          const cActive = (document.body.dataset.child === c);
-          childLinks += `<li><a class="dropdown-item ${cActive ? 'active' : ''}" href="${rel(target)}">${c}</a></li>`;
-        });
-        navLinks += `<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle ${isActive ? 'active' : ''}" href="${rel(href)}" data-bs-toggle="dropdown">${label}</a>
-          <ul class="dropdown-menu">${childLinks}</ul></li>`;
-      } else {
-        navLinks += `<li class="nav-item"><a class="nav-link ${isActive ? 'active' : ''}" href="${rel(href)}">${label}</a></li>`;
-      }
-    }
-
-    holder.innerHTML = `
-    <div class="topbar no-print">
-      <div class="container">
-        <div><i class="bi bi-geo-alt me-1"></i> Carpenter Hill, Koronadal City · <i class="bi bi-envelope me-1 ms-1"></i> <a href="mailto:${SITE.email}">${SITE.email}</a></div>
-        <div class="tb-right">
-          <span class="visitor-mini d-none d-md-inline"><i class="bi bi-eye me-1"></i>Visitors: <span id="visitor-mini-count">0</span></span>
-          <div class="social">
-            ${SITE.social.map(s=>`<a href="${s.url}" aria-label="${s.label}"><i class="bi ${s.icon}"></i></a>`).join('')}
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-custom no-print" aria-label="Main navigation">
-      <div class="container">
-        <a class="navbar-brand" href="${rel('index.html')}">
-          <img src="${rel('assets/images/icons/clmd-logo.png')}" alt="CLMD Logo" loading="lazy">
-          <span class="brand-text">
-            <strong>CURRICULUM &amp; LEARNING<br>MANAGEMENT DIVISION</strong>
-            <small>DepEd Regional Office XII · SOCCSKSARGEN</small>
-          </span>
-        </a>
-        <div class="nav-tools d-lg-none ms-auto me-1">
-          <button class="icon-btn" data-action="search" aria-label="Search"><i class="bi bi-search"></i></button>
-          <button class="icon-btn" data-action="darkmode" aria-label="Dark mode"><i class="bi bi-moon-stars"></i></button>
-          <button class="navbar-toggler icon-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
-        </div>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">${navLinks}</ul>
-          <div class="nav-tools d-none d-lg-flex">
-            <button class="icon-btn" data-action="search" aria-label="Search"><i class="bi bi-search"></i></button>
-            <button class="icon-btn" data-action="darkmode" aria-label="Dark mode"><i class="bi bi-moon-stars"></i></button>
-            <button class="icon-btn" data-action="notif" aria-label="Notifications"><i class="bi bi-bell"></i><span class="notif-dot"></span></button>
-            <button class="icon-btn" data-action="access" aria-label="Accessibility"><i class="bi bi-person-lines-fill"></i></button>
-          </div>
-        </div>
-      </div>
-    </nav>`;
-  }
-
-  // ---------- Build footer ----------
-  function buildFooter() {
-    const holder = document.getElementById("site-footer");
-    if (!holder) return;
-    holder.innerHTML = `
-    <footer class="footer no-print">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <img src="${rel('assets/images/icons/deped-logo.png')}" alt="DepEd" width="64" height="64">
-              <div>
-                <h5 class="mb-0">Curriculum &amp; Learning Management Division</h5>
-                <small>Department of Education · Regional Office XII</small>
-              </div>
-            </div>
-            <p class="muted" style="color:rgba(255,255,255,.8)">Transforming Learning Through Quality Curriculum and Excellent Educational Leadership.</p>
-            <div class="social">
-              ${SITE.social.map(s=>`<a class="me-2" href="${s.url}" aria-label="${s.label}"><i class="bi ${s.icon} fs-5"></i></a>`).join('')}
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <h5>Quick Links</h5>
-            <ul class="f-links">
-              <li><a href="${rel('index.html')}"><i class="bi bi-chevron-right"></i>Home</a></li>
-              <li><a href="${rel('about.html')}"><i class="bi bi-chevron-right"></i>About CLMD</a></li>
-              <li><a href="${rel('programs.html')}"><i class="bi bi-chevron-right"></i>Programs</a></li>
-              <li><a href="${rel('downloads.html')}"><i class="bi bi-chevron-right"></i>Downloads</a></li>
-              <li><a href="${rel('memoranda.html')}"><i class="bi bi-chevron-right"></i>Memoranda</a></li>
-              <li><a href="${rel('gallery.html')}"><i class="bi bi-chevron-right"></i>Gallery</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5>Learning Areas</h5>
-            <ul class="f-links">
-              ${Object.entries(AREA_CHILDREN).slice(0,8).map(([l,f]) => `<li><a href="${rel('learning-areas/'+f)}"><i class="bi bi-chevron-right"></i>${l}</a></li>`).join('')}
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5>Contact</h5>
-            <ul class="f-links">
-              <li><i class="bi bi-geo-alt"></i> Carpenter Hill, City Proper, Koronadal City, South Cotabato</li>
-              <li><i class="bi bi-envelope"></i> <a href="mailto:${SITE.email}">${SITE.email}</a></li>
-              <li><i class="bi bi-telephone"></i> ${SITE.tel}</li>
-            </ul>
-            <div class="mt-3">
-              <img src="${rel('assets/images/icons/deped-xii.png')}" alt="DepEd XII" width="54" height="54">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container">
-          &copy; <span id="year"></span> Curriculum &amp; Learning Management Division · DepEd Regional Office XII (SOCCSKSARGEN). All rights reserved.
-        </div>
-      </div>
-    </footer>
-    <button class="back-to-top no-print" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
-    <div class="floating-menu no-print">
-      <button class="icon-btn" data-action="access" aria-label="Accessibility"><i class="bi bi-person-lines-fill"></i></button>
-      <button class="icon-btn" data-action="print" aria-label="Print page"><i class="bi bi-printer"></i></button>
-      <button class="icon-btn pulse-gold" data-action="top" aria-label="Quick menu"><i class="bi bi-grid"></i></button>
-    </div>
-    <div class="notif-panel no-print" id="notifPanel"></div>`;
-  }
-
-  // ---------- Dark mode ----------
-  function applyTheme() {
-    const t = localStorage.getItem("clmd-theme") || "light";
-    document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
-    qsa("[data-action='darkmode']").forEach((b) => {
-      const icon = qs("i", b);
-      if (icon) icon.className = "bi " + (t === "dark" ? "bi-sun" : "bi-moon-stars");
-    });
-    document.dispatchEvent(new CustomEvent("clmd-theme-changed", { detail: { theme: t } }));
-  }
-
-  // ---------- Notifications ----------
-  const NOTIFS = [
-    { title: "2025 Festival of Talents", body: "Registration is now open across all SDOs.", icon: "bi-trophy", time: "2h ago" },
-    { title: "CRLA Administration", body: "Submission deadline is on Friday.", icon: "bi-journal-text", time: "5h ago" },
-    { title: "New Memoranda Released", body: "RM No. 2025-0112 has been published.", icon: "bi-file-earmark-text", time: "1d ago" },
-    { title: "Aral Program Report", body: "Q3 learning gains have been uploaded.", icon: "bi-graph-up-arrow", time: "2d ago" }
+/* Global shell, navigation, accessibility, utilities, export and interactions. */
+(() => {
+  'use strict';
+  const root=CLMD.root;
+  const p=path=>CLMD.page(path);
+  const page=document.body.dataset.page||'';
+  const learningLinks=[
+    ['english','English','fa-language'],['math','Mathematics','fa-square-root-variable'],['science','Science','fa-flask'],['filipino','Filipino','fa-book'],['ap','Araling Panlipunan','fa-earth-asia'],['values','Values Education','fa-heart'],['mapeh','MAPEH / Special Programs','fa-masks-theater'],['tle','TLE','fa-screwdriver-wrench'],['scp','Special Curricular Programs','fa-star'],['inclusive','Inclusive Education','fa-universal-access'],['sned','SNED','fa-hands-holding-child'],['iped','IPED','fa-people-roof'],['madrasah','Madrasah Education','fa-mosque'],['als','Alternative Learning System','fa-road'],['sshs','Strengthened SHS','fa-graduation-cap'],['lrmds','LRMDS','fa-box-archive']
   ];
-  function buildNotifs() {
-    const panel = document.getElementById("notifPanel");
-    if (!panel) return;
-    panel.innerHTML = `<div class="n-head"><span><i class="bi bi-bell me-1"></i>Notifications</span><span class="badge bg-light text-dark">${NOTIFS.length}</span></div>` +
-      NOTIFS.map(n => `<div class="notif-item"><h6><i class="bi ${n.icon} me-1 text-primary"></i>${n.title}</h6><small class="muted">${n.body}</small><div class="text-end"><small class="muted">${n.time}</small></div></div>`).join('');
-  }
+  const active=(ids)=>ids.includes(page)?'active':'';
+  const header=`
+    <div class="gov-strip"><div class="container-fluid"><div class="gov-left"><span><i class="fa-solid fa-landmark me-2"></i>Republic of the Philippines · Department of Education</span><span id="phTime">Philippine Standard Time</span></div><div class="gov-right"><span class="visitor-mini"><i class="fa-regular fa-eye"></i><strong data-visitor-total>—</strong> visitors</span><a href="${p('contact.html')}"><i class="fa-regular fa-envelope me-1"></i> Contact CLMD</a></div></div></div>
+    <nav class="main-nav" aria-label="Primary navigation"><div class="nav-shell">
+      <a class="brand-group" href="${p('index.html')}" aria-label="CLMD Region XII home"><img class="brand-logo" src="${p('assets/images/deped-region-xii-logo.jpg')}" alt="DepEd Region XII logo"><span class="brand-divider"></span><img class="clmd-logo" src="${p('assets/images/clmd-mark.svg')}" alt="CLMD identity mark"><span class="brand-copy"><strong>Curriculum & Learning Management Division</strong><span>Regional Office XII · SOCCSKSARGEN</span></span></a>
+      <ul class="primary-nav" id="primaryNav">
+        <li class="${active(['home'])}"><a href="${p('index.html')}">Home</a></li>
+        <li class="${active(['about'])}"><a href="${p('about.html')}">About CLMD</a></li>
+        <li class="dropdown ${active(['learning-areas','learning-area'])}"><button data-bs-toggle="dropdown" aria-expanded="false">Learning Areas <i class="bi bi-chevron-down"></i></button><div class="dropdown-menu mega-menu"><div class="px-2 pt-1 pb-2"><small class="text-muted fw-bold">CURRICULUM PORTFOLIO</small></div><div class="mega-grid">${learningLinks.map(x=>`<a class="dropdown-item" href="${p(`learning-areas/${x[0]}.html`)}"><i class="fa-solid ${x[2]}"></i>${x[1]}</a>`).join('')}</div><div class="p-2 mt-1 border-top"><a class="dropdown-item text-center" href="${p('learning-areas/index.html')}">View all learning areas</a></div></div></li>
+        <li class="${active(['programs'])}"><a href="${p('programs/index.html')}">Programs</a></li>
+        <li class="${active(['performance'])}"><a href="${p('analytics/index.html')}">Regional Performance</a></li>
+        <li class="${active(['memoranda'])}"><a href="${p('memoranda/index.html')}">Memoranda</a></li>
+        <li class="${active(['advisories'])}"><a href="${p('advisories/index.html')}">Advisories</a></li>
+        <li class="${active(['downloads'])}"><a href="${p('downloads/index.html')}">Downloads</a></li>
+        <li class="dropdown ${active(['aral','assessment'])}"><button data-bs-toggle="dropdown" aria-expanded="false">Analytics <i class="bi bi-chevron-down"></i></button><div class="dropdown-menu"><a class="dropdown-item" href="${p('analytics/index.html')}"><i class="fa-solid fa-chart-line me-2"></i>Regional Performance</a><a class="dropdown-item" href="${p('analytics/aral.html')}"><i class="fa-solid fa-arrow-trend-up me-2"></i>ARAL Program</a><a class="dropdown-item" href="${p('analytics/assessment.html')}"><i class="fa-solid fa-clipboard-check me-2"></i>Learning Assessment</a></div></li>
+        <li class="${active(['gallery'])}"><a href="${p('gallery/index.html')}">Gallery</a></li>
+        <li class="${active(['contact'])}"><a href="${p('contact.html')}">Contact</a></li>
+      </ul>
+      <div class="nav-tools"><button class="nav-tool" data-open-search title="Smart search" aria-label="Open portal search"><i class="fa-solid fa-magnifying-glass"></i></button><button class="nav-tool" id="themeToggle" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="fa-regular fa-moon"></i></button><button class="nav-tool" id="notificationBtn" title="Notifications" aria-label="Notifications"><i class="fa-regular fa-bell"></i><span class="notify-dot"></span></button><button class="nav-tool" data-bs-toggle="offcanvas" data-bs-target="#accessibilityPanel" title="Accessibility options" aria-label="Accessibility options"><i class="fa-solid fa-universal-access"></i></button></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+    </div></nav><div class="mobile-nav-backdrop" id="navBackdrop"></div>`;
+  document.getElementById('siteHeader').innerHTML=header;
 
-  // ---------- Global search ----------
-  let SEARCH_INDEX = [];
-  function loadSearchIndex() {
-    const idx = [];
-    const areasP = fetch(rel("assets/data/learning-areas.json")).then(r => r.json()).then(d => {
-      d.areas.forEach(a => {
-        idx.push({ type: "Learning Area", title: a.name, desc: a.overview, url: rel("learning-areas/" + a.id + ".html"), icon: a.icon });
-      });
-    }).catch(() => {});
-    const memP = fetch(rel("assets/data/memoranda.json")).then(r => r.json()).then(d => {
-      d.items.forEach(m => idx.push({ type: "Memorandum", title: m.no + " - " + m.title, desc: m.issuedTo, url: rel("memoranda.html#mem-" + m.no.replace(/\s/g, "-")), icon: "bi-file-earmark-text" }));
-    }).catch(() => {});
-    const advP = fetch(rel("assets/data/advisories.json")).then(r => r.json()).then(d => {
-      d.items.forEach(m => idx.push({ type: "Advisory", title: m.no + " - " + m.title, desc: m.issuedTo, url: rel("advisories.html#adv-" + m.no.replace(/\s/g, "-")), icon: "bi-megaphone" }));
-    }).catch(() => {});
-    const dwnP = fetch(rel("assets/data/downloads.json")).then(r => r.json()).then(d => {
-      d.items.forEach(i => idx.push({ type: "Download", title: i.name, desc: i.desc, url: rel("downloads.html"), icon: "bi-download" }));
-    }).catch(() => {});
-    const galP = fetch(rel("assets/data/gallery.json")).then(r => r.json()).then(d => {
-      d.items.forEach(g => idx.push({ type: "Gallery", title: g.title, desc: g.program, url: rel("gallery.html"), icon: "bi-image" }));
-    }).catch(() => {});
-    Promise.all([areasP, memP, advP, dwnP, galP]).then(() => { SEARCH_INDEX = idx; });
-  }
+  const footer=`<footer class="portal-footer"><div class="container"><div class="row g-5"><div class="col-lg-5"><div class="footer-brand"><img src="${p('assets/images/deped-region-xii-logo.jpg')}" alt="DepEd Region XII logo"><div><strong>Curriculum and Learning Management Division</strong><span>DepEd Regional Office XII · SOCCSKSARGEN</span></div></div><p class="footer-copy">Transforming learning through quality curriculum, responsive programs, evidence-informed leadership, and excellent educational service.</p><div class="social-row"><a href="https://www.facebook.com/DepEdTayoRegionXII" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="https://depedroxii.org/" target="_blank" rel="noopener" aria-label="Official website"><i class="fa-solid fa-globe"></i></a><a href="mailto:region12@deped.gov.ph" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></div></div><div class="col-6 col-lg-2"><h3 class="footer-title">Portal</h3><div class="footer-links"><a href="${p('about.html')}">About CLMD</a><a href="${p('learning-areas/index.html')}">Learning Areas</a><a href="${p('programs/index.html')}">Programs</a><a href="${p('gallery/index.html')}">Gallery</a><a href="${p('contact.html')}">Contact</a></div></div><div class="col-6 col-lg-2"><h3 class="footer-title">Resources</h3><div class="footer-links"><a href="${p('downloads/index.html')}">Download Center</a><a href="${p('memoranda/index.html')}">Regional Memoranda</a><a href="${p('advisories/index.html')}">Regional Advisories</a><a href="${p('analytics/index.html')}">Performance</a><a href="${p('analytics/aral.html')}">ARAL Dashboard</a></div></div><div class="col-lg-3"><h3 class="footer-title">Official Contact</h3><div class="footer-links"><span><i class="fa-solid fa-location-dot me-2 text-warning"></i>Regional Center, Carpenter Hill, Koronadal City</span><a href="tel:+63832288825"><i class="fa-solid fa-phone me-2 text-warning"></i>(083) 228-8825 / 228-1893</a><a href="mailto:region12@deped.gov.ph"><i class="fa-solid fa-envelope me-2 text-warning"></i>region12@deped.gov.ph</a></div></div></div><div class="footer-bottom"><span>© 2026 Department of Education · Regional Office XII · CLMD. All Rights Reserved.</span><span>Demo portal · Replace sample content and placeholder images before official deployment.</span></div></div></footer>`;
+  document.getElementById('siteFooter').innerHTML=footer;
 
-  function renderSearchResults(term, container, limit) {
-    const q = term.toLowerCase().trim();
-    if (!q) { container.innerHTML = '<div class="p-3 muted text-center">Start typing to search the CLMD portal...</div>'; return; }
-    const res = SEARCH_INDEX.filter(i => (i.title + " " + i.desc + " " + i.type).toLowerCase().includes(q)).slice(0, limit || 8);
-    if (!res.length) { container.innerHTML = '<div class="p-3 muted text-center">No results found for &quot;' + term + '&quot;.</div>'; return; }
-    container.innerHTML = res.map(i =>
-      `<a class="s-item" href="${i.url}"><i class="bi ${i.icon}"></i><div><strong>${i.title}</strong><br><small class="muted">${i.type} · ${i.desc}</small></div></a>`).join("");
-  }
+  const globalUi=`<button class="quick-fab" id="quickFab" aria-label="Open quick menu"><i class="fa-solid fa-bolt"></i></button><div class="quick-menu" id="quickMenu"><button data-open-search title="Search"><i class="fa-solid fa-search"></i></button><a href="${p('downloads/index.html')}" title="Downloads"><i class="fa-solid fa-download"></i></a><button data-print-page title="Print"><i class="fa-solid fa-print"></i></button><button data-bs-toggle="offcanvas" data-bs-target="#accessibilityPanel" title="Accessibility"><i class="fa-solid fa-universal-access"></i></button></div><button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Portal search"><div class="search-panel"><div class="ai-search"><i class="fa-solid fa-wand-magic-sparkles"></i><input id="globalSearchInput" type="search" placeholder="Ask the portal to find a program, memo, advisory, resource…" autocomplete="off"><button id="closeGlobalSearch" aria-label="Close search"><i class="bi bi-x-lg"></i></button></div><div class="search-results" id="globalSearchResults"><div class="search-empty"><i class="fa-solid fa-wand-magic-sparkles mb-2 d-block"></i>Search across learning areas, programs, issuances, downloads, gallery records, and analytics.</div></div></div></div>
+    <div class="offcanvas offcanvas-end access-panel" tabindex="-1" id="accessibilityPanel"><div class="offcanvas-header"><div><h2 class="offcanvas-title h5 mb-0">Accessibility</h2><small>Personalize your portal experience</small></div><button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button></div><div class="offcanvas-body"><div class="access-option"><div><strong>Text size</strong><span>Increase or decrease interface text</span></div><div class="font-controls"><button data-font="down">A−</button><button data-font="reset">A</button><button data-font="up">A+</button></div></div><div class="access-option"><div><strong>High contrast</strong><span>Increase visual separation</span></div><div class="form-check form-switch"><input class="form-check-input" id="contrastToggle" type="checkbox"></div></div><div class="access-option"><div><strong>Grayscale</strong><span>Remove color from the interface</span></div><div class="form-check form-switch"><input class="form-check-input" id="grayscaleToggle" type="checkbox"></div></div><div class="access-option"><div><strong>Reduce motion</strong><span>Minimize animation and transitions</span></div><div class="form-check form-switch"><input class="form-check-input" id="motionToggle" type="checkbox"></div></div><div class="access-option"><div><strong>Language</strong><span>Interface language demo</span></div><select id="languageSelect" class="form-select w-auto"><option value="en">English</option><option value="fil">Filipino</option></select></div><button class="btn btn-violet w-100 mt-4" id="resetAccessibility">Reset accessibility settings</button></div></div>`;
+  document.getElementById('globalUi').innerHTML=globalUi;
 
-  // ---------- Global action handler ----------
-  function wireActions() {
-    document.addEventListener("click", (e) => {
-      const btn = e.target.closest("[data-action]");
-      if (!btn) return;
-      const action = btn.dataset.action;
-      if (action === "darkmode") {
-        const t = (document.documentElement.getAttribute("data-theme") === "dark") ? "light" : "dark";
-        localStorage.setItem("clmd-theme", t);
-        applyTheme();
-      } else if (action === "search") {
-        openSearchOverlay();
-      } else if (action === "notif") {
-        const panel = document.getElementById("notifPanel");
-        panel.classList.toggle("show");
-        const dot = qs(".notif-dot"); if (dot) dot.style.display = "none";
-      } else if (action === "access") {
-        openAccessibility();
-      } else if (action === "print") {
-        window.print();
-      } else if (action === "top") {
-        document.getElementById("backToTop").click();
-      }
+  CLMD.charts=CLMD.charts||[];
+  CLMD.addChart=chart=>{CLMD.charts.push(chart);return chart;};
+  CLMD.animateCounters=function(scope=document){
+    scope.querySelectorAll('[data-count]').forEach(el=>{
+      if(el.dataset.counted) return; el.dataset.counted='1';
+      const value=Number(el.dataset.count||0), suffix=el.dataset.suffix||'';
+      if(window.countUp?.CountUp){const counter=new countUp.CountUp(el,value,{duration:1.7,separator:',',suffix});if(!counter.error)counter.start();else el.textContent=CLMD.number(value)+suffix;}
+      else {let start=0;const begin=performance.now();const tick=now=>{const p=Math.min(1,(now-begin)/1100),v=Math.round(value*(1-Math.pow(1-p,3)));el.textContent=CLMD.number(v)+suffix;if(p<1)requestAnimationFrame(tick)};requestAnimationFrame(tick);}
     });
-    document.addEventListener("click", (e) => {
-      const panel = document.getElementById("notifPanel");
-      if (panel && panel.classList.contains("show") && !e.target.closest("#notifPanel") && !e.target.closest("[data-action='notif']")) panel.classList.remove("show");
-    });
-  }
+  };
+  CLMD.toast=function(title,text,icon='success'){if(window.Swal)Swal.fire({title,text,icon,confirmButtonColor:'#69358e'});};
 
-  // ---------- Search overlay ----------
-  function openSearchOverlay() {
-    let ov = document.getElementById("searchOverlay");
-    if (!ov) {
-      ov = document.createElement("div");
-      ov.id = "searchOverlay";
-      ov.className = "search-overlay no-print";
-      ov.innerHTML = `<div class="so-box">
-        <input type="text" id="soInput" placeholder="Search learning areas, programs, memos, advisories, downloads..." aria-label="Search">
-        <div class="so-results" id="soResults"></div>
-      </div>`;
-      document.body.appendChild(ov);
-      const inp = qs("#soInput", ov);
-      inp.addEventListener("input", () => renderSearchResults(inp.value, qs("#soResults", ov), 12));
-      inp.addEventListener("keydown", (e) => { if (e.key === "Escape") ov.classList.remove("show"); });
-      ov.addEventListener("click", (e) => { if (e.target === ov) ov.classList.remove("show"); });
-    }
-    ov.classList.add("show");
-    setTimeout(() => qs("#soInput", ov).focus(), 50);
-  }
+  function updateClock(){const el=document.getElementById('phTime');if(el)el.textContent=new Intl.DateTimeFormat('en-PH',{timeZone:'Asia/Manila',weekday:'short',month:'short',day:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(new Date())+' PHT';}
+  updateClock(); setInterval(updateClock,60000);
+  CLMD.visitor?.refresh();
 
-  // ---------- Accessibility ----------
-  function openAccessibility() {
-    if (typeof Swal !== "undefined") {
-      Swal.fire({
-        title: "Accessibility Options",
-        html: `<div class="text-start">
-          <button class="btn btn-violet w-100 mb-2" id="acc-font"><i class="bi bi-type"></i> Toggle Large Text</button>
-          <button class="btn btn-violet w-100 mb-2" id="acc-contrast"><i class="bi bi-contrast"></i> High Contrast</button>
-          <button class="btn btn-violet w-100 mb-2" id="acc-lang"><i class="bi bi-translate"></i> Toggle Language (EN / FIL)</button>
-          <button class="btn btn-violet w-100" id="acc-reset"><i class="bi bi-arrow-counterclockwise"></i> Reset</button>
-        </div>`,
-        showConfirmButton: false, showCloseButton: true,
-        didOpen: () => {
-          qs("#acc-font").onclick = () => {
-            const cur = parseFloat(getComputedStyle(document.body).fontSize);
-            document.body.style.fontSize = (cur < 18 ? 19 : 16) + "px";
-          };
-          qs("#acc-contrast").onclick = () => {
-            const isHc = document.documentElement.getAttribute("data-theme") === "high-contrast";
-            document.documentElement.setAttribute("data-theme", isHc ? (localStorage.getItem("clmd-theme") || "light") : "high-contrast");
-          };
-          qs("#acc-lang").onclick = () => {
-            const cur = document.documentElement.getAttribute("lang") === "en" ? "fil" : "en";
-            document.documentElement.setAttribute("lang", cur);
-            const msg = cur === "en" ? "Language set to English." : "Wika naitakda sa Filipino.";
-            window.CLMD.toast("success", msg + " (Static labels; extend via i18n JSON as needed.)");
-          };
-          qs("#acc-reset").onclick = () => {
-            document.body.style.fontSize = "";
-            const saved = localStorage.getItem("clmd-theme") || "light";
-            document.documentElement.setAttribute("data-theme", saved);
-          };
-        }
-      });
-    } else {
-      alert("Accessibility options: use the theme toggle and your browser's text zoom.");
-    }
-  }
+  const nav=document.getElementById('primaryNav'),toggle=document.getElementById('navToggle'),backdrop=document.getElementById('navBackdrop');
+  const closeNav=()=>{nav.classList.remove('open');backdrop.classList.remove('show');document.body.classList.remove('menu-open');};
+  toggle.addEventListener('click',()=>{nav.classList.toggle('open');backdrop.classList.toggle('show');document.body.classList.toggle('menu-open',nav.classList.contains('open'));});
+  backdrop.addEventListener('click',closeNav); window.addEventListener('resize',()=>{if(innerWidth>=1200)closeNav()});
+  window.addEventListener('scroll',()=>{document.querySelector('.main-nav')?.classList.toggle('scrolled',scrollY>20);document.getElementById('backToTop').classList.toggle('show',scrollY>500)});
+  document.getElementById('backToTop').addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
 
-  // ---------- Back to top ----------
-  function initBackToTop() {
-    const btn = document.getElementById("backToTop");
-    if (!btn) return;
-    window.addEventListener("scroll", () => {
-      btn.classList.toggle("show", window.scrollY > 400);
-    });
-    btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-  }
+  const setTheme=dark=>{document.body.classList.toggle('dark-mode',dark);localStorage.setItem('clmd-theme',dark?'dark':'light');document.querySelector('#themeToggle i').className=dark?'fa-regular fa-sun':'fa-regular fa-moon';window.dispatchEvent(new CustomEvent('clmd:theme'))};
+  setTheme(localStorage.getItem('clmd-theme')==='dark'); document.getElementById('themeToggle').addEventListener('click',()=>setTheme(!document.body.classList.contains('dark-mode')));
+  document.getElementById('notificationBtn').addEventListener('click',()=>Swal.fire({title:'Regional Notifications',html:'<div class="text-start small"><p><strong>4 new portal updates</strong></p><hr><p>• Curriculum implementation review schedule posted</p><p>• New learning resource QA cycle opened</p><p>• CRLA submission reminder</p><p>• Action Research Colloquium update</p></div>',icon:'info',confirmButtonColor:'#69358e'}));
 
-  // ---------- Reveal on scroll (fallback to AOS) ----------
-  function initReveal() {
-    if (window.AOS) {
-      window.AOS.init({ duration: 800, once: true, offset: 60 });
-      return;
-    }
-    const els = qsa(".reveal");
-    if (!els.length || !("IntersectionObserver" in window)) { els.forEach(e => e.classList.add("in")); return; }
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
-    }, { threshold: 0.1 });
-    els.forEach(e => io.observe(e));
-  }
+  const quick=document.getElementById('quickMenu');document.getElementById('quickFab').addEventListener('click',()=>quick.classList.toggle('open'));document.querySelectorAll('[data-print-page]').forEach(b=>b.addEventListener('click',()=>print()));
+  document.querySelectorAll('[data-export-pdf]').forEach(b=>b.addEventListener('click',()=>{CLMD.toast('PDF export','Choose “Save as PDF” in your browser print dialog.','info');setTimeout(()=>print(),350)}));
+  document.querySelectorAll('[data-export-table]').forEach(b=>b.addEventListener('click',()=>{
+    const table=document.getElementById(b.dataset.exportTable);if(!table)return;
+    if(window.XLSX){const wb=XLSX.utils.table_to_book(table,{sheet:'CLMD Data'});XLSX.writeFile(wb,`CLMD-${page}-${new Date().toISOString().slice(0,10)}.xlsx`);}else CLMD.toast('Export unavailable','The Excel library could not be loaded.','warning');
+  }));
 
-  // ---------- Particles ----------
-  function initParticles() {
-    if (window.particlesJS && document.getElementById("particles-js")) {
-      particlesJS("particles-js", {
-        particles: {
-          number: { value: 70, density: { enable: true, value_area: 900 } },
-          color: { value: "#ffffff" },
-          shape: { type: "circle" },
-          opacity: { value: 0.4, random: true },
-          size: { value: 3, random: true },
-          line_linked: { enable: true, distance: 130, color: "#ffffff", opacity: 0.22, width: 1 },
-          move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out" }
-        },
-        interactivity: {
-          detect_on: "canvas", events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" } },
-          modes: { grab: { distance: 140, line_linked: { opacity: 0.4 } }, push: { particles_nb: 4 } }
-        },
-        retina_detect: true
-      });
-    }
-  }
+  const preference=(id,cls,key)=>{const input=document.getElementById(id),stored=localStorage.getItem(key)==='1';input.checked=stored;document.body.classList.toggle(cls,stored);input.addEventListener('change',()=>{document.body.classList.toggle(cls,input.checked);localStorage.setItem(key,input.checked?'1':'0')})};
+  preference('contrastToggle','high-contrast','clmd-contrast');preference('grayscaleToggle','grayscale','clmd-grayscale');preference('motionToggle','reduce-motion','clmd-motion');
+  document.querySelectorAll('[data-font]').forEach(btn=>btn.addEventListener('click',()=>{const mode=btn.dataset.font;if(mode==='up')document.body.classList.add('large-text');else document.body.classList.remove('large-text');localStorage.setItem('clmd-large-text',document.body.classList.contains('large-text')?'1':'0')}));
+  document.body.classList.toggle('large-text',localStorage.getItem('clmd-large-text')==='1');
+  document.getElementById('resetAccessibility').addEventListener('click',()=>{['high-contrast','grayscale','reduce-motion','large-text'].forEach(c=>document.body.classList.remove(c));['clmd-contrast','clmd-grayscale','clmd-motion','clmd-large-text'].forEach(k=>localStorage.removeItem(k));document.querySelectorAll('.access-panel input').forEach(i=>i.checked=false);CLMD.toast('Accessibility reset','Display preferences returned to default.')});
+  document.getElementById('languageSelect').addEventListener('change',e=>{document.documentElement.lang=e.target.value==='fil'?'fil':'en';Swal.fire({title:e.target.value==='fil'?'Wikang Filipino':'English',text:e.target.value==='fil'?'Demo mode: Ikonekta ang opisyal na salin upang isalin ang buong portal.':'The interface language is set to English.',icon:'info',confirmButtonColor:'#69358e'})});
 
-  // ---------- Visitor counter (localStorage demo) ----------
-  function initVisitor() {
-    const KEY = "clmd-visitors";
-    let data = {};
-    try { data = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { data = {}; }
-    const now = new Date();
-    const todayKey = now.toDateString();
-
-    // Initialize defaults if not present
-    if (!data.total) data = Object.assign({}, { total: 124530, today: 342, week: 2408, month: 10420, online: 186, returning: 62040, history: {} }, data);
-    if (!data.lastDay) data.lastDay = todayKey;
-
-    // Reset daily counters if new day
-    if (data.lastDay !== todayKey) { data.today = 0; data.lastDay = todayKey; }
-
-    // Count this visit once per session
-    const sessionKey = "clmd-visited-" + todayKey;
-    if (!sessionStorage.getItem(sessionKey)) {
-      data.total += 1;
-      data.today += 1;
-      data.week += 1;
-      data.month += 1;
-      const isReturning = localStorage.getItem("clmd-returned");
-      if (isReturning) { data.returning += 1; } else { localStorage.setItem("clmd-returned", "1"); }
-      const dk = now.toISOString().slice(0, 10);
-      data.history[dk] = (data.history[dk] || 0) + 1;
-      sessionStorage.setItem(sessionKey, "1");
-    }
-
-    localStorage.setItem(KEY, JSON.stringify(data));
-    window.CLMD_VISITORS = data;
-
-    // Update any elements
-    const mini = document.getElementById("visitor-mini-count");
-    if (mini) mini.textContent = data.total.toLocaleString();
-    document.querySelectorAll("[data-visitor='total']").forEach(el => el.textContent = data.total.toLocaleString());
-    document.querySelectorAll("[data-visitor='today']").forEach(el => el.textContent = data.today.toLocaleString());
-    document.querySelectorAll("[data-visitor='week']").forEach(el => el.textContent = data.week.toLocaleString());
-    document.querySelectorAll("[data-visitor='month']").forEach(el => el.textContent = data.month.toLocaleString());
-    document.querySelectorAll("[data-visitor='online']").forEach(el => el.textContent = data.online.toLocaleString());
-    document.querySelectorAll("[data-visitor='returning']").forEach(el => el.textContent = data.returning.toLocaleString());
-
-    // Build visitor chart on visitor page
-    buildVisitorChart(data);
-  }
-
-  function buildVisitorChart(data) {
-    const canvas = document.getElementById("visitorChart");
-    if (!canvas || !window.Chart) return;
-    const labels = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
-    // derive from history if possible
-    let values = [210,265,248,302,340,410,356];
-    const ctx = canvas.getContext("2d");
-    new Chart(ctx, {
-      type: "bar",
-      data: { labels, datasets: [{
-        label: "Visitors",
-        data: values,
-        backgroundColor: "rgba(91,45,142,.7)",
-        borderRadius: 8, borderSkipped: false
-      }]},
-      options: chartBase("Violet gradient bar showing weekly visitor traffic")
-    });
-  }
-
-  function chartBase(accessLabel) {
-    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-    const tick = isDark ? "#b9aed6" : "#6b6480";
-    const grid = isDark ? "rgba(220,200,255,.1)" : "rgba(91,45,142,.1)";
-    return {
-      responsive: true, maintainAspectRatio: false, plugins: {
-        legend: { labels: { color: tick, font: { weight: 600 } } },
-        tooltip: { backgroundColor: "#3d1b63" },
-        accessibility: { enabled: true, announceOnShow: true },
-        title: { display: false }
-      },
-      scales: {
-        x: { ticks: { color: tick }, grid: { color: grid } },
-        y: { ticks: { color: tick }, grid: { color: grid } }
-      }
-    };
-  }
-  window.CLMD_chartBase = chartBase;
-  window.CLMD_DEPTH = window.CLMD_DEPTH || 0;
-
-  // ---------- Init ----------
-  function init() {
-    buildHeader();
-    buildFooter();
-    applyTheme();
-    buildNotifs();
-    loadSearchIndex();
-    wireActions();
-    initBackToTop();
-    initReveal();
-    initParticles();
-    initVisitor();
-    const y = document.getElementById("year"); if (y) y.textContent = new Date().getFullYear();
-    // Scroll shadow
-    window.addEventListener("scroll", () => {
-      const nav = qs(".navbar-custom"); if (nav) nav.classList.toggle("scrolled", window.scrollY > 20);
-    });
-  }
-
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
-  else init();
+  CLMD.initSearch?.();
+  if(window.AOS)AOS.init({duration:700,once:true,offset:60});
+  if(page==='home'&&window.particlesJS){particlesJS('heroParticles',{particles:{number:{value:34,density:{enable:true,value_area:900}},color:{value:'#f1d36d'},shape:{type:'circle'},opacity:{value:.28,random:true},size:{value:2,random:true},line_linked:{enable:true,distance:150,color:'#ffffff',opacity:.12,width:1},move:{enable:true,speed:.7,direction:'none',random:true,out_mode:'out'}},interactivity:{events:{onhover:{enable:false},onclick:{enable:false},resize:true}},retina_detect:true});}
+  setTimeout(()=>{document.getElementById('pageLoader')?.classList.add('hidden');CLMD.animateCounters();},650);
 })();

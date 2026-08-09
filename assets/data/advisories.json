@@ -1,13 +1,92 @@
-{
-  "title": "Regional Advisories Repository",
-  "items": [
-    { "no": "RA No. 2025-0034", "year": 2025, "title": "Advisory on the 2025 National Learning Camp", "area": "Programs", "program": "NLC", "date": "2025-07-01", "issuedTo": "Schools Division Offices", "keywords": "national, learning, camp, summer", "pdf": "pdf/sample.pdf" },
-    { "no": "RA No. 2025-0028", "year": 2025, "title": "Advisory on the Submission of Learning Resource Materials", "area": "LRMDS", "program": "Learning Resources", "date": "2025-06-12", "issuedTo": "All School Heads", "keywords": "learning, resource, materials, submission", "pdf": "pdf/sample.pdf" },
-    { "no": "RA No. 2025-0021", "year": 2025, "title": "Advisory on the Regional Validation of Curriculum Guides", "area": "Curriculum", "program": "Curriculum Guides", "date": "2025-05-19", "issuedTo": "Curriculum Implementers", "keywords": "curriculum, guides, validation", "pdf": "pdf/sample.pdf" },
-    { "no": "RA No. 2024-0045", "year": 2024, "title": "Advisory on the Distribution of DepEd TV Episodes", "area": "Learning Resources", "program": "DepEd TV", "date": "2024-12-03", "issuedTo": "Schools Division Offices", "keywords": "deped tv, episodes, broadcast, television", "pdf": "pdf/sample.pdf" },
-    { "no": "RA No. 2024-0036", "year": 2024, "title": "Advisory on the Conduct of the Brigada Pagbasa 2024", "area": "Reading", "program": "Literacy", "date": "2024-10-14", "issuedTo": "All Schools", "keywords": "brigada, pagbasa, reading, volunteers", "pdf": "pdf/sample.pdf" },
-    { "no": "RA No. 2024-0029", "year": 2024, "title": "Advisory on the 2024 Buwan ng Wika Celebration", "area": "Filipino", "program": "Buwan ng Wika", "date": "2024-08-01", "issuedTo": "All Schools", "keywords": "buwan, wika, filipino, language, month", "pdf": "pdf/sample.pdf" },
-    { "no": "RA No. 2023-0052", "year": 2023, "title": "Advisory on the Search for the Most Functional Library", "area": "LRMDS", "program": "Libraries", "date": "2023-11-11", "issuedTo": "Schools Division Offices", "keywords": "library, functional, search, resource", "pdf": "pdf/sample.pdf" },
-    { "no": "RA No. 2023-0041", "year": 2023, "title": "Advisory on the Regional Reading Month Celebration", "area": "Reading", "program": "Literacy", "date": "2023-09-22", "issuedTo": "All Schools", "keywords": "reading, month, celebration, literacy", "pdf": "pdf/sample.pdf" }
-  ]
-}
+[
+  {
+    "number": "RA No. 118, s. 2026",
+    "title": "Invitation to the SOCCSKSARGEN Reading Innovation Expo",
+    "year": 2026,
+    "learningArea": "English",
+    "program": "Literacy",
+    "date": "2026-07-31",
+    "file": "assets/pdf/ra-118-2026.pdf"
+  },
+  {
+    "number": "RA No. 109, s. 2026",
+    "title": "Participation in the National Learning Resource Congress",
+    "year": 2026,
+    "learningArea": "LRMDS",
+    "program": "Learning Resources",
+    "date": "2026-07-20",
+    "file": "assets/pdf/ra-109-2026.pdf"
+  },
+  {
+    "number": "RA No. 102, s. 2026",
+    "title": "Call for Entries: Regional Mathematics Innovation Challenge",
+    "year": 2026,
+    "learningArea": "Mathematics",
+    "program": "Mathematics",
+    "date": "2026-07-10",
+    "file": "assets/pdf/math-guide.pdf"
+  },
+  {
+    "number": "RA No. 096, s. 2026",
+    "title": "International Webinar on Inclusive Learning Design",
+    "year": 2026,
+    "learningArea": "Inclusive Education",
+    "program": "Inclusion",
+    "date": "2026-06-28",
+    "file": "assets/pdf/lr-quality-assurance.pdf"
+  },
+  {
+    "number": "RA No. 087, s. 2026",
+    "title": "2026 Youth Science Communication Fellowship",
+    "year": 2026,
+    "learningArea": "Science",
+    "program": "Science",
+    "date": "2026-06-14",
+    "file": "assets/pdf/science-guide.pdf"
+  },
+  {
+    "number": "RA No. 079, s. 2026",
+    "title": "National Schools Press Conference Partner Activities",
+    "year": 2026,
+    "learningArea": "English",
+    "program": "Campus Journalism",
+    "date": "2026-05-30",
+    "file": "assets/pdf/regional-performance-report.pdf"
+  },
+  {
+    "number": "RA No. 068, s. 2026",
+    "title": "Teacher Exchange on Culture-Responsive IPED Practices",
+    "year": 2026,
+    "learningArea": "IPED",
+    "program": "IPED",
+    "date": "2026-05-12",
+    "file": "assets/pdf/clmd-monitoring-template.pdf"
+  },
+  {
+    "number": "RA No. 057, s. 2026",
+    "title": "Call for Creative Outputs for the National Festival of Talents",
+    "year": 2026,
+    "learningArea": "MAPEH",
+    "program": "NFOT",
+    "date": "2026-04-25",
+    "file": "assets/pdf/curriculum-framework-2026.pdf"
+  },
+  {
+    "number": "RA No. 046, s. 2026",
+    "title": "Regional Library and Reading Spaces Design Forum",
+    "year": 2026,
+    "learningArea": "LRMDS",
+    "program": "Libraries",
+    "date": "2026-04-04",
+    "file": "assets/pdf/lr-quality-assurance.pdf"
+  },
+  {
+    "number": "RA No. 033, s. 2026",
+    "title": "Career Guidance and Work Immersion Partners Summit",
+    "year": 2026,
+    "learningArea": "SSHS",
+    "program": "Senior High School",
+    "date": "2026-03-12",
+    "file": "assets/pdf/office-transmittal-form.pdf"
+  }
+]

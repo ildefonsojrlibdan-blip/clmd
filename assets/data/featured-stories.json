@@ -1,0 +1,23 @@
+[
+  {
+    "label": "Regional Learning in Action",
+    "title": "Strengthening Practice Through Regional Learning",
+    "caption": "CLMD empowers education leaders and teachers through collaborative training that turns curriculum standards into meaningful classroom experiences.",
+    "image": "assets/images/hero-clmd-training.jpg",
+    "event": "Regional Trainings"
+  },
+  {
+    "label": "Learner Talent and Excellence",
+    "title": "Celebrating Talent, Innovation, and Excellence",
+    "caption": "CLMD creates platforms where SOCCSKSARGEN learners showcase creativity, skill, confidence, and leadership.",
+    "image": "assets/images/hero-clmd-excellence.jpg",
+    "event": "NFOT Feats"
+  },
+  {
+    "label": "Inclusive and Culture-Responsive Education",
+    "title": "Inclusive Learning, Every Community",
+    "caption": "CLMD brings responsive programs, meaningful support, and learning opportunities closer to every learner and community.",
+    "image": "assets/images/hero-clmd-inclusion.jpg",
+    "event": "CLMD Outreach to Sama-Badjao Learners"
+  }
+]
