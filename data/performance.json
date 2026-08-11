@@ -1,0 +1,401 @@
+{
+  "divisions": [
+    "Cotabato",
+    "Kidapawan City",
+    "South Cotabato",
+    "Koronadal City",
+    "Sultan Kudarat",
+    "Tacurong City",
+    "Sarangani",
+    "General Santos City"
+  ],
+  "regionalStats": {
+    "events": 10,
+    "participants": 7536,
+    "awards": 375,
+    "completion": 94,
+    "resources": 1248
+  },
+  "divisionScores": [
+    84,
+    89,
+    91,
+    94,
+    83,
+    92,
+    82,
+    93
+  ],
+  "awards": [
+    38,
+    34,
+    52,
+    48,
+    31,
+    42,
+    29,
+    56
+  ],
+  "events": [
+    {
+      "slug": "nft",
+      "title": "National Festival of Talents",
+      "category": "Talent Development",
+      "year": 2026,
+      "image": "assets/images/event-talents.jpg",
+      "participants": 1240,
+      "awards": 38,
+      "sdos": 8,
+      "performance": 82,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
+      ],
+      "narrative": "Learners showcased artistic, technical, linguistic, and entrepreneurial excellence across multiple competition areas.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "General Santos City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Cotabato SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sarangani SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/event-talents.jpg",
+        "assets/images/event-science.jpg",
+        "assets/images/hero-learning.jpg"
+      ]
+    },
+    {
+      "slug": "nspc",
+      "title": "National Schools Press Conference",
+      "category": "Campus Journalism",
+      "year": 2026,
+      "image": "assets/images/hero-leadership.jpg",
+      "participants": 486,
+      "awards": 27,
+      "sdos": 8,
+      "performance": 85,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
+      ],
+      "narrative": "Campus journalists demonstrated responsible, ethical, and innovative storytelling in individual and group events.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "Koronadal City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Tacurong City SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sultan Kudarat SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/hero-leadership.jpg",
+        "assets/images/event-reading.jpg",
+        "assets/images/hero-curriculum.jpg"
+      ]
+    },
+    {
+      "slug": "rstf",
+      "title": "Regional Science and Technology Fair",
+      "category": "Science & Innovation",
+      "year": 2026,
+      "image": "assets/images/event-science.jpg",
+      "participants": 920,
+      "awards": 64,
+      "sdos": 8,
+      "performance": 88,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
+      ],
+      "narrative": "Research teams presented inquiry-based solutions in science, robotics, sustainability, and community innovation.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "South Cotabato SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Kidapawan City SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "South Cotabato SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/event-science.jpg",
+        "assets/images/hero-learning.jpg",
+        "assets/images/hero-leadership.jpg"
+      ]
+    },
+    {
+      "slug": "math-olympics",
+      "title": "Regional Mathematics Olympics",
+      "category": "Mathematics",
+      "year": 2026,
+      "image": "assets/images/hero-curriculum.jpg",
+      "participants": 760,
+      "awards": 52,
+      "sdos": 8,
+      "performance": 91,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
+      ],
+      "narrative": "Learners engaged in individual and team challenges that emphasized reasoning, precision, creativity, and perseverance.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "General Santos City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Cotabato SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sarangani SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/hero-curriculum.jpg",
+        "assets/images/hero-curriculum.jpg",
+        "assets/images/event-talents.jpg"
+      ]
+    },
+    {
+      "slug": "kiddie-festival",
+      "title": "Regional Kiddie Festival",
+      "category": "Early Learning",
+      "year": 2026,
+      "image": "assets/images/event-reading.jpg",
+      "participants": 1100,
+      "awards": 45,
+      "sdos": 8,
+      "performance": 94,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
+      ],
+      "narrative": "Kindergarten learners celebrated play, language, numeracy, creativity, movement, and social-emotional learning.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "Koronadal City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Tacurong City SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sultan Kudarat SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/event-reading.jpg",
+        "assets/images/hero-leadership.jpg",
+        "assets/images/event-science.jpg"
+      ]
+    },
+    {
+      "slug": "sned-fun-day",
+      "title": "SNED Fun Day",
+      "category": "Inclusive Education",
+      "year": 2026,
+      "image": "assets/images/hero-learning.jpg",
+      "participants": 680,
+      "awards": 20,
+      "sdos": 8,
+      "performance": 82,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
+      ],
+      "narrative": "Inclusive activities highlighted learner strengths, family participation, accessibility, and joyful community engagement.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "South Cotabato SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Kidapawan City SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "South Cotabato SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/hero-learning.jpg",
+        "assets/images/event-talents.jpg",
+        "assets/images/event-reading.jpg"
+      ]
+    },
+    {
+      "slug": "techvoc-day",
+      "title": "Regional TechVoc Day",
+      "category": "TLE & TVL",
+      "year": 2026,
+      "image": "assets/images/event-talents.jpg",
+      "participants": 980,
+      "awards": 58,
+      "sdos": 8,
+      "performance": 85,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
+      ],
+      "narrative": "Learners demonstrated technical skills, innovation, entrepreneurship, craftsmanship, and workplace readiness.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "General Santos City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Cotabato SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sarangani SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/event-talents.jpg",
+        "assets/images/event-science.jpg",
+        "assets/images/hero-learning.jpg"
+      ]
+    },
+    {
+      "slug": "iped-day",
+      "title": "Regional Indigenous Peoples Day",
+      "category": "Culture & Inclusion",
+      "year": 2026,
+      "image": "assets/images/hero-learning.jpg",
+      "participants": 820,
+      "awards": 24,
+      "sdos": 8,
+      "performance": 88,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
+      ],
+      "narrative": "Communities and schools celebrated Indigenous knowledge, languages, arts, heritage, and education partnerships.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "Koronadal City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Tacurong City SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sultan Kudarat SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/hero-learning.jpg",
+        "assets/images/event-reading.jpg",
+        "assets/images/hero-curriculum.jpg"
+      ]
+    },
+    {
+      "slug": "library-search",
+      "title": "Search for the Most Functional Library",
+      "category": "Learning Resources",
+      "year": 2026,
+      "image": "assets/images/event-reading.jpg",
+      "participants": 210,
+      "awards": 16,
+      "sdos": 8,
+      "performance": 91,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
+      ],
+      "narrative": "The regional search recognized accessible, learner-centered, well-managed, and innovative school library services.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "South Cotabato SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Kidapawan City SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "South Cotabato SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/event-reading.jpg",
+        "assets/images/hero-learning.jpg",
+        "assets/images/hero-leadership.jpg"
+      ]
+    },
+    {
+      "slug": "gawad-teodora",
+      "title": "Gawad Teodora Alonzo Award",
+      "category": "Literacy",
+      "year": 2026,
+      "image": "assets/images/event-reading.jpg",
+      "participants": 340,
+      "awards": 31,
+      "sdos": 8,
+      "performance": 94,
+      "highlights": [
+        "Eight SDOs represented",
+        "Regional documentation completed",
+        "Post-activity learning session conducted"
+      ],
+      "narrative": "Outstanding reading advocates and programs were recognized for sustained literacy impact and community partnership.",
+      "awardees": [
+        {
+          "rank": "Gold",
+          "awardee": "General Santos City SDO"
+        },
+        {
+          "rank": "Silver",
+          "awardee": "Cotabato SDO"
+        },
+        {
+          "rank": "Bronze",
+          "awardee": "Sarangani SDO"
+        }
+      ],
+      "gallery": [
+        "assets/images/event-reading.jpg",
+        "assets/images/hero-curriculum.jpg",
+        "assets/images/event-talents.jpg"
+      ]
+    }
+  ]
+}

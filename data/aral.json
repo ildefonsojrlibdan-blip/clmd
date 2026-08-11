@@ -1,0 +1,145 @@
+{
+  "divisions": [
+    {
+      "division": "Cotabato",
+      "baseline": 52,
+      "midline": 64,
+      "endline": 72,
+      "gain": 20,
+      "learners": 4200,
+      "coverage": 88,
+      "completion": 81,
+      "reading": 68,
+      "numeracy": 66
+    },
+    {
+      "division": "Kidapawan City",
+      "baseline": 58,
+      "midline": 70,
+      "endline": 78,
+      "gain": 20,
+      "learners": 4710,
+      "coverage": 94,
+      "completion": 89,
+      "reading": 75,
+      "numeracy": 74
+    },
+    {
+      "division": "South Cotabato",
+      "baseline": 56,
+      "midline": 68,
+      "endline": 76,
+      "gain": 20,
+      "learners": 5220,
+      "coverage": 92,
+      "completion": 87,
+      "reading": 73,
+      "numeracy": 72
+    },
+    {
+      "division": "Koronadal City",
+      "baseline": 61,
+      "midline": 74,
+      "endline": 83,
+      "gain": 22,
+      "learners": 5730,
+      "coverage": 97,
+      "completion": 94,
+      "reading": 81,
+      "numeracy": 80
+    },
+    {
+      "division": "Sultan Kudarat",
+      "baseline": 50,
+      "midline": 62,
+      "endline": 69,
+      "gain": 19,
+      "learners": 6240,
+      "coverage": 87,
+      "completion": 80,
+      "reading": 65,
+      "numeracy": 64
+    },
+    {
+      "division": "Tacurong City",
+      "baseline": 60,
+      "midline": 72,
+      "endline": 81,
+      "gain": 21,
+      "learners": 6750,
+      "coverage": 96,
+      "completion": 92,
+      "reading": 79,
+      "numeracy": 78
+    },
+    {
+      "division": "Sarangani",
+      "baseline": 49,
+      "midline": 60,
+      "endline": 68,
+      "gain": 19,
+      "learners": 7260,
+      "coverage": 85,
+      "completion": 78,
+      "reading": 64,
+      "numeracy": 62
+    },
+    {
+      "division": "General Santos City",
+      "baseline": 59,
+      "midline": 72,
+      "endline": 80,
+      "gain": 21,
+      "learners": 7770,
+      "coverage": 95,
+      "completion": 91,
+      "reading": 77,
+      "numeracy": 76
+    }
+  ],
+  "monthly": {
+    "labels": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug"
+    ],
+    "reading": [
+      52,
+      55,
+      58,
+      62,
+      65,
+      69,
+      72,
+      76
+    ],
+    "numeracy": [
+      50,
+      53,
+      57,
+      60,
+      64,
+      68,
+      71,
+      74
+    ]
+  },
+  "tracks": {
+    "Reading": 18420,
+    "Numeracy": 15680,
+    "Study Skills": 6220,
+    "Psychosocial Support": 4680
+  },
+  "summary": {
+    "learners": 45080,
+    "tutors": 2136,
+    "sessions": 128440,
+    "avgGain": 20.4,
+    "coverage": 91.8
+  }
+}

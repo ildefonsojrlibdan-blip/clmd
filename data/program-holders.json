@@ -1,0 +1,149 @@
+[
+  {
+    "id": "shienna-antenor",
+    "name": "Shienna Lyn L. Antenor, PhD",
+    "assignments": [
+      "English"
+    ],
+    "areas": [
+      "english"
+    ],
+    "image": "assets/images/program-holders/shienna-lyn-antenor.jpg",
+    "position": "Education Program Supervisor / Regional Program Holder"
+  },
+  {
+    "id": "jay-ar-lipura",
+    "name": "Jay-ar S. Lipura, PhD",
+    "assignments": [
+      "Mathematics"
+    ],
+    "areas": [
+      "math"
+    ],
+    "image": "assets/images/program-holders/jay-ar-lipura.jpg",
+    "position": "Education Program Supervisor / Regional Program Holder"
+  },
+  {
+    "id": "dantly-villanueva",
+    "name": "Dantly S. Villanueva, PhD",
+    "assignments": [
+      "Science",
+      "Special Program in Science, Technology and Engineering (STE)"
+    ],
+    "areas": [
+      "science"
+    ],
+    "image": "assets/images/program-holders/dantly-villanueva.jpg",
+    "position": "Education Program Supervisor / Regional Program Holder"
+  },
+  {
+    "id": "leonardo-mission",
+    "name": "Leonardo B. Mission, PhD",
+    "assignments": [
+      "Filipino",
+      "Special Program in Journalism (SPJ)"
+    ],
+    "areas": [
+      "filipino"
+    ],
+    "image": "assets/images/program-holders/leonardo-mission.jpg",
+    "position": "Education Program Supervisor / Regional Program Holder"
+  },
+  {
+    "id": "jade-palomar",
+    "name": "Jade T. Palomar, PhD, CAR",
+    "assignments": [
+      "Araling Panlipunan",
+      "Kindergarten"
+    ],
+    "areas": [
+      "ap"
+    ],
+    "image": "assets/images/program-holders/jade-palomar.jpg",
+    "position": "Education Program Supervisor / Regional Program Holder"
+  },
+  {
+    "id": "maria-cunanan",
+    "name": "Maria Isabel R. Cunanan, MAEd",
+    "assignments": [
+      "Values Education",
+      "Multigrade Education"
+    ],
+    "areas": [
+      "values"
+    ],
+    "image": "assets/images/program-holders/maria-isabel-cunanan.jpg",
+    "position": "Education Program Supervisor / Regional Program Holder"
+  },
+  {
+    "id": "ildefonso-libdan",
+    "name": "Ildefonso E. Libdan Jr., PhD",
+    "assignments": [
+      "MAPEH",
+      "Special Program in the Arts (SPA)",
+      "Special Program in Sports (SPS)",
+      "Special Program in Foreign Language (SPFL)"
+    ],
+    "areas": [
+      "mapeh",
+      "scp"
+    ],
+    "image": "assets/images/program-holders/ildefonso-libdan-jr.jpg",
+    "position": "Education Program Supervisor / Regional Program Holder"
+  },
+  {
+    "id": "crisanto-bulado",
+    "name": "Crisanto M. Bulado, PhDU",
+    "assignments": [
+      "Technology and Livelihood Education",
+      "Strengthened Senior High School"
+    ],
+    "areas": [
+      "tle",
+      "sshs"
+    ],
+    "image": "assets/images/program-holders/crisanto-bulado.jpg",
+    "position": "Education Program Supervisor / Regional Program Holder"
+  },
+  {
+    "id": "arturo-tingson",
+    "name": "Arturo B. Tingson, MAEd",
+    "assignments": [
+      "Learning Resources Management and Development System (LRMDS)"
+    ],
+    "areas": [
+      "lrmds"
+    ],
+    "image": "assets/images/program-holders/arturo-tingson.jpg",
+    "position": "Education Program Supervisor / Regional Program Holder"
+  },
+  {
+    "id": "cynthia-diaz",
+    "name": "Cynthia B. Diaz, PhD",
+    "assignments": [
+      "Alternative Learning System (ALS)",
+      "Special Needs Education (SNED)"
+    ],
+    "areas": [
+      "als",
+      "sned"
+    ],
+    "image": "assets/images/program-holders/cynthia-diaz.jpg",
+    "position": "Education Program Supervisor / Regional Program Holder"
+  },
+  {
+    "id": "regan-dagadas",
+    "name": "Regan B. Dagadas, PhD",
+    "assignments": [
+      "Madrasah Education",
+      "Arabic Language and Islamic Values Education (ALIVE)",
+      "Indigenous Peoples Education (IPED)"
+    ],
+    "areas": [
+      "madrasah",
+      "iped"
+    ],
+    "image": "assets/images/program-holders/regan-dagadas.jpg",
+    "position": "Education Program Supervisor / Regional Program Holder"
+  }
+]
