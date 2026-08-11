@@ -41,13 +41,13 @@
     {
       "name": "ATTY. ALBERTO T. ESCOBARTE, CESO II",
       "position": "Regional Director",
-      "image": "assets/images/regional-director-placeholder.svg",
+      "image": "images/leadership/alberto-escobarte.jpg",
       "message": "We advance learning excellence through responsive leadership, evidence-informed decisions, and shared accountability."
     },
     {
       "name": "KATHRINE H. LOTILLA",
       "position": "Director III · Assistant Regional Director",
-      "image": "assets/images/assistant-regional-director-placeholder.svg",
+      "image": "images/leadership/kathrine-lotilla.jpg",
       "message": "Our work connects policy with meaningful support for divisions, schools, teachers, and learners."
     },
     {
@@ -85,28 +85,36 @@
   ],
   "announcements": [
     {
-      "date": "2026-08-01",
-      "tag": "Regional Activity",
-      "title": "Regional Curriculum Implementation Review and Planning Conference",
-      "text": "Division curriculum leaders are requested to complete the pre-conference evidence matrix."
+      "date": "2026-07-30",
+      "tag": "RSPC / NSPC / Special Program in Journalism",
+      "title": "Post-Evaluation and Planning Workshop on RSPC Guidelines with Supervisors in Charge of Campus Journalism",
+      "text": "Official Regional Memorandum CLMD-2026-184 is now available in the CLMD memoranda repository.",
+      "memoNumber": "CLMD-2026-184",
+      "file": "assets/pdf/memoranda/clmd-2026-184.pdf"
     },
     {
-      "date": "2026-07-28",
-      "tag": "Learning Resources",
-      "title": "Call for Quality-Assured Contextualized Learning Resources",
-      "text": "Submissions for the third-quarter regional evaluation cycle are now open."
+      "date": "2026-07-30",
+      "tag": "SNED Fun Day and SPEEd Program",
+      "title": "2026 SNED Fun Day Planning Conference Cum Orientation of Strengthening Parental Engagement in Education (SPEEd) Program",
+      "text": "Official Regional Memorandum CLMD-2026-183 is now available in the CLMD memoranda repository.",
+      "memoNumber": "CLMD-2026-183",
+      "file": "assets/pdf/memoranda/clmd-2026-183.pdf"
     },
     {
-      "date": "2026-07-24",
-      "tag": "Assessment",
-      "title": "Submission of Consolidated CRLA and RMA Results",
-      "text": "SDOs may upload validated assessment files through the regional data submission channel."
+      "date": "2026-07-30",
+      "tag": "ALS Program Management",
+      "title": "Meeting of Alternative Learning System (ALS) Focal Persons and Select Education Program Specialists in ALS II (EPSAs)",
+      "text": "Official Regional Memorandum CLMD-2026-182 is now available in the CLMD memoranda repository.",
+      "memoNumber": "CLMD-2026-182",
+      "file": "assets/pdf/memoranda/clmd-2026-182.pdf"
     },
     {
-      "date": "2026-07-19",
-      "tag": "Research",
-      "title": "2026 Regional Action Research Colloquium",
-      "text": "Accepted researchers will receive presentation schedules through their respective SDOs."
+      "date": "2026-07-31",
+      "tag": "Technical-Professional Track Electives",
+      "title": "Participation in the Development, Validation, Finalization, and Quality Assurance of Additional Priority Sectors Curriculum for Technical-Professional Track Electives",
+      "text": "Official Regional Memorandum CLMD-2026-181 is now available in the CLMD memoranda repository.",
+      "memoNumber": "CLMD-2026-181",
+      "file": "assets/pdf/memoranda/clmd-2026-181.pdf"
     }
   ]
 }
