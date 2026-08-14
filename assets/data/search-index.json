@@ -30,12 +30,6 @@
     "keywords": "Regional Performance CLMD Region XII"
   },
   {
-    "title": "ARAL Program Dashboard",
-    "url": "analytics/aral.html",
-    "type": "Analytics",
-    "keywords": "ARAL Program Dashboard CLMD Region XII"
-  },
-  {
     "title": "Learning Assessment Dashboard",
     "url": "analytics/assessment.html",
     "type": "Analytics",
@@ -226,78 +220,6 @@
     "url": "programs/index.html#gawad-teodora",
     "type": "Program",
     "keywords": "Literacy accomplishments performance"
-  },
-  {
-    "title": "RM No. 412, s. 2026 · Regional Curriculum Implementation Review and Planning Conference",
-    "url": "memoranda/index.html",
-    "type": "Memorandum",
-    "keywords": "All Learning Areas Curriculum Implementation"
-  },
-  {
-    "title": "RM No. 398, s. 2026 · Guidelines for the 2026 Regional Science and Technology Fair",
-    "url": "memoranda/index.html",
-    "type": "Memorandum",
-    "keywords": "Science RSTF"
-  },
-  {
-    "title": "RM No. 381, s. 2026 · Administration and Submission of CRLA Regional Results",
-    "url": "memoranda/index.html",
-    "type": "Memorandum",
-    "keywords": "English Assessment"
-  },
-  {
-    "title": "RM No. 352, s. 2026 · Regional Mathematics Olympics Implementing Guidelines",
-    "url": "memoranda/index.html",
-    "type": "Memorandum",
-    "keywords": "Mathematics Mathematics Olympics"
-  },
-  {
-    "title": "RM No. 329, s. 2026 · Quality Assurance Cycle for Contextualized Learning Resources",
-    "url": "memoranda/index.html",
-    "type": "Memorandum",
-    "keywords": "LRMDS Learning Resources"
-  },
-  {
-    "title": "RM No. 304, s. 2026 · Regional Action Research Colloquium and Research Utilization Forum",
-    "url": "memoranda/index.html",
-    "type": "Memorandum",
-    "keywords": "All Learning Areas Action Research"
-  },
-  {
-    "title": "RM No. 277, s. 2026 · ARAL Program Midyear Implementation Review",
-    "url": "memoranda/index.html",
-    "type": "Memorandum",
-    "keywords": "English and Mathematics ARAL"
-  },
-  {
-    "title": "RM No. 245, s. 2026 · Regional Indigenous Peoples Education Day",
-    "url": "memoranda/index.html",
-    "type": "Memorandum",
-    "keywords": "IPED IPED"
-  },
-  {
-    "title": "RM No. 218, s. 2026 · Strengthened Senior High School Regional Technical Assistance",
-    "url": "memoranda/index.html",
-    "type": "Memorandum",
-    "keywords": "SSHS Senior High School"
-  },
-  {
-    "title": "RM No. 194, s. 2026 · Regional TechVoc Day and Skills Demonstration",
-    "url": "memoranda/index.html",
-    "type": "Memorandum",
-    "keywords": "TLE TechVoc"
-  },
-  {
-    "title": "RM No. 161, s. 2026 · Regional Kiddie Festival and Early Learning Showcase",
-    "url": "memoranda/index.html",
-    "type": "Memorandum",
-    "keywords": "Kindergarten Early Learning"
-  },
-  {
-    "title": "RM No. 128, s. 2026 · Regional SNED Fun Day and Inclusive Education Summit",
-    "url": "memoranda/index.html",
-    "type": "Memorandum",
-    "keywords": "SNED Inclusive Education"
   },
   {
     "title": "RA No. 118, s. 2026 · Invitation to the SOCCSKSARGEN Reading Innovation Expo",
@@ -568,5 +490,83 @@
     "url": "gallery/index.html",
     "type": "Gallery Event",
     "keywords": "Learning Resources LRMDS Promoting functional, welcoming, and resource-rich school libraries that nurture lifelong readers. CLMD event photos"
+  },
+  {
+    "title": "CLMD-2026-181 · Participation in the Development, Validation, Finalization, and Quality Assurance of Additional Priority Sectors Curriculum for Technical-Professional Track Electives",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "TLE and Strengthened Senior High School Technical-Professional Track Electives 2026-07-31 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-184 · Post-Evaluation and Planning Workshop on RSPC Guidelines with Supervisors in Charge of Campus Journalism",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "English, Filipino, and Campus Journalism RSPC / NSPC / Special Program in Journalism 2026-07-30 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-183 · 2026 SNED Fun Day Planning Conference Cum Orientation of Strengthening Parental Engagement in Education (SPEEd) Program",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Special Needs Education (SNED) SNED Fun Day and SPEEd Program 2026-07-30 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-182 · Meeting of Alternative Learning System (ALS) Focal Persons and Select Education Program Specialists in ALS II (EPSAs)",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Alternative Learning System ALS Program Management 2026-07-30 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-180 · Participation in the Workshops on the Co-Development, Validation, and Finalization of the Policy on M&E Systems for RA 11650 Inter-Agency Programs",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Inclusive Education and SNED RA 11650 Inter-Agency Programs 2026-07-30 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-176 · Reproduction and Delivery of BASA Materials for Multigrade Schools",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Multigrade Education BASA Literacy Program 2026-07-29 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-175 · Adjustments to the CLMD-CID Assembly Cum Regional Convergence on the Implementation of Strengthened Senior High School Curriculum",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Strengthened Senior High School Strengthened Senior High School Curriculum 2026-07-28 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-179 · Sports, Health and Wellness Elective Offering Assessment",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "MAPEH and Strengthened Senior High School Sports, Health and Wellness Elective 2026-07-27 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-174 · Conduct of Workshop on the Conformance Review of Additional Course Kits for Functional Education Literacy Program (FELP) Course",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Alternative Learning System Functional Education Literacy Program 2026-07-27 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-177 · Addendum to Regional Memorandum CLMD-2026-157 re: Post-Evaluation of 2026 Regional Festival and National Festival of Talents",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Special Curricular Programs Regional and National Festival of Talents 2026-07-25 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-172 · 2026 Regional Search for Most Functional School Libraries",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "LRMDS School Libraries and Learning Resources 2026-07-25 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-170 · Virtual Orientation for ARAL Tutors, School Heads, and Focal Persons",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "English and Mathematics ARAL Program 2026-07-24 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-169 · Regional Training on Enhancing Teachers’ Expertise in Mathematical Manipulatives and Mathematics Investigation and Modelling (MIM)",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Mathematics Project MATHLAB / Mathematics Investigation and Modelling 2026-07-11 official regional memorandum"
   }
 ]
