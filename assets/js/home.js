@@ -5,7 +5,6 @@
     document.getElementById('homeStats').innerHTML=site.stats.map(s=>`<div class="stat-item"><div class="stat-icon"><i class="fa-solid ${s.icon}"></i></div><div><strong class="stat-value" data-count="${s.value}" data-suffix="${s.suffix}">0</strong><span class="stat-label">${CLMD.escape(s.label)}</span></div></div>`).join('');
     const quick=[
       ['learning-areas/index.html','fa-book-open-reader','Learning Areas','Curriculum leadership, programs, supervisors, and resources'],
-      ['analytics/aral.html','fa-arrow-trend-up','ARAL Dashboard','Comparative gains from all eight Schools Division Offices'],
       ['analytics/assessment.html','fa-clipboard-check','Learning Assessment','CRLA, RMA, and Philippine ECD Checklist results'],
       ['downloads/index.html','fa-cloud-arrow-down','Download Center','Guides, resources, forms, templates, and reports'],
       ['memoranda/index.html','fa-file-signature','Regional Memoranda','Search, preview, print, share, and download'],
@@ -25,7 +24,7 @@
     CLMD.addChart(new Chart(document.getElementById('homeProgramChart'),{type:'doughnut',data:{labels:['Completed','Ongoing','Scheduled'],datasets:[{data:[68,22,10],backgroundColor:[c.gold,c.violetLight,'rgba(255,255,255,.17)'],borderWidth:0,hoverOffset:5}]},options:{responsive:true,maintainAspectRatio:false,cutout:'68%',plugins:{legend:{position:'bottom',labels:{color:'rgba(255,255,255,.65)',usePointStyle:true,boxWidth:7,font:{size:9}}}}}}));
 
     const stats=CLMD.visitor.getStats();
-    document.getElementById('visitorKpis').innerHTML=[['Total',stats.total],['Today',stats.today],['This Week',stats.week],['This Month',stats.month],['Online',stats.online],['Returning',stats.returning]].map(x=>`<div class="visitor-kpi"><strong data-count="${x[1]}">0</strong><span>${x[0]}</span></div>`).join('');
+    document.getElementById('visitorKpis').innerHTML=[['Total',stats.total,'total'],['Today',stats.today,'today'],['This Week',stats.week,'week'],['This Month',stats.month,'month'],['Returning',stats.returning,'returning']].map(x=>`<div class="visitor-kpi"><strong data-count="${x[1]}" data-visitor-${x[2]}>0</strong><span>${x[0]}</span></div>`).join('');
     CLMD.addChart(new Chart(document.getElementById('visitorChart'),{type:'line',data:{labels:stats.labels,datasets:[{label:'Visitors',data:stats.trend,borderColor:c.violet,backgroundColor:'rgba(105,53,142,.12)',fill:true,tension:.4,pointRadius:3,pointBackgroundColor:c.gold}]},options:{...CLMD.baseChartOptions({legend:false}),scales:{x:{grid:{display:false},ticks:{color:c.muted,font:{size:8}}},y:{display:false,beginAtZero:true}}}}));
     document.getElementById('visitorGeo').innerHTML=`<div><strong>Top Countries</strong>${stats.countries.map(x=>`<span>${x.name}<b>${x.share}%</b></span>`).join('')}</div><div><strong>Regional Reach</strong>${stats.regions.map(x=>`<span>${x.name}<b>${x.share}%</b></span>`).join('')}</div>`;
 
