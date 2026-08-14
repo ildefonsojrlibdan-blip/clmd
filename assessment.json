@@ -1,0 +1,14 @@
+{
+  "status": "placeholder",
+  "note": "No validated Region XII datasets have been supplied for RMA or the Philippine ECD Checklist. These sections remain intentionally blank.",
+  "assessments": {
+    "RMA": {
+      "available": false,
+      "title": "Reading Management Assessment"
+    },
+    "ECD": {
+      "available": false,
+      "title": "Philippine Early Childhood Development Checklist"
+    }
+  }
+}

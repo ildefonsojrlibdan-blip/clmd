@@ -1,0 +1,89 @@
+{
+  "title": "Comprehensive Rapid Literacy Assessment (CRLA)",
+  "period": "Beginning of School Year (BoSY) 2026–2027",
+  "scope": "DepEd Region XII – SOCCSKSARGEN Public Schools",
+  "coverage": {
+    "regions": 1,
+    "divisions": 8,
+    "districts": 150,
+    "schools": 1741,
+    "schoolsSubmitted": 1730,
+    "schoolSubmissionRate": 99.37,
+    "totalAssessed": 226016,
+    "malePercentage": 51.06,
+    "femalePercentage": 48.94
+  },
+  "gradeEnrollment": [
+    { "grade": "Grade 1", "learners": 76855 },
+    { "grade": "Grade 2", "learners": 69720 },
+    { "grade": "Grade 3", "learners": 79441 }
+  ],
+  "profileLabels": [
+    "Low Emerging Reader",
+    "High Emerging Reader",
+    "Developing Reader",
+    "Transitioning Reader",
+    "Reading at Grade Level"
+  ],
+  "overallProfiles": [42.23, 8.85, 11.78, 25.95, 11.19],
+  "contexts": [
+    {
+      "id": "g1-mt",
+      "label": "Grade 1 · Mother Tongue",
+      "grade": "Grade 1",
+      "language": "Mother Tongue",
+      "profiles": [64.52, 13.33, 8.24, 9.90, 4.02],
+      "wordsPerMinute": 19.08,
+      "fluency": 45.51,
+      "comprehension": 31.17
+    },
+    {
+      "id": "g2-mt",
+      "label": "Grade 2 · Mother Tongue",
+      "grade": "Grade 2",
+      "language": "Mother Tongue",
+      "profiles": [40.89, 4.98, 12.91, 29.42, 11.79],
+      "wordsPerMinute": 35.73,
+      "fluency": 66.10,
+      "comprehension": 47.86
+    },
+    {
+      "id": "g2-fil",
+      "label": "Grade 2 · Filipino",
+      "grade": "Grade 2",
+      "language": "Filipino",
+      "profiles": [40.02, 4.90, 12.86, 30.45, 11.77],
+      "wordsPerMinute": 35.88,
+      "fluency": 69.82,
+      "comprehension": 47.15
+    },
+    {
+      "id": "g3-fil",
+      "label": "Grade 3 · Filipino",
+      "grade": "Grade 3",
+      "language": "Filipino",
+      "profiles": [28.13, 3.56, 10.78, 41.74, 15.79],
+      "wordsPerMinute": 42.28,
+      "fluency": 78.40,
+      "comprehension": 51.30
+    },
+    {
+      "id": "g3-eng",
+      "label": "Grade 3 · English",
+      "grade": "Grade 3",
+      "language": "English",
+      "profiles": [25.47, 8.82, 13.75, 35.25, 16.71],
+      "wordsPerMinute": 37.30,
+      "fluency": 67.04,
+      "comprehension": 42.80
+    }
+  ],
+  "overallMethodNote": "The source dashboard states that the overall average is based on Grade 1 Mother Tongue, Grade 2 Filipino, and Grade 3 English.",
+  "source": {
+    "label": "Department of Education – CRLA National Dashboard",
+    "url": "https://datastudio.google.com/reporting/1a2b7706-a54d-4646-82b7-93da6a9eb7d3/page/p_zoq8ccvk4d?s=suPjwoowKzA&params=%7B%22df312%22:%22ORexclude%25EE%2580%25800%25EE%2580%2580IN%25EE%2580%2580Region%2520XII%25EE%2580%2581include%25EE%2580%25803%25EE%2580%2580NU%25EE%2580%2582%22%7D",
+    "pdf": "assets/pdf/crla-region-xii-bosy-2026-2027.pdf",
+    "retrieved": "2026-08-14",
+    "citation": "Department of Education. Comprehensive Rapid Literacy Assessment (CRLA) National Dashboard, BoSY SY 2026–2027, Region XII filter. Figures reproduced from the user-supplied CRLA.pdf. Retrieved August 14, 2026."
+  }
+}
