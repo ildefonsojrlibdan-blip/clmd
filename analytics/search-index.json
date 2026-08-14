@@ -1,0 +1,572 @@
+[
+  {
+    "title": "Home",
+    "url": "index.html",
+    "type": "Portal",
+    "keywords": "Home CLMD Region XII"
+  },
+  {
+    "title": "About CLMD",
+    "url": "about.html",
+    "type": "Page",
+    "keywords": "About CLMD CLMD Region XII"
+  },
+  {
+    "title": "Learning Areas",
+    "url": "learning-areas/index.html",
+    "type": "Page",
+    "keywords": "Learning Areas CLMD Region XII"
+  },
+  {
+    "title": "Programs",
+    "url": "programs/index.html",
+    "type": "Page",
+    "keywords": "Programs CLMD Region XII"
+  },
+  {
+    "title": "Regional Performance",
+    "url": "analytics/index.html",
+    "type": "Analytics",
+    "keywords": "Regional Performance CLMD Region XII"
+  },
+  {
+    "title": "Learning Assessment Dashboard",
+    "url": "analytics/assessment.html",
+    "type": "Analytics",
+    "keywords": "Learning Assessment Dashboard CLMD Region XII"
+  },
+  {
+    "title": "Download Center",
+    "url": "downloads/index.html",
+    "type": "Repository",
+    "keywords": "Download Center CLMD Region XII"
+  },
+  {
+    "title": "Regional Memoranda",
+    "url": "memoranda/index.html",
+    "type": "Repository",
+    "keywords": "Regional Memoranda CLMD Region XII"
+  },
+  {
+    "title": "Regional Advisories",
+    "url": "advisories/index.html",
+    "type": "Repository",
+    "keywords": "Regional Advisories CLMD Region XII"
+  },
+  {
+    "title": "Photo Gallery",
+    "url": "gallery/index.html",
+    "type": "Gallery",
+    "keywords": "Photo Gallery CLMD Region XII"
+  },
+  {
+    "title": "Contact CLMD",
+    "url": "contact.html",
+    "type": "Page",
+    "keywords": "Contact CLMD CLMD Region XII"
+  },
+  {
+    "title": "English",
+    "url": "learning-areas/english.html",
+    "type": "Learning Area",
+    "keywords": "Regional English Program Campus Journalism Reading and Literacy Shienna Lyn L. Antenor, PhD"
+  },
+  {
+    "title": "Mathematics",
+    "url": "learning-areas/math.html",
+    "type": "Learning Area",
+    "keywords": "Regional Mathematics Program Mathematics Olympics Numeracy Intervention Jay-ar S. Lipura, PhD"
+  },
+  {
+    "title": "Science & STE",
+    "url": "learning-areas/science.html",
+    "type": "Learning Area",
+    "keywords": "Science Special Program in Science, Technology and Engineering (STE) Regional Science and Technology Fair Dantly S. Villanueva, PhD"
+  },
+  {
+    "title": "Filipino & SPJ",
+    "url": "learning-areas/filipino.html",
+    "type": "Learning Area",
+    "keywords": "Filipino Special Program in Journalism (SPJ) Pambansang Buwan ng Wika Leonardo B. Mission, PhD"
+  },
+  {
+    "title": "Araling Panlipunan & Kindergarten",
+    "url": "learning-areas/ap.html",
+    "type": "Learning Area",
+    "keywords": "Araling Panlipunan Kindergarten Regional Kiddie Festival Jade T. Palomar, PhD, CAR"
+  },
+  {
+    "title": "Values Education & Multigrade",
+    "url": "learning-areas/values.html",
+    "type": "Learning Area",
+    "keywords": "Values Education Multigrade Education Homeroom Guidance Support Maria Isabel R. Cunanan, MAEd"
+  },
+  {
+    "title": "MAPEH · SPA · SPS · SPFL",
+    "url": "learning-areas/mapeh.html",
+    "type": "Learning Area",
+    "keywords": "MAPEH Special Program in the Arts (SPA) Special Program in Sports (SPS) Special Program in Foreign Language (SPFL) Ildefonso E. Libdan Jr., PhD"
+  },
+  {
+    "title": "Technology and Livelihood Education",
+    "url": "learning-areas/tle.html",
+    "type": "Learning Area",
+    "keywords": "Technology and Livelihood Education Technical-Vocational Education Strengthened Senior High School Crisanto M. Bulado, PhDU"
+  },
+  {
+    "title": "Special Curricular Programs",
+    "url": "learning-areas/scp.html",
+    "type": "Learning Area",
+    "keywords": "Special Program in the Arts (SPA) Special Program in Sports (SPS) Special Program in Foreign Language (SPFL) Other Special Curricular Programs Ildefonso E. Libdan Jr., PhD"
+  },
+  {
+    "title": "Inclusive Education",
+    "url": "learning-areas/inclusive.html",
+    "type": "Learning Area",
+    "keywords": "Inclusive Education Learner Support Universal Design for Learning Regional Inclusive Education Focal Team"
+  },
+  {
+    "title": "Special Needs Education (SNED)",
+    "url": "learning-areas/sned.html",
+    "type": "Learning Area",
+    "keywords": "Special Needs Education (SNED) SNED Fun Day Transition Support Cynthia B. Diaz, PhD"
+  },
+  {
+    "title": "Indigenous Peoples Education (IPED)",
+    "url": "learning-areas/iped.html",
+    "type": "Learning Area",
+    "keywords": "Indigenous Peoples Education (IPED) Regional Indigenous Peoples Day Community Partnership Regan B. Dagadas, PhD"
+  },
+  {
+    "title": "Madrasah Education",
+    "url": "learning-areas/madrasah.html",
+    "type": "Learning Area",
+    "keywords": "Madrasah Education Arabic Language and Islamic Values Education (ALIVE) Indigenous Peoples Education (IPED) Regan B. Dagadas, PhD"
+  },
+  {
+    "title": "Alternative Learning System",
+    "url": "learning-areas/als.html",
+    "type": "Learning Area",
+    "keywords": "Alternative Learning System (ALS) Accreditation and Equivalency Community Learning Centers Cynthia B. Diaz, PhD"
+  },
+  {
+    "title": "Strengthened Senior High School",
+    "url": "learning-areas/sshs.html",
+    "type": "Learning Area",
+    "keywords": "Strengthened Senior High School Career Pathways Work Immersion Crisanto M. Bulado, PhDU"
+  },
+  {
+    "title": "Learning Resources Management and Development System (LRMDS)",
+    "url": "learning-areas/lrmds.html",
+    "type": "Learning Area",
+    "keywords": "Learning Resources Management and Development System (LRMDS) Learning Resource Quality Assurance Digital Resource Management Arturo B. Tingson, MAEd"
+  },
+  {
+    "title": "National Festival of Talents",
+    "url": "programs/index.html#nft",
+    "type": "Program",
+    "keywords": "Talent Development accomplishments performance"
+  },
+  {
+    "title": "National Schools Press Conference",
+    "url": "programs/index.html#nspc",
+    "type": "Program",
+    "keywords": "Campus Journalism accomplishments performance"
+  },
+  {
+    "title": "Regional Science and Technology Fair",
+    "url": "programs/index.html#rstf",
+    "type": "Program",
+    "keywords": "Science & Innovation accomplishments performance"
+  },
+  {
+    "title": "Regional Mathematics Olympics",
+    "url": "programs/index.html#math-olympics",
+    "type": "Program",
+    "keywords": "Mathematics accomplishments performance"
+  },
+  {
+    "title": "Regional Kiddie Festival",
+    "url": "programs/index.html#kiddie-festival",
+    "type": "Program",
+    "keywords": "Early Learning accomplishments performance"
+  },
+  {
+    "title": "SNED Fun Day",
+    "url": "programs/index.html#sned-fun-day",
+    "type": "Program",
+    "keywords": "Inclusive Education accomplishments performance"
+  },
+  {
+    "title": "Regional TechVoc Day",
+    "url": "programs/index.html#techvoc-day",
+    "type": "Program",
+    "keywords": "TLE & TVL accomplishments performance"
+  },
+  {
+    "title": "Regional Indigenous Peoples Day",
+    "url": "programs/index.html#iped-day",
+    "type": "Program",
+    "keywords": "Culture & Inclusion accomplishments performance"
+  },
+  {
+    "title": "Search for the Most Functional Library",
+    "url": "programs/index.html#library-search",
+    "type": "Program",
+    "keywords": "Learning Resources accomplishments performance"
+  },
+  {
+    "title": "Gawad Teodora Alonzo Award",
+    "url": "programs/index.html#gawad-teodora",
+    "type": "Program",
+    "keywords": "Literacy accomplishments performance"
+  },
+  {
+    "title": "RA No. 118, s. 2026 · Invitation to the SOCCSKSARGEN Reading Innovation Expo",
+    "url": "advisories/index.html",
+    "type": "Advisory",
+    "keywords": "English Literacy"
+  },
+  {
+    "title": "RA No. 109, s. 2026 · Participation in the National Learning Resource Congress",
+    "url": "advisories/index.html",
+    "type": "Advisory",
+    "keywords": "LRMDS Learning Resources"
+  },
+  {
+    "title": "RA No. 102, s. 2026 · Call for Entries: Regional Mathematics Innovation Challenge",
+    "url": "advisories/index.html",
+    "type": "Advisory",
+    "keywords": "Mathematics Mathematics"
+  },
+  {
+    "title": "RA No. 096, s. 2026 · International Webinar on Inclusive Learning Design",
+    "url": "advisories/index.html",
+    "type": "Advisory",
+    "keywords": "Inclusive Education Inclusion"
+  },
+  {
+    "title": "RA No. 087, s. 2026 · 2026 Youth Science Communication Fellowship",
+    "url": "advisories/index.html",
+    "type": "Advisory",
+    "keywords": "Science Science"
+  },
+  {
+    "title": "RA No. 079, s. 2026 · National Schools Press Conference Partner Activities",
+    "url": "advisories/index.html",
+    "type": "Advisory",
+    "keywords": "English Campus Journalism"
+  },
+  {
+    "title": "RA No. 068, s. 2026 · Teacher Exchange on Culture-Responsive IPED Practices",
+    "url": "advisories/index.html",
+    "type": "Advisory",
+    "keywords": "IPED IPED"
+  },
+  {
+    "title": "RA No. 057, s. 2026 · Call for Creative Outputs for the National Festival of Talents",
+    "url": "advisories/index.html",
+    "type": "Advisory",
+    "keywords": "MAPEH NFOT"
+  },
+  {
+    "title": "RA No. 046, s. 2026 · Regional Library and Reading Spaces Design Forum",
+    "url": "advisories/index.html",
+    "type": "Advisory",
+    "keywords": "LRMDS Libraries"
+  },
+  {
+    "title": "RA No. 033, s. 2026 · Career Guidance and Work Immersion Partners Summit",
+    "url": "advisories/index.html",
+    "type": "Advisory",
+    "keywords": "SSHS Senior High School"
+  },
+  {
+    "title": "Kindergarten to Grade 12 Curriculum Implementation Framework 2026",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Curriculum Guides"
+  },
+  {
+    "title": "English Curriculum and Program Guide",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Curriculum Guides"
+  },
+  {
+    "title": "Mathematics Curriculum and Numeracy Guide",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Curriculum Guides"
+  },
+  {
+    "title": "Science Curriculum and Innovation Guide",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Curriculum Guides"
+  },
+  {
+    "title": "Learning Resource Quality Assurance Manual",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Manuals"
+  },
+  {
+    "title": "CLMD Program Monitoring Template",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Templates"
+  },
+  {
+    "title": "Regional Performance Accomplishment Report",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Reports"
+  },
+  {
+    "title": "ARAL Program Regional Implementation Guide",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Manuals"
+  },
+  {
+    "title": "Learning Assessment Report Template",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Templates"
+  },
+  {
+    "title": "CLMD Office Transmittal Form",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Office Forms"
+  },
+  {
+    "title": "Regional Memorandum No. 412, s. 2026",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Regional Memoranda"
+  },
+  {
+    "title": "Regional Memorandum No. 398, s. 2026",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Regional Memoranda"
+  },
+  {
+    "title": "Regional Advisory No. 118, s. 2026",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Regional Advisories"
+  },
+  {
+    "title": "Regional Advisory No. 109, s. 2026",
+    "url": "downloads/index.html",
+    "type": "Download",
+    "keywords": "CLMD Region XII Regional Advisories"
+  },
+  {
+    "title": "Shienna Lyn L. Antenor, PhD",
+    "url": "learning-areas/english.html",
+    "type": "Program Holder",
+    "keywords": "English Education Program Supervisor CLMD Region XII"
+  },
+  {
+    "title": "Jay-ar S. Lipura, PhD",
+    "url": "learning-areas/math.html",
+    "type": "Program Holder",
+    "keywords": "Mathematics Education Program Supervisor CLMD Region XII"
+  },
+  {
+    "title": "Dantly S. Villanueva, PhD",
+    "url": "learning-areas/science.html",
+    "type": "Program Holder",
+    "keywords": "Science Special Program in Science, Technology and Engineering (STE) Education Program Supervisor CLMD Region XII"
+  },
+  {
+    "title": "Leonardo B. Mission, PhD",
+    "url": "learning-areas/filipino.html",
+    "type": "Program Holder",
+    "keywords": "Filipino Special Program in Journalism (SPJ) Education Program Supervisor CLMD Region XII"
+  },
+  {
+    "title": "Jade T. Palomar, PhD, CAR",
+    "url": "learning-areas/ap.html",
+    "type": "Program Holder",
+    "keywords": "Araling Panlipunan Kindergarten Education Program Supervisor CLMD Region XII"
+  },
+  {
+    "title": "Maria Isabel R. Cunanan, MAEd",
+    "url": "learning-areas/values.html",
+    "type": "Program Holder",
+    "keywords": "Values Education Multigrade Education Education Program Supervisor CLMD Region XII"
+  },
+  {
+    "title": "Ildefonso E. Libdan Jr., PhD",
+    "url": "learning-areas/mapeh.html",
+    "type": "Program Holder",
+    "keywords": "MAPEH Special Program in the Arts (SPA) Special Program in Sports (SPS) Special Program in Foreign Language (SPFL) Education Program Supervisor CLMD Region XII"
+  },
+  {
+    "title": "Crisanto M. Bulado, PhDU",
+    "url": "learning-areas/tle.html",
+    "type": "Program Holder",
+    "keywords": "Technology and Livelihood Education Strengthened Senior High School Education Program Supervisor CLMD Region XII"
+  },
+  {
+    "title": "Arturo B. Tingson, MAEd",
+    "url": "learning-areas/lrmds.html",
+    "type": "Program Holder",
+    "keywords": "Learning Resources Management and Development System (LRMDS) Education Program Supervisor CLMD Region XII"
+  },
+  {
+    "title": "Cynthia B. Diaz, PhD",
+    "url": "learning-areas/als.html",
+    "type": "Program Holder",
+    "keywords": "Alternative Learning System (ALS) Special Needs Education (SNED) Education Program Supervisor CLMD Region XII"
+  },
+  {
+    "title": "Regan B. Dagadas, PhD",
+    "url": "learning-areas/madrasah.html",
+    "type": "Program Holder",
+    "keywords": "Madrasah Education Arabic Language and Islamic Values Education (ALIVE) Indigenous Peoples Education (IPED) Education Program Supervisor CLMD Region XII"
+  },
+  {
+    "title": "Inter-Region Audit",
+    "url": "gallery/index.html",
+    "type": "Gallery Event",
+    "keywords": "Quality Assurance All Learning Areas Strengthening accountability and quality systems through collaborative inter-regional review. CLMD event photos"
+  },
+  {
+    "title": "National Festival of Talents Consultative Meeting",
+    "url": "gallery/index.html",
+    "type": "Gallery Event",
+    "keywords": "Talent Development Special Curricular Programs Aligning teams and partners to create meaningful platforms for learner talent and excellence. CLMD event photos"
+  },
+  {
+    "title": "CLMD Outreach to Earthquake-Hit Areas",
+    "url": "gallery/index.html",
+    "type": "Gallery Event",
+    "keywords": "Community Outreach Inclusive Education Extending care, resources, and solidarity to education communities affected by disasters. CLMD event photos"
+  },
+  {
+    "title": "CLMD Planning",
+    "url": "gallery/index.html",
+    "type": "Gallery Event",
+    "keywords": "Strategic Planning All Learning Areas Turning evidence and shared priorities into responsive regional action. CLMD event photos"
+  },
+  {
+    "title": "Regional Trainings",
+    "url": "gallery/index.html",
+    "type": "Gallery Event",
+    "keywords": "Professional Development All Learning Areas Building educator capacity for innovative, inclusive, and high-quality learning. CLMD event photos"
+  },
+  {
+    "title": "ARAL Program Monitoring",
+    "url": "gallery/index.html",
+    "type": "Gallery Event",
+    "keywords": "Learning Recovery English and Mathematics Monitoring learning recovery and translating evidence into targeted learner support. CLMD event photos"
+  },
+  {
+    "title": "NFOT Feats",
+    "url": "gallery/index.html",
+    "type": "Gallery Event",
+    "keywords": "Talent Development Special Curricular Programs Celebrating SOCCSKSARGEN talent, creativity, innovation, and regional excellence. CLMD event photos"
+  },
+  {
+    "title": "CLMD Outreach to Sama-Badjao Learners",
+    "url": "gallery/index.html",
+    "type": "Gallery Event",
+    "keywords": "Inclusive Education IPED and Inclusive Education Advancing culture-responsive education and meaningful support for every learner and community. CLMD event photos"
+  },
+  {
+    "title": "Special Curricular Program Monitoring",
+    "url": "gallery/index.html",
+    "type": "Gallery Event",
+    "keywords": "Program Monitoring Special Curricular Programs Strengthening specialized programs through direct field monitoring, dialogue, and coaching. CLMD event photos"
+  },
+  {
+    "title": "School Library Monitoring",
+    "url": "gallery/index.html",
+    "type": "Gallery Event",
+    "keywords": "Learning Resources LRMDS Promoting functional, welcoming, and resource-rich school libraries that nurture lifelong readers. CLMD event photos"
+  },
+  {
+    "title": "CLMD-2026-181 · Participation in the Development, Validation, Finalization, and Quality Assurance of Additional Priority Sectors Curriculum for Technical-Professional Track Electives",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "TLE and Strengthened Senior High School Technical-Professional Track Electives 2026-07-31 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-184 · Post-Evaluation and Planning Workshop on RSPC Guidelines with Supervisors in Charge of Campus Journalism",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "English, Filipino, and Campus Journalism RSPC / NSPC / Special Program in Journalism 2026-07-30 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-183 · 2026 SNED Fun Day Planning Conference Cum Orientation of Strengthening Parental Engagement in Education (SPEEd) Program",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Special Needs Education (SNED) SNED Fun Day and SPEEd Program 2026-07-30 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-182 · Meeting of Alternative Learning System (ALS) Focal Persons and Select Education Program Specialists in ALS II (EPSAs)",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Alternative Learning System ALS Program Management 2026-07-30 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-180 · Participation in the Workshops on the Co-Development, Validation, and Finalization of the Policy on M&E Systems for RA 11650 Inter-Agency Programs",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Inclusive Education and SNED RA 11650 Inter-Agency Programs 2026-07-30 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-176 · Reproduction and Delivery of BASA Materials for Multigrade Schools",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Multigrade Education BASA Literacy Program 2026-07-29 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-175 · Adjustments to the CLMD-CID Assembly Cum Regional Convergence on the Implementation of Strengthened Senior High School Curriculum",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Strengthened Senior High School Strengthened Senior High School Curriculum 2026-07-28 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-179 · Sports, Health and Wellness Elective Offering Assessment",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "MAPEH and Strengthened Senior High School Sports, Health and Wellness Elective 2026-07-27 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-174 · Conduct of Workshop on the Conformance Review of Additional Course Kits for Functional Education Literacy Program (FELP) Course",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Alternative Learning System Functional Education Literacy Program 2026-07-27 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-177 · Addendum to Regional Memorandum CLMD-2026-157 re: Post-Evaluation of 2026 Regional Festival and National Festival of Talents",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Special Curricular Programs Regional and National Festival of Talents 2026-07-25 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-172 · 2026 Regional Search for Most Functional School Libraries",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "LRMDS School Libraries and Learning Resources 2026-07-25 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-170 · Virtual Orientation for ARAL Tutors, School Heads, and Focal Persons",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "English and Mathematics ARAL Program 2026-07-24 official regional memorandum"
+  },
+  {
+    "title": "CLMD-2026-169 · Regional Training on Enhancing Teachers’ Expertise in Mathematical Manipulatives and Mathematics Investigation and Modelling (MIM)",
+    "url": "memoranda/index.html",
+    "type": "Memorandum",
+    "keywords": "Mathematics Project MATHLAB / Mathematics Investigation and Modelling 2026-07-11 official regional memorandum"
+  }
+]
