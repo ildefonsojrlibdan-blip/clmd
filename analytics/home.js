@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   document.addEventListener('DOMContentLoaded',async()=>{
-    const [site,areas,performance,programs,featuredStories]=await Promise.all([CLMD.load('site'),CLMD.load('learning-areas'),CLMD.load('performance'),CLMD.load('programs'),CLMD.load('featured-stories')]);
+    const [site,areas,programs,featuredStories]=await Promise.all([CLMD.load('site'),CLMD.load('learning-areas'),CLMD.load('programs'),CLMD.load('featured-stories')]);
     document.getElementById('homeStats').innerHTML=site.stats.map(s=>`<div class="stat-item"><div class="stat-icon"><i class="fa-solid ${s.icon}"></i></div><div><strong class="stat-value" data-count="${s.value}" data-suffix="${s.suffix}">0</strong><span class="stat-label">${CLMD.escape(s.label)}</span></div></div>`).join('');
     const quick=[
       ['learning-areas/index.html','fa-book-open-reader','Learning Areas','Curriculum leadership, programs, supervisors, and resources'],
@@ -19,9 +19,6 @@
     document.getElementById('homeAnnouncements').innerHTML=site.announcements.map(a=>{const d=new Date(`${a.date}T00:00:00`);return`<article class="announcement-item"><div class="announcement-date"><strong>${d.getDate()}</strong>${new Intl.DateTimeFormat('en-PH',{month:'short'}).format(d)}</div><div><span class="announcement-tag">${CLMD.escape(a.tag)}</span><h3>${CLMD.escape(a.title)}</h3><p>${CLMD.escape(a.text)}</p></div><a class="text-link" href="memoranda/index.html">View <i class="fa-solid fa-arrow-right"></i></a></article>`}).join('');
 
     const c=CLMD.chartColors();
-    const performanceOptions=CLMD.baseChartOptions({legend:false});performanceOptions.scales.x.ticks.color='rgba(255,255,255,.6)';performanceOptions.scales.y.ticks.color='rgba(255,255,255,.6)';performanceOptions.scales.y.grid.color='rgba(255,255,255,.09)';performanceOptions.scales.x.grid.color='rgba(255,255,255,.06)';
-    CLMD.addChart(new Chart(document.getElementById('homePerformanceChart'),{type:'bar',data:{labels:performance.divisions,datasets:[{label:'Performance index',data:performance.divisionScores,backgroundColor:performance.divisionScores.map(v=>v>=92?c.gold:c.violetLight),borderRadius:7,maxBarThickness:28}]},options:performanceOptions}));
-    CLMD.addChart(new Chart(document.getElementById('homeProgramChart'),{type:'doughnut',data:{labels:['Completed','Ongoing','Scheduled'],datasets:[{data:[68,22,10],backgroundColor:[c.gold,c.violetLight,'rgba(255,255,255,.17)'],borderWidth:0,hoverOffset:5}]},options:{responsive:true,maintainAspectRatio:false,cutout:'68%',plugins:{legend:{position:'bottom',labels:{color:'rgba(255,255,255,.65)',usePointStyle:true,boxWidth:7,font:{size:9}}}}}}));
 
     const stats=CLMD.visitor.getStats();
     document.getElementById('visitorKpis').innerHTML=[['Total',stats.total,'total'],['Today',stats.today,'today'],['This Week',stats.week,'week'],['This Month',stats.month,'month'],['Returning',stats.returning,'returning']].map(x=>`<div class="visitor-kpi"><strong data-count="${x[1]}" data-visitor-${x[2]}>0</strong><span>${x[0]}</span></div>`).join('');

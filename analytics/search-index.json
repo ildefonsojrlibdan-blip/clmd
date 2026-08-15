@@ -24,10 +24,10 @@
     "keywords": "Programs CLMD Region XII"
   },
   {
-    "title": "Regional Performance",
+    "title": "Region XII’s Performance in the National and International Arena",
     "url": "analytics/index.html",
     "type": "Analytics",
-    "keywords": "Regional Performance CLMD Region XII"
+    "keywords": "Region XII national international arena verified achievements awards recognition official records CLMD"
   },
   {
     "title": "Learning Assessment Dashboard",
@@ -318,12 +318,6 @@
     "keywords": "CLMD Region XII Templates"
   },
   {
-    "title": "Regional Performance Accomplishment Report",
-    "url": "downloads/index.html",
-    "type": "Download",
-    "keywords": "CLMD Region XII Reports"
-  },
-  {
     "title": "ARAL Program Regional Implementation Guide",
     "url": "downloads/index.html",
     "type": "Download",
@@ -568,5 +562,11 @@
     "url": "memoranda/index.html",
     "type": "Memorandum",
     "keywords": "Mathematics Project MATHLAB / Mathematics Investigation and Modelling 2026-07-11 official regional memorandum"
+  },
+  {
+    "title": "CRLA Region XII BoSY 2026–2027 Results",
+    "url": "analytics/assessment.html",
+    "type": "CRLA Results",
+    "keywords": "Comprehensive Rapid Literacy Assessment Region XII reading profiles Grade 1 Grade 2 Grade 3 fluency comprehension BoSY 2026 2027"
   }
 ]
