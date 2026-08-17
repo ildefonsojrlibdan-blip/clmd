@@ -16,10 +16,11 @@
         <li class="${active(['home'])}"><a href="${p('index.html')}">Home</a></li>
         <li class="${active(['about'])}"><a href="${p('about.html')}">About CLMD</a></li>
         <li class="dropdown ${active(['learning-areas','learning-area'])}"><button data-bs-toggle="dropdown" aria-expanded="false">Learning Areas <i class="bi bi-chevron-down"></i></button><div class="dropdown-menu mega-menu"><div class="px-2 pt-1 pb-2"><small class="text-muted fw-bold">CURRICULUM PORTFOLIO</small></div><div class="mega-grid">${learningLinks.map(x=>`<a class="dropdown-item" href="${p(`learning-areas/${x[0]}.html`)}"><i class="fa-solid ${x[2]}"></i>${x[1]}</a>`).join('')}</div><div class="p-2 mt-1 border-top"><a class="dropdown-item text-center" href="${p('learning-areas/index.html')}">View all learning areas</a></div></div></li>
+        <li class="${active(['assessment'])}"><a href="${p('analytics/assessment.html')}">Learning Assessments</a></li>
         <li class="${active(['programs'])}"><a href="${p('programs/index.html')}">Programs</a></li>
         <li class="${active(['advisories'])}"><a href="${p('advisories/index.html')}">Memoranda</a></li>
         <li class="${active(['downloads'])}"><a href="${p('downloads/index.html')}">Downloads</a></li>
-        <li class="dropdown ${active(['assessment'])}"><button data-bs-toggle="dropdown" aria-expanded="false">Analytics <i class="bi bi-chevron-down"></i></button><div class="dropdown-menu"><a class="dropdown-item" href="${p('analytics/index.html')}"><i class="fa-solid fa-trophy me-2"></i>Region XII’s Performance in the National and International Arena</a><a class="dropdown-item" href="${p('analytics/assessment.html')}"><i class="fa-solid fa-clipboard-check me-2"></i>Learning Assessments</a></div></li>
+        <li class="dropdown ${active(['assessment'])}"><button data-bs-toggle="dropdown" aria-expanded="false">Analytics <i class="bi bi-chevron-down"></i></button><div class="dropdown-menu"><a class="dropdown-item" href="${p('analytics/index.html')}"><i class="fa-solid fa-trophy me-2"></i>Region XII’s Performance in the National and International Arena</a></div></li>
         <li class="${active(['gallery'])}"><a href="${p('gallery/index.html')}">Gallery</a></li>
         <li class="${active(['contact'])}"><a href="${p('contact.html')}">Contact</a></li>
       </ul>
